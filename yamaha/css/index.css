@@ -1,0 +1,1765 @@
+@charset "utf-8";
+@font-face{
+  font-family: "NanumSquareR";
+  src: url(../font/NanumSquareR.eot) format("embedded-opentype"), url(../font/NanumSquareR.woff) format("woff");
+}
+
+/*reset*/
+*{margin: 0; padding: 0; box-sizing: border-box;}
+a{text-decoration: none; color: #f5f5f5;}
+ul{list-style-type: none;}
+img{border: none;}
+html{font-size: 0.625em;}
+body{font-family: 'Source Sans Pro', sans-serif; color: #f5f5f5; background-color: #1d1d1d;}
+.blind{position: absolute; top: 0; left: -9999px; display: none;}
+
+/*keyframes make by ktj*/
+@keyframes fadeInRight{
+  100% {opacity: 1; transform: translateX(0);}
+}
+.fadeInRight{animation-name: fadeInRight; animation-duration: 2s; animation-fill-mode: forwards;}
+
+@keyframes fadeInLeft{
+  100% {opacity: 1; transform: translateX(0);}
+}
+.fadeInLeft{animation-name: fadeInLeft; animation-duration: 2s; animation-fill-mode: forwards;}
+
+@keyframes footerSlideCss{
+  100% {position: fixed; bottom: 0;}
+}
+.footerSlideCss{animation-name: footerSlideCss; animation-duration: 1.1s; animation-delay: 2.7s; animation-fill-mode: forwards;}
+
+@keyframes introSlideUp{
+    95%{opacity: 0; top: 0; display: none;}
+    100% {opacity: 0; top: -10000px;}
+}
+.introSlideUp{animation-name: introSlideUp; animation-duration: .6s; animation-delay: 6s; animation-fill-mode: forwards; animation-timing-function: ease-in;}
+
+@keyframes lineSize{
+     0%{width: 0; opacity: 1;}
+    100%{opacity: 1;}
+}
+.lineSize{animation-name: lineSize; animation-duration: 1.2s; animation-delay: .5s; animation-fill-mode: forwards;}
+
+.slideInDown{animation-name: slideInDown; animation-duration: 1.2s; animation-delay: 1.5s;}
+
+/*header*/
+header{width: 100%; position: fixed; top: 0; left: 0; transition: .3s; z-index: 10;}
+header h1{text-indent: -9999px;}
+header h1 a{width: 77px; height: 18px; background: url(../img/yamaha_mainm_logo_top.png) no-repeat center; background-size: contain; position: absolute; top: 10px; left: 3.125%; z-index: 10; transition: .3s;}
+
+/*header button*/
+header button{width: 12px; height: 10px; border: none; background: none; text-indent: -9999px; position: absolute; top: 14px; right: 3.125%; z-index: 10; cursor: pointer;}
+header button span{display: block; width: 12px; height: 2px; background: #f5f5f5; border-radius: 5px; transition: 0.3s;}
+header button span:nth-child(2){margin: 2px 0;}
+header button.on{transition: .3s;}
+header button.on span{display: block; position: absolute; top: 4px; right: 0; transition: 0.3s;}
+header button.on span:nth-child(1){transform: rotate(-45deg);}
+header button.on span:nth-child(2){display: none; opacity: 0;}
+header button.on span:nth-child(3){transform: rotate(45deg);}
+
+/*header .gnb*/
+header .gnb{background: rgba(29,29,29,.96); position: fixed; top: 0; right: 0; width: 100%; height: 100%; z-index: 9; display: none;}
+header .gnb .tmb{display: none;}
+header .gnb .mainMenu{margin-top: 138px; text-align: center; transition: .3s;}
+header .gnb .mainMenu li{margin: 25px 0;}
+header .gnb .mainMenu li a{font-size: 2.5rem;}
+header .gnb .subMenu{display: none;}
+
+/*header #snb*/
+header #snb{display: none; transition: .3s;}
+
+/*header #headerBg*/
+header > div{position: fixed; top: 0; display: block; width: 100%; height: 40px; background: rgba(0,0,0,.85); z-index: 7; opacity: 0; transition: .5s;}
+
+/*.main*/
+
+/*.main .close*/
+.main div.close{display: none;}
+
+/*.main #intro*/
+.main #intro{display: none; transition: .3s;}
+
+/*.main #top*/
+.main #top{position: relative; width: 100%; padding-top: 240px; padding-bottom: 240px; background: url(../img/yamaha_mainm_top_bg.jpg) no-repeat left; background-size: cover;}
+.main #top h2{position: absolute; top: 110px; left: 10.3125%; transition: .3s;}
+.main #top h2 span:nth-child(1){display: block; width: 13px; height: 2px; background: #f5f5f5; margin-bottom: 12px;}
+.main #top h2 span:nth-child(2){display: block;}
+.main #top h2 span:nth-child(3){display: block; font-size: 3rem; width: 185px; margin: 21px 0 8px; line-height: 1.3333;}
+.main #top h2 span:nth-child(4){display: block; font-size: 4.5rem;}
+.main #top p{position: absolute; top: 325px; left: 10.3125%; font-size: 1.5rem; width: 207px; line-height: 1.333em; transition: .3s;}
+
+/*.main #top animate*/
+    .slideOutUp {
+      animation-name: slideOutUp;
+    }
+    
+    #topSecondSpan {
+      animation-duration: 1.2s;
+      animation-delay: 1.2s;
+    }
+    
+    #topthirdSpan {
+      animation-duration: 1.8s;
+      animation-delay: 1.8s;
+    }
+    
+    #topfourthSpan {
+      animation-duration: 1.8s;
+      animation-delay: 2.4s;
+    }
+    
+    #topP {
+      animation-duration: 1.8s;
+      animation-delay: 3s;
+    }
+
+/*.main #acoustic*/
+.main #acoustic{position: relative; width: 100%; padding-top: 400px; padding-bottom: 400px; text-align: center; background: url(../img/yamaha_mainm_acoustic_bg.jpg) no-repeat center; background-size: cover;}
+.main #acoustic h2{position: absolute; top: 55px; left: 0; right: 0; font-size: 2.5rem;}
+.main #acoustic h2 span.contentBar{display: block; width: 25px; height: 2px; background: #f5f5f5; margin: 12px auto 0;}
+.main #acoustic p{position: absolute; top: 110px; left: 0; right: 0; font-size: 1.5rem; line-height: 1.3333em; text-align: center;}
+.main #acoustic .acousticTPbg{display: none;}
+.main #acoustic .bxslider{width: 100%; position: absolute; top: 180px; right: 0;}
+.main #acoustic .bxslider li{width: 100%; height: 170px; margin-bottom: 40px; font-size: 2.2rem;}
+.main #acoustic .bxslider li.upright{margin-bottom: 0;}
+.main #acoustic .bxslider li a{position: relative; display: block; width: 87.5%; height: 170px; border: 1px solid #4d4d4d;}
+.main #acoustic .bxslider li.premium a{background: url(../img/yamaha_mainm_premium.jpg) no-repeat left; background-size: cover; border-left: none;}
+.main #acoustic .bxslider li.grand a{background: url(../img/yamaha_mainm_grand.jpg) no-repeat left; background-size: cover; position: absolute; right: 0; border-right: none;}
+.main #acoustic .bxslider li.upright a{background: url(../img/yamaha_mainm_upright.jpg) no-repeat left; background-size: cover; border-left: none;}
+.main #acoustic .bxslider li.premium a span{position: absolute; top: 17px; right: -26px;}
+.main #acoustic .bxslider li.grand a span{position: absolute; top: 17px; left: -26px;}
+.main #acoustic .bxslider li.upright a span{position: absolute; top: 17px; right: -26px;}
+.main #acoustic #acoustic-pager{display: none;}
+
+/*.main #hybrid*/
+.main #hybrid{position: relative; width: 100%; padding-top: 400px; padding-bottom: 400px; text-align: center; background: url(../img/yamaha_mainm_hybrid_bg.jpg) no-repeat center; background-size: cover;}
+.main #hybrid h2{position: absolute; top: 45px; left: 0;right: 0; font-size: 2.5rem;}
+.main #hybrid h2 span.contentBar{display: block; width: 25px; height: 2px; background: #f5f5f5; margin: 12px auto 0;}
+.main #hybrid p{position: absolute; top: 100px; left: 0; right: 0; font-size: 1.5rem; line-height: 1.3333em;}
+.main #hybrid .hybridTPbg{display: none;}
+.main #hybrid .bxslider{width: 100%; position: absolute; top: 170px; left: 0;}
+.main #hybrid .bxslider li{width: 100%; height: 170px; margin-bottom: 40px; font-size: 2.2rem;}
+.main #hybrid .bxslider li.avant{margin-bottom: 0;}
+.main #hybrid .bxslider li a{position: relative; display: block; width: 87.5%; height: 170px; border: 1px solid #4d4d4d;}
+.main #hybrid .bxslider li.disklavier a{background: url(../img/yamaha_mainm_disklavier.jpg) no-repeat right; background-size: cover; border-left: none;}
+.main #hybrid .bxslider li.silent a{background: url(../img/yamaha_mainm_silent.jpg) no-repeat right; background-size: cover; position: absolute; right: 0; border-right: none;}
+.main #hybrid .bxslider li.avant a{background: url(../img/yamaha_mainm_avant.jpg) no-repeat left; background-size: cover; border-left: none;}
+.main #hybrid .bxslider li.disklavier a span{position: absolute; top: 17px; right: -26px;}
+.main #hybrid .bxslider li.silent a span{position: absolute; top: 17px; left: -26px;}
+.main #hybrid .bxslider li.avant a span{position: absolute; top: 17px; right: -26px;}
+.main #hybrid #hybrid-pager{display: none;}
+
+/*.main #digital*/
+.main #digital{position: relative; width: 100%; padding-top: 715px; padding-bottom: 715px; text-align: center; background: url(../img/yamaha_mainm_digital_bg.jpg) no-repeat center; background-size: cover;}
+.main #digital h2{position: absolute; top: 45px; left: 0; right: 0; font-size: 2.5rem;}
+.main #digital h2 span.contentBar{display: block; width: 25px; height: 2px; background: #f5f5f5; margin: 12px auto 0;}
+.main #digital p{position: absolute; top: 100px; left: 0; right: 0; font-size: 1.5rem; line-height: 1.3333em;}
+.main #digital p br:nth-of-type(1), .main #digital p br:nth-of-type(3){display: none;}
+.main #digital .digitalTPbg{display: none;}
+.main #digital .bxslider{width: 100%; position: absolute; top: 170px; right: 0;}
+.main #digital .bxslider li{width: 100%; height: 170px; margin-bottom: 40px; font-size: 2.2rem;}
+.main #digital .bxslider li.synthesizer{margin-bottom: 0;}
+.main #digital .bxslider li a{position: relative; display: block; width: 87.5%; height: 170px; border: 1px solid #4d4d4d;}
+.main #digital .bxslider li.clavinova a{background: url(../img/yamaha_mainm_clavinova.jpg) no-repeat center; background-size: cover; border-left: none;}
+.main #digital .bxslider li.pseries a{background: url(../img/yamaha_mainm_pseies.jpg) no-repeat left; background-size: cover; position: absolute; right: 0; border-right: none;}
+.main #digital .bxslider li.modus a{background: url(../img/yamaha_mainm_modus.jpg) no-repeat center; background-size: cover; border-left: none;}
+.main #digital .bxslider li.portable a{background: url(../img/yamaha_mainm_portable.jpg) no-repeat center; background-size: cover; position: absolute; right: 0; border-right: none;}
+.main #digital .bxslider li.arius a{background: url(../img/yamaha_mainm_arius.jpg) no-repeat center; background-size: cover; border-left: none;}
+.main #digital .bxslider li.synthesizer a{background: url(../img/yamaha_mainm_synthesizer.jpg) no-repeat center; background-size: cover; position: absolute; right: 0; border-right: none;}
+.main #digital .bxslider li.clavinova a span{position: absolute; top: 17px; right: -26px;}
+.main #digital .bxslider li.pseries a span{position: absolute; top: 17px; left: -26px;}
+.main #digital .bxslider li.modus a span{position: absolute; top: 17px; right: -26px;}
+.main #digital .bxslider li.portable a span{position: absolute; top: 17px; left: -26px;}
+.main #digital .bxslider li.arius a span{position: absolute; top: 17px; right: -26px;}
+.main #digital .bxslider li.synthesizer a span{position: absolute; top: 17px; left: -26px;}
+.main #digital #digital-pager{display: none;}
+
+/*.main #app*/
+.main #app{position: relative; width: 100%; padding-top: 295px; padding-bottom: 295px; text-align: center; background: url(../img/yamaha_mainm_app_bg.jpg) no-repeat center; background-size: cover;}
+.main #app h2{position: absolute; top: 45px; left: 0; right: 0; font-size: 2.5rem;}
+.main #app h2 span.contentBar{display: block; width: 25px; height: 2px; background: #f5f5f5; margin: 12px auto 0;}
+.main #app p{position: absolute; top: 100px; left: 0; right: 0; font-size: 1.5rem; line-height: 1.3333em;}
+.main #app .appTPbg{display: none;}
+.main #app .bxslider{width: 100%; position: absolute; top: 170px; left: 0;}
+.main #app .bxslider li{width: 100%; height: 170px; margin-bottom: 40px; font-size: 2.2rem;}
+.main #app .bxslider li.accessory{margin-bottom: 0;}
+.main #app .bxslider li a{position: relative; display: block; width: 87.5%; height: 170px; border: 1px solid #4d4d4d;}
+.main #app .bxslider li.app a{background: url(../img/yamaha_mainm_app.jpg) no-repeat right; background-size: cover; border-left: none;}
+.main #app .bxslider li.accessory a{background: url(../img/yamaha_mainm_accessory.jpg) no-repeat right; background-size: cover; position: absolute; right: 0; border-right: none;}
+.main #app .bxslider li.app a span{position: absolute; top: 17px; right: -26px;}
+.main #app .bxslider li.accessory a span{position: absolute; top: 17px; left: -26px;}
+.main #app #app-pager{display: none;}
+
+/*.main #bottom*/
+.main #bottom{display: none;}
+
+/*footer*/
+footer{width: 100%; height: 266px; position: relative; background: #000; z-index: 8; font-size: 1.2rem; transition: 1s;}
+footer h2{display: none; transition: .3s;}
+
+/*footer .topBox*/
+footer .topBox{width: 100%; margin-bottom: 21px; position: absolute; top: 16px;}
+footer .topBox:after{content: ""; display: block; clear: both;}
+footer .topBox .leftBox{float: left; margin-left: 6.25%;}
+footer .topBox .leftBox li{margin-bottom: 12px;}
+footer .topBox .rightBox{float: right; margin-right: 6.25%;}
+footer .topBox .rightBox li{margin-bottom: 12px;}
+footer .topBox .rightBox li a{margin-left: 10px;}
+
+/*footer .bottomBox*/
+footer .bottomBox{width: 100%; position: absolute; bottom: 16px; transition: .3s;}
+footer .bottomBox:after{content: ""; display: block; clear: both;}
+footer .bottomBox small{display: block; float: left; margin-left: 6.25%; font-size: 1.2rem; transition: .3s;}
+footer .bottomBox div{float: right; margin-right: 6.25%; transition: .3s;}
+footer .bottomBox div a{margin-left: 12px;}
+footer .bottomBox div img{height: 15px;}
+
+/*footer button*/
+footer button{display: none;}
+
+/*gta width < 480px && height < 401px*/
+@media screen and (max-height: 400px){
+    header .gnb .mainMenu{margin-top: 108px;}
+}
+
+/*gta width < 480px && height < 341px*/
+@media screen and (max-height: 340px){
+    header .gnb .mainMenu{margin-top: 68px;}
+}
+
+/*gta width < 480px && height < 281px*/
+@media screen and (max-height: 280px){
+    header .gnb .mainMenu{margin-top: 0px;  position: absolute;  top: 7px; right: 9%; text-align: center; border-bottom: 1px solid #f5f5f5;}
+    header .gnb .mainMenu li{margin: 0 0 5px 14px; float: left;}
+    header .gnb .mainMenu li:nth-child(1){margin: 0;}
+    header .gnb .mainMenu li a{font-size: 1.5rem;}
+    header .gnb .mainMenu li a span.piano{display: none;}
+    header .gnb .mainMenu li a span.accDel{display: none;}
+}
+
+/*gta 480px*/
+@media screen and (min-width: 480px){
+    /*header*/
+    header h1 a{width: 116px; height: 27px; top: 15px;}
+
+    /*header button*/
+    header button{width: 18px; height: 15px; top: 21px;}
+    header button span{width: 18px; height: 2px;}
+    header button span:nth-child(2){margin: 3px 0;}
+    header button.on span{top: 6px;}
+    
+    /*header #headerBg*/
+    header #headerBg{height: 57px;}
+
+    /*header .gnb*/
+    header .gnb .mainMenu{margin-top: 207px;}
+    header .gnb .mainMenu li{margin: 38px 0;}
+    header .gnb .mainMenu li a{font-size: 3.75rem;}
+
+    /*.main #top*/
+    .main #top{padding-top: 360px; padding-bottom: 360px; background-image: url(../img/yamaha_mainp_page02_bg.jpg);}
+    .main #top h2{top: 165px;}
+    .main #top h2 span:nth-child(1){width: 20px; height: 2px; margin-bottom: 18px;}
+    .main #top h2 span:nth-child(2){font-size: 2.25rem;}
+    .main #top h2 span:nth-child(3){font-size: 4.5rem; width: 278px; margin: 32px 0 12px;}
+    .main #top h2 span:nth-child(4){font-size: 6.75rem;}
+    .main #top p{top: 488px; font-size: 2.25rem; width: 346px;}
+
+    /*.main #acoustic*/
+    .main #acoustic{padding-top: 600px; padding-bottom: 600px;}
+    .main #acoustic h2{top: 83px; font-size: 3.75rem;}
+    .main #acoustic h2 span.contentBar{width: 38px; height: 2px; margin: 18px auto 0;}
+    .main #acoustic p{top: 165px; font-size: 2.25rem;}
+    .main #acoustic .bxslider{top: 270px;}
+    .main #acoustic .bxslider li{height: 255px; margin-bottom: 60px; font-size: 3.3rem;}
+    .main #acoustic .bxslider li a{height: 255px;}
+    .main #acoustic .bxslider li.premium a span{top: 26px; right: -39px;}
+    .main #acoustic .bxslider li.grand a span{top: 26px; left: -39px;}
+    .main #acoustic .bxslider li.upright a span{top: 39px; right: -39px;}
+
+    /*.main #hybrid*/
+    .main #hybrid{padding-top: 600px; padding-bottom: 600px;}
+    .main #hybrid h2{top: 83px; font-size: 3.75rem;}
+    .main #hybrid h2 span.contentBar{width: 38px; height: 2px; margin: 18px auto 0;}
+    .main #hybrid p{top: 165px; font-size: 2.25rem;}
+    .main #hybrid .bxslider{top: 270px;}
+    .main #hybrid .bxslider li{height: 255px; margin-bottom: 60px; font-size: 3.3rem;}
+    .main #hybrid .bxslider li a{height: 255px;}
+    .main #hybrid .bxslider li.disklavier a span{top: 26px; right: -39px;}
+    .main #hybrid .bxslider li.silent a span{top: 26px; left: -39px;}
+    .main #hybrid .bxslider li.avant a span{top: 39px; right: -39px;}
+
+    /*.main #digital*/
+    .main #digital{padding-top: 1072px; padding-bottom: 1072px;}
+    .main #digital h2{top: 83px; font-size: 3.75rem;}
+    .main #digital h2 span.contentBar{width: 38px; height: 2px; margin: 18px auto 0;}
+    .main #digital p{top: 165px; font-size: 2.25rem;}
+    .main #digital .bxslider{top: 270px;}
+    .main #digital .bxslider li{height: 255px; margin-bottom: 60px; font-size: 3.3rem;}
+    .main #digital .bxslider li a{height: 255px;}
+    .main #digital .bxslider li.clavinova a span{top: 26px; right: -39px;}
+    .main #digital .bxslider li.pseries a span{top: 26px; left: -39px;}
+    .main #digital .bxslider li.modus a span{top: 39px; right: -39px;}
+    .main #digital .bxslider li.portable a span{top: 39px; left: -39px;}
+    .main #digital .bxslider li.arius a span{top: 39px; right: -39px;}
+    .main #digital .bxslider li.synthesizer a span{top: 39px; left: -39px;}
+
+    /*.main #app*/
+    .main #app{padding-top: 442px; padding-bottom: 442px;}
+    .main #app h2{top: 83px; font-size: 3.75rem;}
+    .main #app h2 span.contentBar{width: 38px; height: 2px; margin: 18px auto 0;}
+    .main #app p{top: 165px; font-size: 2.25rem;}
+    .main #app .bxslider{top: 270px;}
+    .main #app .bxslider li{height: 255px; margin-bottom: 60px; font-size: 3.3rem;}
+    .main #app .bxslider li a{height: 255px;}
+    .main #app .bxslider li.app a span{top: 26px; right: -39px;}
+    .main #app .bxslider li.accessory a span{top: 26px; left: -39px;}
+
+    /*footer*/
+    footer{height: 399px; font-size: 1.8rem;}
+
+    /*footer .topBox*/
+    footer .topBox{margin-bottom: 32px; top: 24px;}
+    footer .topBox .leftBox li{margin-bottom: 18px;}
+    footer .topBox .rightBox li{margin-bottom: 18px;}
+    footer .topBox .rightBox li a{margin-left: 15px;}
+
+    /*footer .bottomBox*/
+    footer .bottomBox{bottom: 12px;}
+    footer .bottomBox small{font-size: 1.8rem;}
+    footer .bottomBox div a{margin-left: 18px;}
+    footer .bottomBox div img{height: 23px;}
+}
+
+/*gta width > 480px && height < 601px*/
+@media screen and (min-width: 480px) and (max-height: 600px){
+    header .gnb .mainMenu{margin-top: 118px;}
+}
+
+/*gta width > 480px && height < 451px*/
+@media screen and (min-width: 480px) and (max-height: 450px){
+    header .gnb .mainMenu{margin-top: 88px;}
+    header .gnb .mainMenu li{margin: 20px 0;}
+    header .gnb .mainMenu li a{font-size: 2.0rem;}
+}
+
+/*gta width > 480px && height < 341px*/
+@media screen and (min-width: 480px) and (max-height: 340px){
+    header .gnb .mainMenu{margin-top: 68px; border: none; position: static;}
+    header .gnb .mainMenu li{float: none;}
+    header .gnb .mainMenu li a span.piano{display: inline;}
+    header .gnb .mainMenu li a span.accDel{display: inline;}
+}
+
+/*gta width > 480px && height < 241px*/
+@media screen and (min-width: 480px) and (max-height: 240px){
+    header .gnb .mainMenu{margin-top: 0px;  position: absolute;  top: 14px; right: 9%; text-align: center; border-bottom: 1px solid #f5f5f5;}
+    header .gnb .mainMenu li{margin: 0 0 5px 25px; float: left;}
+    header .gnb .mainMenu li:nth-child(1){margin: 0;}
+    header .gnb .mainMenu li a{font-size: 1.8rem;}
+    header .gnb .mainMenu li a span.piano{display: none;}
+    header .gnb .mainMenu li a span.accDel{display: none;}
+}
+
+/*gta 640px*/
+@media screen and (min-width: 640px){
+    /*header*/
+    header h1 a{width: 154px; height: 36px; top: 20px;}
+
+    /*header button*/
+    header button{width: 24px; height: 20px; top: 28px;}
+    header button span{width: 24px; height: 3px;}
+    header button span:nth-child(2){margin: 4px 0;}
+    header button.on span{top: 8px;}
+    
+    /*header #headerBg*/
+    header #headerBg{height: 75px;}
+
+    /*header .gnb*/
+    header .gnb .mainMenu{margin-top: 276px;}
+    header .gnb .mainMenu li{margin: 50px 0;}
+    header .gnb .mainMenu li a{font-size: 5rem;}
+
+    /*.main #top*/
+    .main #top{padding-top: 480px; padding-bottom: 480px;}
+    .main #top h2{top: 220px;}
+    .main #top h2 span:nth-child(1){width: 26px; height: 3px; margin-bottom: 24px;}
+    .main #top h2 span:nth-child(2){font-size: 3rem;}
+    .main #top h2 span:nth-child(3){font-size: 6rem; width: 370px; margin: 42px 0 16px;}
+    .main #top h2 span:nth-child(4){font-size: 9rem;}
+    .main #top p{top: 650px; font-size: 3rem; width: 534px;}
+
+    /*.main #acoustic*/
+    .main #acoustic{padding-top: 800px; padding-bottom: 800px;}
+    .main #acoustic h2{top: 110px; font-size: 5rem;}
+    .main #acoustic h2 span.contentBar{width: 50px; height: 3px; margin: 24px auto 0;}
+    .main #acoustic p{top: 220px; font-size: 3rem;}
+    .main #acoustic .bxslider{top: 360px;}
+    .main #acoustic .bxslider li{height: 340px; margin-bottom: 80px; font-size: 4.4rem;}
+    .main #acoustic .bxslider li a{height: 340px;}
+    .main #acoustic .bxslider li.premium a span{top: 34px; right: -52px;}
+    .main #acoustic .bxslider li.grand a span{top: 34px; left: -52px;}
+    .main #acoustic .bxslider li.upright a span{top: 34px; right: -52px;}
+
+    /*.main #hybrid*/
+    .main #hybrid{padding-top: 800px; padding-bottom: 800px;}
+    .main #hybrid h2{top: 110px; font-size: 5rem;}
+    .main #hybrid h2 span.contentBar{width: 50px; height: 3px; margin: 24px auto 0;}
+    .main #hybrid p{top: 220px; font-size: 3rem;}
+    .main #hybrid .bxslider{top: 360px;}
+    .main #hybrid .bxslider li{height: 340px; margin-bottom: 80px; font-size: 4.4rem;}
+    .main #hybrid .bxslider li a{height: 340px;}
+    .main #hybrid .bxslider li.disklavier a span{top: 34px; right: -52px;}
+    .main #hybrid .bxslider li.silent a span{top: 34px; left: -52px;}
+    .main #hybrid .bxslider li.avant a span{top: 34px; right: -52px;}
+
+    /*.main #digital*/
+    .main #digital{padding-top: 1430px; padding-bottom: 1430px;}
+    .main #digital h2{top: 110px; font-size: 5rem;}
+    .main #digital h2 span.contentBar{width: 50px; height: 3px; margin: 24px auto 0;}
+    .main #digital p{top: 220px; font-size: 3rem;}
+    .main #digital .bxslider{top: 360px;}
+    .main #digital .bxslider li{height: 340px; margin-bottom: 80px; font-size: 4.4rem;}
+    .main #digital .bxslider li a{height: 340px;}
+    .main #digital .bxslider li.clavinova a span{top: 34px; right: -52px;}
+    .main #digital .bxslider li.pseries a span{top: 34px; left: -52px;}
+    .main #digital .bxslider li.modus a span{top: 34px; right: -52px;}
+    .main #digital .bxslider li.portable a span{top: 34px; left: -52px;}
+    .main #digital .bxslider li.arius a span{top: 34px; right: -52px;}
+    .main #digital .bxslider li.synthesizer a span{top: 34px; left: -52px;}
+
+    /*.main #app*/
+    .main #app{padding-top: 590px; padding-bottom: 590px;}
+    .main #app h2{top: 110px; font-size: 5rem;}
+    .main #app h2 span.contentBar{width: 50px; height: 3px; margin: 24px auto 0;}
+    .main #app p{top: 220px; font-size: 3rem;}
+    .main #app .bxslider{top: 360px;}
+    .main #app .bxslider li{height: 340px; margin-bottom: 80px; font-size: 4.4rem;}
+    .main #app .bxslider li a{height: 340px;}
+    .main #app .bxslider li.app a span{top: 34px; right: -52px;}
+    .main #app .bxslider li.accessory a span{top: 34px; left: -52px;}
+
+    /*footer*/
+    footer{height: 532px; font-size: 2.4rem;}
+
+    /*footer .topBox*/
+    footer .topBox{margin-bottom: 42px; top: 32px;}
+    footer .topBox .leftBox li{margin-bottom: 24px;}
+    footer .topBox .rightBox li{margin-bottom: 24px;}
+    footer .topBox .rightBox li a{margin-left: 20px;}
+
+    /*footer .bottomBox*/
+    footer .bottomBox{bottom: 16px;}
+    footer .bottomBox small{font-size: 2.4rem;}
+    footer .bottomBox div a{margin-left: 24px;}
+    footer .bottomBox div img{height: 30px;}
+}
+
+/*gta width > 640px && height < 701px*/
+@media screen and (min-width: 640px) and (max-height: 700px){
+    header .gnb .mainMenu{margin-top: 118px;}
+}
+
+/*gta width > 640px && height < 551px*/
+@media screen and (min-width: 640px) and (max-height: 550px){
+    header .gnb .mainMenu{margin-top: 90px;}
+    header .gnb .mainMenu li a{font-size: 3.75rem;}
+}
+
+/*gta width > 640px && height < 451px*/
+@media screen and (min-width: 640px) and (max-height: 450px){
+    header .gnb .mainMenu{margin-top: 90px;}
+    header .gnb .mainMenu li{margin: 0 0 20px 0;}
+    header .gnb .mainMenu li a{font-size: 3rem;}
+}
+
+/*gta width > 640px && height < 301px*/
+@media screen and (min-width: 640px) and (max-height: 300px){
+    /*.main*/
+    .main div.close{display: block; width: 100%; height: 100%; background: url(../img/yamaha_mainp_page01_bg.jpg) no-repeat center; background-size: cover;}
+    .main div.close p{font-size: 4rem; color: #f5f5f5; line-height: 1.4; text-align: center; position: absolute; top: 40%; left: 0; right: 0;}
+    header{display: none;}
+    .main #intro{display: none;}
+    .main #top{display: none;}
+    .main #acoustic{display: none;}
+    .main #hybrid{display: none;}
+    .main #digital{display: none;}
+    .main #app{display: none;}
+    .main #bottom{display: none;}
+    footer{display: none;}
+}
+
+/*gta 1024px*/
+@media screen and (min-width: 1024px){
+    /*body*/
+    body{overflow: hidden;}
+    
+    /*header*/
+    header h1 a{top: 35px; left: 4.101%;}
+
+    /*header button*/
+    header button{width: 24px; height: 17px; top: 44px; right: 4.101%;}
+    
+    /*header #headerBg*/
+    header #headerBg{display: none;}
+    
+    /*header .gnb*/
+    header .gnb .mainMenu{position: absolute; top: 170px; left: 15.987%; margin-top: 0; margin-left: 0; text-align: left;}
+    header .gnb .mainMenu li{margin: 0 0 74px 0;}
+    header .gnb .mainMenu li:nth-child(4){margin-bottom: 0;}
+    header .gnb .mainMenu li a{font-size: 5.6rem; text-transform: uppercase; color: #818181;  transition: .3s;}
+    header .gnb .mainMenu li:hover a,  header .gnb .mainMenu li:focus a{color: #eb9f34;}
+    header .gnb .mainMenu li a .piano{display: none;}
+    header .gnb .mainMenu li a .bar{display: block; background: #eb9f34; width: 0; height: 4px; transition: .5s;}
+    header .gnb .mainMenu li:hover .bar, header .gnb .mainMenu li:focus .bar{width: 550px;}
+    header .gnb .tmb{display: block; width: 0; height: 100%; position: absolute; top: 0; left: 28%; z-index: -1; transition-duration: 1.1s; transition-delay: .2s;}
+    header .gnb .acousticTmb{background: url(../img/yamaha_maint_acoustic_bg.jpg) no-repeat center; background-size: cover;}
+    header .gnb .hybridTmb{background: url(../img/yamaha_maint_hybrid_bg.jpg) no-repeat center; background-size: cover;}
+    header .gnb .digitalTmb{background: url(../img/yamaha_maint_digital_bg.jpg) no-repeat left; background-size: cover;}
+    header .gnb .appTmb{background: url(../img/yamaha_maint_app_bg.jpg) no-repeat center; background-size: cover;}
+
+    /*.main #intro*/
+    .main #intro{width: 100%; height: 100%; position: fixed; top: 0; left: 0; right: 0; z-index: 11; background: url(../img/yamaha_mainm_hybrid_bg.jpg) no-repeat center; background-size: cover; transition: 0.3s; display: block; margin: 0 auto;}
+    .main #intro h2{font-size: 1.7rem; position: absolute; top: 302px; left: 23.925%; transition: .3s; opacity: 0;}
+    .main #intro p{font-size: 7rem; display: block;}
+    .main #intro p:nth-of-type(1){width: 385px; position: absolute; top: 113px; left: 33.984%; right: 28.515%; transition: .3s;}
+    .main #intro p:nth-of-type(2){width: 278px; position: absolute; top: 258px; left: 57.421%; right: 17.968%; transition: .3s;}
+    .main #intro p:nth-of-type(3){width: 636px; position: absolute; top: 403px; left: 28.222%; right: 9.667%; transition: .3s;}
+    .main #intro p:nth-of-type(4){width: 247px; position: absolute; top: 546px; left: 44.433%; right: 31.542%; transition: .3s;}
+    
+    /*.main #intro aniamte*/
+    .main #intro 
+    .main #intro h2 {
+        animation-duration: 1.2s;
+        animation-delay: .5s;
+        animation-timing-function: ease;
+    }
+    
+    .main #intro .a{
+        animation-duration: 3.5s;
+        animation-delay: 1.4s;
+        display: inline-block;
+    }
+    
+    .main #intro .b{
+        animation-duration: 3.5s;
+        animation-delay: 2.4s;
+        display: inline-block;
+    }
+    
+    .main #intro .c{
+        animation-duration: 3.5s;
+        animation-delay: 1.8s;
+        display: inline-block;
+    }
+    
+    .main #intro .d{
+        animation-duration: 3.5s;
+        animation-delay: 1.8s;
+        display: inline-block;
+    }
+    
+    .main #intro .e{
+        animation-duration: 3.5s;
+        animation-delay: 2s;
+        display: inline-block;
+    }
+    
+    .main #intro .f{
+        animation-duration: 3.5s;
+        animation-delay: 2.4s;
+        display: inline-block;
+    }
+    
+    .main #intro .g{
+        animation-duration: 3.5s;
+        animation-delay: 2.2s;
+        display: inline-block;
+    }
+    
+    .main #intro .h{
+        animation-duration: 3.5s;
+        animation-delay: 1.3s;
+        display: inline-block;
+    }
+    
+    .main #intro .i{
+        animation-duration: 3.5s;
+        animation-delay: 1.8s;
+        display: inline-block;
+    }
+    
+
+    /*.main #top*/
+    .main #top{height: 768px; background: url(../img/yamaha_mainp_top_bg.jpg) no-repeat left; background-size: cover; padding: 0;}
+    .main #top h2{top: 210px; left: 16.796%;}
+    .main #top h2 span:nth-child(1){margin-bottom: 16px;}
+    .main #top h2 span:nth-child(2){font-size: 2.5rem;}
+    .main #top h2 span:nth-child(3){font-size: 7rem; width: 636px; margin: 31px 0 3px;}
+    .main #top h2 span:nth-child(4){font-size: 7rem;}
+    .main #top p{top: 497px; left: 16.796%; font-size: 2rem; width: 406px; line-height: 1.2em;}
+    
+    /*.main #top animate*/
+    .slideOutUp {
+      animation-name: slideOutUp;
+    }
+    .main #top span:nth-child(1){
+      animation-duration: 1.1s;
+      animation-delay: 6.3s;
+    }
+    
+    #topSecondSpan {
+      animation-duration: 1.2s;
+      animation-delay: 7.9s;
+    }
+    
+    #topthirdSpan {
+      animation-duration: 1.8s;
+      animation-delay: 8.5s;
+    }
+    
+    #topfourthSpan {
+      animation-duration: 1.8s;
+      animation-delay: 8.5s;
+    }
+    
+    #topP {
+      animation-duration: 1.8s;
+      animation-delay: 9.1s;
+    }
+
+    /*.main #acoustic*/
+    .main #acoustic{height: 768px; text-align: left; background: url(../img/yamaha_maint_page03_bg.jpg) no-repeat center; background-size: cover; overflow: hidden; padding: 0;}
+    .main #acoustic h2{width: 190px; position: absolute; top: 255px; left: 13.671%; right: 67.871%; font-size: 3rem; z-index: 5;}
+    .main #acoustic h2 span{display: inline-block; opacity: 0;}
+    .main #acoustic h2 span.contentBar{display: none;}
+    .main #acoustic p{width: 461px; top: 331px; left: 4.199%; right: 50.878%; font-size: 4.5rem; line-height: 1.2; text-align: left; z-index: 5; opacity: 0;}
+    .main #acoustic .bxslider{width: 70.703%; height: 419px; position: absolute; top: 183px; right: 6.445%;}
+    .main #acoustic .bxslider li{position: absolute; top: 0; left: 0; right: 0; width: 100%; height: 100%; margin-bottom: 0px; font-size: 1rem;}
+    .main #acoustic .bxslider li a{position: static; width: 100%; height: 100%;}
+    .main #acoustic .bxslider li.premium a{background: url(../img/yamaha_maint_premium.jpg) no-repeat left; background-size: cover; border-left: 1px solid #4d4d4d;}
+    .main #acoustic .bxslider li.grand a{background: url(../img/yamaha_maint_grand.jpg) no-repeat 30%; background-size: cover; position: static; border-right: 1px solid #4d4d4d;}
+    .main #acoustic .bxslider li.upright a{background: url(../img/yamaha_maint_upright.jpg) no-repeat 18%; background-size: cover; border-left: 1px solid #4d4d4d;}
+    .main #acoustic .bxslider li.premium a span{display: none;}
+    .main #acoustic .bxslider li.grand a span{display: none;}
+    .main #acoustic .bxslider li.upright a span{display: none;}
+    
+    /*.main #acoustic #acSlider*/
+    .main #acoustic .bx-wrapper{background: none; border: none; margin-bottom: 0; box-shadow: none; width: 70.703%; height: 419px; position: absolute; top: 183px; right: 6.445%; transform: translateX(300px); opacity: 0;}
+    .main #acoustic .bx-wrapper .bx-controls-direction a{display: none;}
+    .main #acoustic .bx-wrapper #acSlider{right: 0; top: 0;}
+    
+    /*.main #acoustic #acoustic-pager*/
+    .main #acoustic #acoustic-pager{display: block; width: 439px; height: 48px; background: url(../img/yamaha_maint_acoustic_textarea.png) no-repeat center; background-size: contain; position: absolute; top: 620px; right: 106px;  transition: .2s; opacity: 0;}
+    .main #acoustic #acoustic-pager:after{content: ""; display: block; clear: both;}
+    .main #acoustic #acoustic-pager a{display: block; width: 120px; font-size: 1.8rem; margin: 19px 14px 0; float: left; transition: 0.3s;}
+    .main #acoustic #acoustic-pager a:nth-child(1){margin-left: 28px;}
+    .main #acoustic #acoustic-pager a:nth-child(2){width: 96px;}
+    .main #acoustic #acoustic-pager a:nth-child(3){width: 108px;}
+    .main #acoustic #acoustic-pager a span{display: block; background: #eb9f34; width: 112px; height: 2px; margin: 2px auto 0; opacity: 0; transition: 0.4s;}
+    .main #acoustic #acoustic-pager a.grand-pager span{width: 89px; margin-left: 5px;}
+    .main #acoustic #acoustic-pager a.upright-pager span{width: 100px; margin-left: 6px;}
+    .main #acoustic #acoustic-pager a:hover, #acoustic #acoustic-pager a:focus{color: #eb9f34;}
+    .main #acoustic #acoustic-pager a:hover span, #acoustic #acoustic-pager a:focus span{opacity: 1;}
+    
+    /*.main #acoustic animate*/
+    .main #acoustic #acoustic-pager{
+        animation-duration: 1.5s;
+        animation-delay: 3s;
+    }
+    .main #acoustic p{
+        animation-duration: 1.5s;
+        animation-delay: 3s;
+    }
+    .main #acoustic h2 span.a{
+        animation-duration: 1.5s;
+        animation-delay: 1.6s;
+        animation-timing-function: ease;
+    }
+    .main #acoustic h2 span.b{
+        animation-duration: .9s;
+        animation-delay: 1.4s;
+        animation-timing-function: ease;
+    }
+    .main #acoustic h2 span.c{
+        animation-duration: .8s;
+        animation-delay: 1.3s;
+        animation-timing-function: ease;
+    }
+    .main #acoustic h2 span.d{
+        animation-duration: .8s;
+        animation-delay: 1.2s;
+        animation-timing-function: ease;
+    }
+    .main #acoustic h2 span.e{
+        animation-duration: .8s;
+        animation-delay: 1.1s;
+        animation-timing-function: ease;
+    }
+    .main #acoustic h2 span.f{
+        animation-duration: .7s;
+        animation-delay: 1s;
+        animation-timing-function: ease;
+    }
+    .main #acoustic h2 span.g{
+        animation-duration: .7s;
+        animation-delay: .9s;
+        animation-timing-function: ease;
+    }
+    .main #acoustic h2 span.h{
+        animation-duration: .7s;
+        animation-delay: .8s;
+        animation-timing-function: ease;
+    }
+    .main #acoustic h2 span.i{
+        animation-duration: .7s;
+        animation-delay: .7s;
+        animation-timing-function: ease;
+    }
+    .main #acoustic h2 span.j{
+        animation-duration: .6s;
+        animation-delay: .6s;
+        animation-timing-function: ease;
+    }
+    .main #acoustic h2 span.k{
+        animation-duration: .6s;
+        animation-delay: .5s;
+        animation-timing-function: ease;
+    }
+    .main #acoustic h2 span.l{
+        animation-duration: .6s;
+        animation-delay: .4s;
+        animation-timing-function: ease;
+    }
+    .main #acoustic h2 span.m{
+        animation-duration: .6s;
+        animation-delay: .3s;
+        animation-timing-function: ease;
+    }
+
+    /*.main #hybrid*/
+    .main #hybrid{height: 768px; text-align: left; background: url(../img/yamaha_maint_page04_bg.jpg) no-repeat center; background-size: cover; overflow: hidden; padding: 0;}
+    .main #hybrid h2{width: 169px; position: absolute; top: 255px; left: 70.871%; right: 10.671%; font-size: 3rem; z-index: 5;}
+    .main #hybrid h2 span{display: inline-block; opacity: 0;}
+    .main #hybrid h2 span.contentBar{display: none;}
+    .main #hybrid p{width: 416px; top: 331px; left: 56.878%; right: -2.199%; font-size: 4.5rem; line-height: 1.2; text-align: left; z-index: 5; opacity: 0;}
+    .main #hybrid .bxslider{width: 70.703%; height: 419px; position: absolute; top: 183px; left: 6.445%;}
+    .main #hybrid .bxslider li{position: absolute; top: 0; left: 0; right: 0; width: 100%; height: 100%; margin-bottom: 0px; font-size: 1rem;}
+    .main #hybrid .bxslider li a{position: static; width: 100%; height: 100%;}
+    .main #hybrid .bxslider li.disklavier a{background: url(../img/yamaha_maint_disklavier.jpg) no-repeat 50%; background-size: cover; border-left: 1px solid #4d4d4d;}
+    .main #hybrid .bxslider li.slient a{background: url(../img/yamaha_maint_silent.jpg) no-repeat left; background-size: cover; position: static; border-right: 1px solid #4d4d4d;}
+    .main #hybrid .bxslider li.avant a{background: url(../img/yamaha_maint_avant.jpg) no-repeat left; background-size: cover; border-left: 1px solid #4d4d4d;}
+    .main #hybrid .bxslider li.disklavier a span{display: none;}
+    .main #hybrid .bxslider li.silent a span{display: none;}
+    .main #hybrid .bxslider li.avant a span{display: none;}
+    
+    /*.main #hybrid #hySlider*/
+    .main #hybrid .bx-wrapper{background: none; border: none; margin-bottom: 0; box-shadow: none; width: 70.703%; height: 419px; position: absolute; top: 183px; left: 6.445%; transform: translateX(-300px); opacity: 0;}
+    .main #hybrid .bx-wrapper .bx-controls-direction a{display: none;}
+    .main #hybrid .bx-wrapper #hySlider{left: 0; top: 0;}
+    
+    /*main #hybrid #hybrid-pager*/
+    .main #hybrid #hybrid-pager{display: block; width: 383px; height: 48px; background: url(../img/yamaha_maint_hybrid_textarea.png) no-repeat center; background-size: contain; position: absolute; top: 620px; left: 107px; transition: .2s; opacity: 0;}
+    .main #hybrid #hybrid-pager:after{content: ""; display: block; clear: both;}
+    .main #hybrid #hybrid-pager a{display: block; width: 79px; font-size: 1.8rem; margin: 19px 14px 0; float: left; transition: 0.3s;}
+    .main #hybrid #hybrid-pager a:nth-child(1){margin-left: 28px;}
+    .main #hybrid #hybrid-pager a:nth-child(2){width: 94px;}
+    .main #hybrid #hybrid-pager a:nth-child(3){width: 96px;}
+    .main #hybrid #hybrid-pager a span{display: block; background: #eb9f34; width: 70px; height: 2px; margin: 2px auto 0; opacity: 0; transition: 0.4s;}
+    .main #hybrid #hybrid-pager a.silent-pager span{width: 86px; margin-left: 4px;}
+    .main #hybrid #hybrid-pager a.avant-pager span{width: 89px; margin-left: 3px;}
+    .main #hybrid #hybrid-pager a:hover, #hybrid #hybrid-pager a:focus{color: #eb9f34;}
+    .main #hybrid #hybrid-pager a:hover span, .main #hybrid #hybrid-pager a:focus span{opacity: 1;}
+    
+    /*.main #hybrid animate*/
+    .main #hybrid #hybrid-pager{
+        animation-duration: 1.5s;
+        animation-delay: 3s;
+    }
+    .main #hybrid p{
+        animation-duration: 1.5s;
+        animation-delay: 3s;
+    }
+    .main #hybrid h2 span.a{
+        animation-duration: .8s;
+        animation-delay: .3s;
+        animation-timing-function: ease;
+    }
+    .main #hybrid h2 span.b{
+        animation-duration: .8s;
+        animation-delay: .4s;
+        animation-timing-function: ease;
+    }
+    .main #hybrid h2 span.c{
+        animation-duration: .8s;
+        animation-delay: .5s;
+        animation-timing-function: ease;
+    }
+    .main #hybrid h2 span.d{
+        animation-duration: .8s;
+        animation-delay: .6s;
+        animation-timing-function: ease;
+    }
+    .main #hybrid h2 span.e{
+        animation-duration: .8s;
+        animation-delay: .7s;
+        animation-timing-function: ease;
+    }
+    .main #hybrid h2 span.f{
+        animation-duration: .8s;
+        animation-delay: .8s;
+        animation-timing-function: ease;
+    }
+    .main #hybrid h2 span.g{
+        animation-duration: .8s;
+        animation-delay: .9s;
+        animation-timing-function: ease;
+    }
+    .main #hybrid h2 span.h{
+        animation-duration: .8s;
+        animation-delay: 1s;
+        animation-timing-function: ease;
+    }
+    .main #hybrid h2 span.i{
+        animation-duration: .8s;
+        animation-delay: 1.1s;
+        animation-timing-function: ease;
+    }
+    .main #hybrid h2 span.j{
+        animation-duration: .8s;
+        animation-delay: 1.2s;
+        animation-timing-function: ease;
+    }
+    .main #hybrid h2 span.k{
+        animation-duration: 1.5s;
+        animation-delay: 1.4s;
+        animation-timing-function: ease;
+    }
+    
+    /*.main #digital*/
+    .main #digital{height: 768px; text-align: left; background: url(../img/yamaha_maint_page05_bg.jpg) no-repeat center; background-size: cover; overflow: hidden; padding: 0;}
+    .main #digital h2{width: 190px; position: absolute; top: 255px; left: 13.671%; right: 67.871%; font-size: 3rem; z-index: 5;}
+    .main #digital h2 span{display: inline-block; opacity: 0;}
+    .main #digital h2 span.contentBar{display: none;}
+    .main #digital p{width: 419px; top: 331px; left: 4.199%; right: 50.878%; font-size: 4.5rem; line-height: 1.2; text-align: left; z-index: 5; opacity: 0;}
+    .main #digital p br{display: none;}
+    .main #digital .bxslider{width: 70.703%; height: 419px; position: absolute; top: 183px; right: 6.445%;}
+    .main #digital .bxslider li{position: absolute; top: 0; left: 0; right: 0; width: 100%; height: 100%; margin-bottom: 0px; font-size: 1rem;}
+    .main #digital .bxslider li a{position: static; width: 100%; height: 100%;}
+    .main #digital .bxslider li.clavinova a{background: url(../img/yamaha_maint_clavinova.jpg) no-repeat 90%; background-size: cover; border-left: 1px solid #4d4d4d;}
+    .main #digital .bxslider li.pseries a{background: url(../img/yamaha_maint_pseries.jpg) no-repeat left; background-size: cover; position: static; border-right: 1px solid #4d4d4d;}
+    .main #digital .bxslider li.modus a{background: url(../img/yamaha_maint_modus.jpg) no-repeat left; background-size: cover; border-left: 1px solid #4d4d4d;}
+    .main #digital .bxslider li.portable a{background: url(../img/yamaha_maint_portable.jpg) no-repeat left; background-size: cover; position: static; border-right: 1px solid #4d4d4d;}
+    .main #digital .bxslider li.arius a{background: url(../img/yamaha_maint_arius.jpg) no-repeat center; background-size: cover; border-left: 1px solid #4d4d4d;}
+    .main #digital .bxslider li.synthesizer a{background: url(../img/yamaha_maint_synthesizer.jpg) no-repeat left; background-size: cover; position: static; border-right: 1px solid #4d4d4d;}
+    .main #digital .bxslider li.clavinova a span{display: none;}
+    .main #digital .bxslider li.pseries a span{display: none;}
+    .main #digital .bxslider li.modus a span{display: none;}
+    .main #digital .bxslider li.portable a span{display: none;}
+    .main #digital .bxslider li.arius a span{display: none;}
+    .main #digital .bxslider li.synthesizer a span{display: none;}
+    
+    /*.main #digital #digSlider*/
+    .main #digital .bx-wrapper{background: none; border: none; margin-bottom: 0; box-shadow: none; width: 70.703%; height: 419px; position: absolute; top: 183px; right: 6.445%; transform: translateX(300px); opacity: 0;}
+    .main #digital .bx-wrapper .bx-controls-direction a{display: none;}
+    .main #digital .bx-wrapper #digSlider{right: 0; top: 0;}
+    
+    /*.main #digital #digital-pager*/
+    .main #digital #digital-pager{display: block; width: 665px; height: 48px; background: url(../img/yamaha_maint_digital_textarea.png) no-repeat center; background-size: contain; position: absolute; top: 620px; right: 92px; transition: .2s; opacity: 0;}
+    .main #digital #digital-pager:after{content: ""; display: block; clear: both;}
+    .main #digital #digital-pager a{display: block; width: 69px; font-size: 1.6rem; margin: 19px 20px 0; float: left; transition: 0.3s;}
+    .main #digital #digital-pager a:nth-child(1){margin-left: 24px;}
+    .main #digital #digital-pager a:nth-child(2){width: 62px;}
+    .main #digital #digital-pager a:nth-child(3){width: 53px;}
+    .main #digital #digital-pager a:nth-child(4){width: 105px;}
+    .main #digital #digital-pager a:nth-child(5){width: 44px;}
+    .main #digital #digital-pager a:nth-child(6){width: 82px;}
+    .main #digital #digital-pager a span{display: block; background: #eb9f34; width: 69px; height: 2px; margin: 2px 0 0 5px; opacity: 0; transition: .4s;}
+    .main #digital #digital-pager a.clavinova-pager span{width: 62px; margin-left: 4px;}
+    .main #digital #digital-pager a.pseries-pager span{width: 58px; margin-left: 3px;}
+    .main #digital #digital-pager a.modus-pager span{width: 48px; margin-left: 3px;}
+    .main #digital #digital-pager a.portable-pager span{width: 100px; margin-left: 4px;}
+    .main #digital #digital-pager a.arius-pager span{width: 40px; margin-left: 2px;}
+    .main #digital #digital-pager a.synthe-pager span{width: 77px; margin-left: 3px;}
+    .main #digital #digital-pager a:hover, #digital #digital-pager a:focus{color: #eb9f34;}
+    .main #digital #digital-pager a:hover span, #digital #digital-pager a:focus span{opacity: 1;}
+    
+    /*.main #digital animate*/
+    .main #digital #digital-pager{
+        animation-duration: 1.5s;
+        animation-delay: 3s;
+    }
+    .main #digital p{
+        animation-duration: 1.5s;
+        animation-delay: 3s;
+    }
+    .main #digital h2 span.a{
+        animation-duration: 1.5s;
+        animation-delay: 1.6s;
+        animation-timing-function: ease;
+    }
+    .main #digital h2 span.b{
+        animation-duration: .9s;
+        animation-delay: 1.4s;
+        animation-timing-function: ease;
+    }
+    .main #digital h2 span.c{
+        animation-duration: .8s;
+        animation-delay: 1.3s;
+        animation-timing-function: ease;
+    }
+    .main #digital h2 span.d{
+        animation-duration: .8s;
+        animation-delay: 1.2s;
+        animation-timing-function: ease;
+    }
+    .main #digital h2 span.e{
+        animation-duration: .8s;
+        animation-delay: 1.1s;
+        animation-timing-function: ease;
+    }
+    .main #digital h2 span.f{
+        animation-duration: .7s;
+        animation-delay: 1s;
+        animation-timing-function: ease;
+    }
+    .main #digital h2 span.g{
+        animation-duration: .7s;
+        animation-delay: .9s;
+        animation-timing-function: ease;
+    }
+    .main #digital h2 span.h{
+        animation-duration: .7s;
+        animation-delay: .8s;
+        animation-timing-function: ease;
+    }
+    .main #digital h2 span.i{
+        animation-duration: .7s;
+        animation-delay: .7s;
+        animation-timing-function: ease;
+    }
+    .main #digital h2 span.j{
+        animation-duration: .6s;
+        animation-delay: .6s;
+        animation-timing-function: ease;
+    }
+    .main #digital h2 span.k{
+        animation-duration: .6s;
+        animation-delay: .5s;
+        animation-timing-function: ease;
+    }
+    .main #digital h2 span.l{
+        animation-duration: .6s;
+        animation-delay: .4s;
+        animation-timing-function: ease;
+    }
+
+    /*.main #app*/
+    .main #app{height: 768px; text-align: left; background: url(../img/yamaha_maint_page06_bg.jpg) no-repeat center; background-size: cover; overflow: hidden; padding: 0;}
+    .main #app h2{width: 212px; position: absolute; top: 255px; left: 70.871%; right: 10.671%; font-size: 3rem; z-index: 5;}
+    .main #app h2 span{display: inline-block; opacity: 0;}
+    .main #app h2 span.contentBar{display: none;}
+    .main #app p{width: 359px; top: 331px; left: 56.878%; right: -2.199%; font-size: 4.5rem; line-height: 1.2; text-align: left; z-index: 5; opacity: 0;}
+    .main #app .bxslider{width: 70.703%; height: 419px; position: absolute; top: 183px; left: 6.445%;}
+    .main #app .bxslider li{position: absolute; top: 0; left: 0; right: 0; width: 100%; height: 100%; margin-bottom: 0px; font-size: 1rem;}
+    .main #app .bxslider li a{position: static; width: 100%; height: 100%;}
+    .main #app .bxslider li.app a{background: url(../img/yamaha_maint_app.jpg) no-repeat left; background-size: cover; border-left: 1px solid #4d4d4d;}
+    .main #app .bxslider li.accessory a{background: url(../img/yamaha_maint_accessory.jpg) no-repeat left; background-size: cover; position: static; border-right: 1px solid #4d4d4d;}
+    .main #app .bxslider li.app a span{display: none;}
+    .main #app .bxslider li.accessory a span{display: none;}
+    
+    /*.main #app #appSlider*/
+    .main #app .bx-wrapper{background: none; border: none; margin-bottom: 0; box-shadow: none; width: 70.703%; height: 419px; position: absolute; top: 183px; left: 6.445%; transform: translateX(-300px); opacity: 0;}
+    .main #app .bx-wrapper .bx-controls-direction a{display: none;}
+    .main #app .bx-wrapper #appSlider{left: 0; top: 0;}
+    
+    /*.main #app #app-pager*/
+    .main #app #app-pager{display: block; width: 198px; height: 48px; background: url(../img/yamaha_maint_app_textarea.png) no-repeat center; background-size: contain; position: absolute; top: 620px; left: 107px; transition: .2s; opacity: 0;}
+    .main #app #app-pager:after{content: ""; display: block; clear: both;}
+    .main #app #app-pager a{display: block; width: 31px; font-size: 1.8rem; margin: 19px 14px 0; float: left; transition: 0.3s;}
+    .main #app #app-pager a:nth-child(1){margin-left: 28px;}
+    .main #app #app-pager a:nth-child(2){width: 77px;}
+    .main #app #app-pager a span{display: block; background: #eb9f34; width: 28px; height: 2px; margin: 2px auto 0; opacity: 0; transition: .4s;}
+    .main #app #app-pager a.appp-pager span{margin-left: 1px;}
+    .main #app #app-pager a.accessory-pager span{width: 72px; margin-left: 2px;}
+    .main #app #app-pager a:hover, #app #app-pager a:focus{color: #eb9f34;}
+    .main #app #app-pager a:hover span, #app #app-pager a:focus span{opacity: 1;}
+    
+    /*.main #app animate*/
+    .main #app #app-pager{
+        animation-duration: 1.5s;
+        animation-delay: 3s;
+    }
+    .main #app p{
+        animation-duration: 1.5s;
+        animation-delay: 3s;
+    }
+    .main #app h2 span.a{
+        animation-duration: .8s;
+        animation-delay: .3s;
+        animation-timing-function: ease;
+    }
+    .main #app h2 span.b{
+        animation-duration: .8s;
+        animation-delay: .4s;
+        animation-timing-function: ease;
+    }
+    .main #app h2 span.c{
+        animation-duration: .8s;
+        animation-delay: .5s;
+        animation-timing-function: ease;
+    }
+    .main #app h2 span.d{
+        animation-duration: .8s;
+        animation-delay: .6s;
+        animation-timing-function: ease;
+    }
+    .main #app h2 span.e{
+        animation-duration: .8s;
+        animation-delay: .7s;
+        animation-timing-function: ease;
+    }
+    .main #app h2 span.f{
+        animation-duration: .8s;
+        animation-delay: .8s;
+        animation-timing-function: ease;
+    }
+    .main #app h2 span.g{
+        animation-duration: .8s;
+        animation-delay: .9s;
+        animation-timing-function: ease;
+    }
+    .main #app h2 span.h{
+        animation-duration: .8s;
+        animation-delay: 1s;
+        animation-timing-function: ease;
+    }
+    .main #app h2 span.i{
+        animation-duration: .8s;
+        animation-delay: 1.1s;
+        animation-timing-function: ease;
+    }
+    .main #app h2 span.j{
+        animation-duration: .8s;
+        animation-delay: 1.2s;
+        animation-timing-function: ease;
+    }
+    .main #app h2 span.k{
+        animation-duration: .9s;
+        animation-delay: 1.3s;
+        animation-timing-function: ease;
+    }
+    .main #app h2 span.l{
+        animation-duration: 1s;
+        animation-delay: 1.4s;
+        animation-timing-function: ease;
+    }
+    .main #app h2 span.m{
+        animation-duration: 1.5s;
+        animation-delay: 1.6s;
+        animation-timing-function: ease;
+    }
+
+    /*.main #bottom*/
+    .main #bottom{display: block; position: relative; background: url(../img/yamaha_maint_page07_bg.jpg) no-repeat center; background-size: cover; width: 100%; height: 768px; transition: .3s;}
+    #bottom p{font-size: 3rem; position: absolute; top: 205px; left: 10.234%; transition: .3s; opacity: 0;}
+    #bottom span{font-size: 7rem; position: absolute; top: 328px; left: 15.289%; transition: .3s; opacity: 0;}
+    #bottom a{font-size: 3rem; border: 2px solid #f5f5f5; padding: 9px 29px 11px 27px; position: absolute; top: 336px; left: 63.421%; transition: .3s; opacity: 0;}
+    #bottom a:hover{border-color: #eb9f34; color: #eb9f34;}
+    
+    /*.main #bottom animate*/
+    .main #bottom p{
+        animation-duration: 1.5s;
+        animation-delay: .3s;
+    }
+    .main #bottom span{
+        animation-duration: 1.5s;
+        animation-delay: .8s;
+    }
+    .main #bottom a{
+        animation-duration: 1.5s;
+        animation-delay: 1.5s;
+    }
+
+    /*footer*/
+    footer{height: 231px; position: fixed; bottom: -231px; left: 0; font-size: 1.8rem;}
+    footer.on{height: 231px; position: relative; bottom: 0; left: 0; font-size: 1.8rem;}
+    footer h2{display: block; position: absolute; top: 71px; left: 5.078%; width: 70px; height: 69px; background: url(../img/yamaha_mainp_logo_footer.png) no-repeat center; background-size: contain; text-indent: -9999px;}
+
+    /*footer .topBox*/
+    footer .topBox{width: 100%; position: absolute; top: 16px;}
+    footer .topBox .leftBox{width: 340px; float: left; margin-top: 22px; margin-left: 17.187%;}
+    footer .topBox .leftBox li{width: 170px; float: left; margin-bottom: 9px;}
+    footer .topBox .rightBox{width: 382px; float: right; margin-top: 22px; margin-right: 2%}
+    footer .topBox .rightBox li{width: 170px; float: left; margin-bottom: 9px;}
+    footer .topBox .rightBox li:nth-child(1){width: 100%;}
+    footer .topBox .rightBox li a{margin-left: 15px;}
+
+    /*footer .bottomBox*/
+    footer .bottomBox{position: absolute; bottom: 16px;}
+    footer .bottomBox:after{content: ""; display: block; clear: both;}
+    footer .bottomBox small{display: block; float: none; margin-left: 30px; font-size: 1.6rem; position: absolute; left: 20%; right: 20%; text-align: center;}
+    footer .bottomBox div{float: right; margin-right: 5.75%;}
+    footer .bottomBox div a{margin-left: 12px;}
+    footer .bottomBox div img{height: 19px;}
+
+    /*footer button*/
+    footer button{display: block; width: 60px; height: 30px; background-color: #000; border: none; border-top-left-radius: 10px; border-top-right-radius: 10px; position: absolute; top: -30px; right: 20px; cursor: pointer; text-indent: -9999px;}
+    footer button:hover span{background: #eb9f34;}
+    footer button span{transition: .8s;}
+    footer button span:nth-child(1){display: block; width: 13px; height: 2px; background: #f5f5f5; transform: rotate(-45deg); position: absolute; top: 14px; left: 19px; border-top-left-radius: 6px; border-bottom-left-radius: 6px; border-top-right-radius: 6px;}
+    footer button span:nth-child(2){display: block; width: 13px; height: 2px; background: #f5f5f5; transform: rotate(45deg); position: absolute; top: 14px; right: 19px; border-top-right-radius: 6px; border-bottom-right-radius: 6px;  border-top-left-radius: 6px;}
+    footer button.on{display: block; width: 60px; height: 30px; background-color: #000; border: none; border-top-left-radius: 10px; border-top-right-radius: 10px; position: absolute; top: -30px; right: 20px; cursor: pointer;}
+    footer button.on span:nth-child(1){display: block; width: 13px; height: 2px; background: #f5f5f5; transform: rotate(45deg); position: absolute; top: 15px; left: 19px; border-top-left-radius: 6px; border-bottom-left-radius: 6px; border-bottom-right-radius: 6px;}
+    footer button.on span:nth-child(2){display: block; width: 13px; height: 2px; background: #f5f5f5; transform: rotate(-45deg); position: absolute; top: 15px; right: 19px; border-top-right-radius: 6px; border-bottom-right-radius: 6px;  border-bottom-left-radius: 6px;}
+    footer button:hover span{background: #eb9f34;}
+    footer button.on:hover span{background: #eb9f34;}
+}
+
+/*gta width > 1023px && height > 850px */
+@media screen and (min-width: 1024px) and (min-height: 850px){
+    
+    /*.main #intro*/
+    .main #intro h2{top: 352px;}
+    .main #intro p:nth-of-type(1){top: 163px;}
+    .main #intro p:nth-of-type(2){top: 308px;}
+    .main #intro p:nth-of-type(3){top: 453px;}
+    .main #intro p:nth-of-type(4){top: 596px;}
+    
+    /*.main #top*/
+    .main #top h2{top: 260px;}
+    .main #top p{top: 547px;}
+    
+    /*.main #acoustic*/
+    .main #acoustic h2{top: 305px;}
+    .main #acoustic p{top: 381px;}
+    .main #acoustic .bxslider{top: 233px;}
+    
+    /*.main #acoustic #acSlider*/
+    .main #acoustic .bx-wrapper{top: 233px;}
+    
+    /*.main #acoustic #acoustic-pager*/
+    .main #acoustic #acoustic-pager{top: 670px;}
+    
+    /*.main #hybrid*/
+    .main #hybrid h2{top: 305px;}
+    .main #hybrid p{top: 381px;}
+    .main #hybrid .bxslider{top: 233px;}
+    
+    /*.main #hybrid #hySlider*/
+    .main #hybrid .bx-wrapper{top: 233px;}
+    
+    /*.main #hybrid #hybrid-pager*/
+    .main #hybrid #hybrid-pager{top: 670px;}
+    
+    /*.main #digital*/
+    .main #digital h2{top: 305px;}
+    .main #digital p{top: 381px;}
+    .main #digital .bxslider{top: 233px;}
+    
+    /*.main #digital #digSlider*/
+    .main #digital .bx-wrapper{top: 233px;}
+    
+    /*.main #digital #digital-pager*/
+    .main #digital #digital-pager{top: 670px;}
+    
+    /*.main #app*/
+    .main #app h2{top: 305px;}
+    .main #app p{top: 381px;}
+    .main #app .bxslider{top: 233px;}
+    
+    /*.main #app #appSlider*/
+    .main #app .bx-wrapper{top: 233px;}
+    
+    /*.main #app #app-pager*/
+    .main #app #app-pager{top: 670px;}
+    
+    /*.main #bottom*/
+    #bottom p{top: 255px;}
+    #bottom span{top: 378px;}
+    #bottom a{top: 386px;}
+}
+
+/*gta width > 1023px && height < 680px */
+@media screen and (min-width: 1024px) and (max-height: 681px){
+    /*header .gnb*/
+    header .gnb .mainMenu{top: 150px;}
+    header .gnb .mainMenu li{margin-bottom: 60px;}
+    header .gnb .mainMenu li a{font-size: 5rem;}
+    
+    /*.main #intro*/
+    .main #intro h2{top: 262px;}
+    .main #intro p:nth-of-type(1){top: 73px;}
+    .main #intro p:nth-of-type(2){top: 218px;}
+    .main #intro p:nth-of-type(3){top: 363px;}
+    .main #intro p:nth-of-type(4){top: 506px;}
+    
+    /*.main #top*/
+    .main #top h2{top: 190px; left: 16.796%;}
+    .main #top p{top: 477px;}
+    
+    /*.main #acoustic*/
+    .main #acoustic h2{top: 235px;}
+    .main #acoustic p{top: 311px;}
+    .main #acoustic .bxslider{height: 399px; top: 143px;}
+    .main #acoustic .bx-wrapper{height: 399px; top: 143px;}
+    
+    /*.main #acoustic #acoustic-pager*/
+    .main #acoustic #acoustic-pager{top: 555px;}
+    
+    /*.main #hybrid*/
+    .main #hybrid h2{top: 235px;}
+    .main #hybrid p{top: 311px;}
+    .main #hybrid .bxslider{height: 399px; top: 143px;}
+    .main #hybrid .bx-wrapper{height: 399px; top: 143px;}
+    
+    /*.main #hybrid #hybrid-pager*/
+    .main #hybrid #hybrid-pager{top: 555px;}
+    
+    /*.main #digital*/
+    .main #digital h2{top: 235px;}
+    .main #digital p{top: 311px;}
+    .main #digital .bxslider{height: 399px; top: 143px;}
+    .main #digital .bx-wrapper{height: 399px; top: 143px;}
+    
+    /*.main #digital #digital-pager*/
+    .main #digital #digital-pager{top: 555px;}
+    
+    /*.main #app*/
+    .main #app h2{top: 235px;}
+    .main #app p{top: 311px;}
+    .main #app .bxslider{height: 399px; top: 143px;}
+    .main #app .bx-wrapper{height: 399px; top: 143px;}
+    
+    /*.main #app #app-pager*/
+    .main #app #app-pager{top: 555px;}
+}
+
+/*gta width > 1023px && height < 610px */
+@media screen and (min-width: 1024px) and (max-height: 611px){
+    /*.main*/
+    .main div.close{display: block; width: 100%; height: 100%; background: url(../img/yamaha_mainp_page01_bg.jpg) no-repeat center; background-size: cover;}
+    .main div.close p{font-size: 5rem; color: #f5f5f5; line-height: 1.4; text-align: center; position: absolute; top: 40%; left: 0; right: 0;}
+    header{display: none;}
+    .main #intro{display: none;}
+    .main #top{display: none;}
+    .main #acoustic{display: none;}
+    .main #hybrid{display: none;}
+    .main #digital{display: none;}
+    .main #app{display: none;}
+    .main #bottom{display: none;}
+    footer{display: none;}
+}
+
+/*gta 1100px*/
+@media screen and (min-width: 1100px){
+    /*bottom*/
+    #bottom a{left: 59.421%;}
+}
+
+/*gta 1200px*/
+@media screen and (min-width: 1200px){
+    /*bottom*/
+    #bottom a{left: 56.421%;}
+    
+    /*footer*/
+    footer h2{left: 6.578%;}
+    
+    /*footer .topBox*/
+    footer .topBox .leftBox{margin-left: 18.687%;}
+    footer .topBox .rightBox{margin-right: 4.5%}
+    
+    /*footer .bottomBox*/
+    footer .bottomBox div{float: right; margin-right: 8.05%;}
+}
+
+/*gta 1280px*/
+@media screen and (min-width: 1280px){
+    /*body*/
+    body{overflow: hidden;}
+    
+    /*header*/
+    header{z-index: 6;}
+    header h1 a{top: 38px; left: 3.229%;}
+
+    /*header button*/
+    header button{width: 28px; height: 21px; top: 49px; right: 4.062%;}
+    header button span{width: 28px; height: 3px;}
+    header button span:nth-child(2){margin: 6px 0;}
+    
+    /*header .gnb*/
+    header .gnb{position: fixed; top: 41px; width: 733px; height: auto; background: none;}
+    header .gnb .mainMenu{position: static; top: 0; margin-top: 0; margin-left: 0; text-align: left; left: 0;}
+    header .gnb .mainMenu li{margin: 0 0 0 0; padding: 0 22px 18px; float: left;}
+    header .gnb .mainMenu li:nth-of-type(1){margin-right: 1px;}
+    header .gnb .mainMenu li:nth-of-type(2){margin-right: 1px;}
+    header .gnb .mainMenu li:nth-of-type(3){margin-right: 1px;}
+    header .gnb .mainMenu li.acoustic a span:nth-child(2){display: none;}
+    header .gnb .mainMenu li:nth-child(4){margin-bottom: 0;}
+    header .gnb .mainMenu li a{font-size: 2.5rem; text-transform: none; color: #f5f5f5;}
+    header .gnb .mainMenu li:hover a,  header .gnb .mainMenu li:focus a{color: #f5f5f5;}
+    header .gnb .mainMenu li a:hover, header .gnb .mainMenu li a:focus{color: #eb9f34;}
+    header .gnb .mainMenu li a .piano{display: none;}
+    header .gnb .mainMenu li a .bar{display: block; background: #9d9d9d; width: 2px; height: 17px; transition-duration: 0.6s; transition-delay: 0.3s;}
+    header .gnb .mainMenu li.hybrid a span:nth-child(2){position: absolute; top: 8px; right: 598px}
+    header .gnb .mainMenu li.digital a span:nth-child(2){position: absolute; top: 8px; right: 480px}
+    header .gnb .mainMenu li.app a span{position: absolute; top: 8px; right: 365px}
+    header .gnb .mainMenu li a span.accDel{position: static;}
+    header .gnb .mainMenu li.hybrid a span:nth-child(2).off{position: absolute; top: -5px; right: 8.562%; background: #f5f5f5; width: 3px; height: 28px; transform: rotate(90deg);}
+    header .gnb .mainMenu li.digital a span:nth-child(2).off{position: absolute; top: 4px; right: 8.562%; background: #f5f5f5; width: 3px; height: 28px; transform: rotate(90deg);}
+    header .gnb .mainMenu li.app a span.off{position: absolute; top: 13px; right: 8.562%; background: #f5f5f5; width: 3px; height: 28px; transform: rotate(90deg);}
+    header .gnb .mainMenu li:hover .bar, header .gnb .mainMenu li:focus .bar{width:2px;}
+    header .gnb .tmb{display: none;}
+    header .gnb .mainMenu .subMenu{display: block; position: absolute; top: 45px; background: rgba(0,0,0,.8); padding: 10px 19px 2px 19px; width: 150px; border: 1px solid #3d3d3d; z-index: 9; display: none;}
+    header .gnb .mainMenu .subMenu li{float: none; padding-bottom: 15px; text-align: center; padding: 0 0 12px 0px;}
+    header .gnb .mainMenu .subMenu li a{font-size: 1.5rem;}
+    header .gnb .mainMenu .acousticSub{margin-left: -29px;}
+    header .gnb .mainMenu .hybridSub{margin-left: -39px;}
+    header .gnb .mainMenu .digitalSub{margin-left: -40px;}
+    header .gnb .mainMenu .appSub{width: 166px; margin-left: 4px;}
+
+    /*.main #intro*/
+    .main #intro h2{font-size: 2.3rem; top: 370px; left: 20.343%;}
+    .main #intro span{font-size: 9rem;}
+    .main #intro p:nth-of-type(1){width: 604px; top: 122px; left: 35.052%; right: 33.489%;}
+    .main #intro p:nth-of-type(2){width: 395px; top: 295px; left: 54.583%; right: 24.843%;}
+    .main #intro p:nth-of-type(3){width: 818px; top: 475px; left: 30.416%; right: 17.5%;}
+    .main #intro p:nth-of-type(4){width: 388px; top: 652px; left: 41.927%; right: 37.916%;}
+
+    /*.main #top*/
+    .main #top{height: 960px;}
+    .main #top h2{top: 232px; left: 13.496%;}
+    .main #top h2 span:nth-child(1){margin-bottom: 25px; width: 40px;}
+    .main #top h2 span:nth-child(2){font-size: 3.7rem;}
+    .main #top h2 span:nth-child(3){font-size: 11rem; width: 1000px; margin: 38px 0 0 0;}
+    .main #top h2 span:nth-child(4){font-size: 11rem;}
+    .main #top p{top: 679px; left: 13.496%; font-size: 3rem; width: 609px;}
+
+    /*.main #acoustic*/
+    .main #acoustic{height: 960px;}
+    .main #acoustic h2{width: 255px; top: 286px; left: 20.854%; font-size: 4rem;}
+    .main #acoustic h2 span.contentBar{display: none;}
+    .main #acoustic p{width: 635px; top: 420px; left: 10.937%; font-size: 6.2rem;}
+    .main #acoustic .bxslider{width: 57.864%; height: 600px; top: 190px; right: 11.979%;}
+    
+    /*.main #acoustic #acSlider*/
+    .main #acoustic .bx-wrapper{background: none; border: none; margin-bottom: 0; box-shadow: none; width: 57.864%; height: 600px; top: 190px; right: 11.979%;}
+    .main #acoustic .bx-wrapper .bx-controls-direction a{display: none;}
+    .main #acoustic .bx-wrapper #acSlider{right: 0; top: 0;}
+    
+    /*.main #acoustic #acoustic-pager*/
+    .main #acoustic #acoustic-pager{width: 638px; height: 68px; background: url(../img/yamaha_mainp_acoustic_textarea.png) no-repeat center; background-size: contain; top: 810px; right: 14.583%;}
+    .main #acoustic #acoustic-pager a{width: 154px; font-size: 2.3rem; margin: 28px 30px 0;}
+    .main #acoustic #acoustic-pager a:nth-child(1){margin-left: 48px;}
+    .main #acoustic #acoustic-pager a:nth-child(2){width: 122px;}
+    .main #acoustic #acoustic-pager a:nth-child(3){width: 138px;}
+    .main #acoustic #acoustic-pager a span{width: 147px; height: 3px; margin-left: 4px;}
+    .main #acoustic #acoustic-pager a.grand-pager span{width: 115px; margin-left: 6px;}
+    .main #acoustic #acoustic-pager a.upright-pager span{width: 131px; margin-left: 6px;}
+
+    /*.main #hybrid*/
+    .main #hybrid{height: 960px;}
+    .main #hybrid h2{width: 253px; top: 286px; left: 65.854%; font-size: 4rem;}
+    .main #hybrid h2 span.contentBar{display: none;}
+    .main #hybrid p{width: 570px; top: 420px; left: 51.937%; font-size: 6.2rem;}
+    .main #hybrid .bxslider{width: 57.864%; height: 600px; top: 190px; left: 13.979%;}
+    .main #hybrid #hybrid-pager{width: 383px; height: 48px; background: url(../img/yamaha_mainp_hybrid_textarea.png) no-repeat center; background-size: contain; top: 810px; left: 107px; transition: .2s;}
+    .main #hybrid #hybrid-pager a{display: block; width: 79px; font-size: 1.8rem; margin: 19px 14px 0; float: left; transition: 0.3s;}
+    .main #hybrid #hybrid-pager a:nth-child(1){margin-left: 28px;}
+    .main #hybrid #hybrid-pager a:nth-child(2){width: 94px;}
+    .main #hybrid #hybrid-pager a:nth-child(3){width: 96px;}
+    .main #hybrid #hybrid-pager a span{display: block; background: #eb9f34; width: 70px; height: 2px; margin: 2px auto 0; opacity: 0; transition: 0.4s;}
+    .main #hybrid #hybrid-pager a.silent-pager span{width: 86px; margin-left: 4px;}
+    .main #hybrid #hybrid-pager a.avant-pager span{width: 89px; margin-left: 3px;}
+    
+    /*.main #hybrid #hySlider*/
+    .main #hybrid .bx-wrapper{background: none; border: none; margin-bottom: 0; box-shadow: none; width: 57.864%; height: 600px; top: 190px; left: 13.979%;}
+    .main #hybrid .bx-wrapper .bx-controls-direction a{display: none;}
+    .main #hybrid .bx-wrapper #hySlider{left: 0; top: 0;}
+    
+    /*.main #hybrid #hybrid-pager*/
+    .main #hybrid #hybrid-pager{width: 568px; height: 68px; background: url(../img/yamaha_mainp_hybrid_textarea.png) no-repeat center; background-size: contain; top: 810px; left: 14.583%;}
+    .main #hybrid #hybrid-pager a{width: 100px; font-size: 2.3rem; margin: 28px 30px 0;}
+    .main #hybrid #hybrid-pager a:nth-child(1){margin-left: 50px;}
+    .main #hybrid #hybrid-pager a:nth-child(2){width: 120px;}
+    .main #hybrid #hybrid-pager a:nth-child(3){width: 122px;}
+    .main #hybrid #hybrid-pager a span{width: 92px; height: 3px; margin-left: 4px;}
+    .main #hybrid #hybrid-pager a.silent-pager span{width: 113px; margin-left: 4px;}
+    .main #hybrid #hybrid-pager a.avant-pager span{width: 115px; margin-left: 3px;}
+
+    /*.main #digital*/
+    .main #digital{height: 960px;}
+    .main #digital h2{width: 253px; top: 286px; left: 20.854%; font-size: 4rem;}
+    .main #digital h2 span.contentBar{display: none;}
+    .main #digital p{width: 635px; top: 420px; left: 10.937%; font-size: 6.2rem;}
+    .main #digital .bxslider{width: 57.864%; height: 600px; top: 190px; right: 11.979%;}
+    
+    /*.main #digital #digSlider*/
+    .main #digital .bx-wrapper{background: none; border: none; margin-bottom: 0; box-shadow: none; width: 57.864%; height: 600px; top: 190px; right: 11.979%;}
+    .main #digital .bx-wrapper .bx-controls-direction a{display: none;}
+    .main #digital .bx-wrapper #digSlider{right: 0; top: 0;}
+    
+    /*.main #digital #digital-pager*/
+    .main #digital #digital-pager{width: 695px; height: 68px; background: url(../img/yamaha_mainp_digital_textarea.png) no-repeat center; background-size: contain; top: 810px; right: 13.583%;}
+    .main #digital #digital-pager a{width: 73px; font-size: 1.7rem; margin: 32px 20px 0;}
+    .main #digital #digital-pager a:nth-child(1){margin-left: 26px;}
+    .main #digital #digital-pager a:nth-child(2){width: 67px;}
+    .main #digital #digital-pager a:nth-child(3){width: 55px;}
+    .main #digital #digital-pager a:nth-child(4){width: 112px;}
+    .main #digital #digital-pager a:nth-child(5){width: 45px;}
+    .main #digital #digital-pager a:nth-child(6){width: 88px;}
+    .main #digital #digital-pager a span{width: 200px; height: 3px; margin-left: 4px;}
+    .main #digital #digital-pager a.clavinova-pager span{width: 66px; margin-left: 4px;}
+    .main #digital #digital-pager a.pseries-pager span{width: 60px; margin-left: 3px;}
+    .main #digital #digital-pager a.modus-pager span{width: 48px; margin-left: 4px;}
+    .main #digital #digital-pager a.portable-pager span{width: 105px; margin-left: 4px;}
+    .main #digital #digital-pager a.arius-pager span{width: 38px; margin-left: 4px;}
+    .main #digital #digital-pager a.synthe-pager span{width: 81px; margin-left: 4px;}
+
+    /*.main #app*/
+    .main #app{height: 960px;}
+    .main #app h2{width: 353px; top: 286px; left: 61.854%; font-size: 4rem;}
+    .main #app h2 span.contentBar{display: none;}
+    .main #app p{width: 500px; top: 420px; left: 56.937%; font-size: 6.2rem;}
+    .main #app .bxslider{width: 57.864%; height: 600px; top: 190px; left: 13.979%;}
+    
+    /*.main #app #appSlider*/
+    .main #app .bx-wrapper{background: none; border: none; margin-bottom: 0; box-shadow: none; width: 57.864%; height: 600px; top: 190px; left: 13.979%;}
+    .main #app .bx-wrapper .bx-controls-direction a{display: none;}
+    .main #app .bx-wrapper #appSlider{left: 0; top: 0;}
+    
+    /*.main #app #app-pager*/
+    .main #app #app-pager{width: 287px; height: 68px; background: url(../img/yamaha_mainp_app_textarea.png) no-repeat center; background-size: contain; top: 810px; left: 16.583%;}
+    .main #app #app-pager a{width: 39px; font-size: 2.3rem; margin: 28px 30px 0;}
+    .main #app #app-pager a:nth-child(1){margin-left: 45px;}
+    .main #app #app-pager a:nth-child(2){width: 97px;}
+    .main #app #app-pager a span{width: 35px; height: 3px; margin-left: 4px;}
+    .main #app #app-pager a.accessory-pager span{width: 92px; margin-left: 2px;}
+
+    /*.main #bottom*/
+    .main #bottom{height: 960px;}
+    #bottom p{font-size: 4rem; top: 285px; left: 11.104%;}
+    #bottom span{font-size: 8rem; top: 445px; left: 14.166%;}
+    #bottom a{font-size: 4.5rem; top: 454px; left: 56.896%;}
+
+    /*footer*/
+    footer{height: 231px; font-size: 1.8rem;}
+    footer h2{top: 78px; left: 3.078%; width: 87px; height: 86px;}
+
+    /*footer .topBox*/
+    footer .topBox{top: 20px;}
+    footer .topBox .leftBox{width: 555px; margin-top: 30px; margin-left: 12.887%;}
+    footer .topBox .leftBox li{width: 170px; margin-bottom: 19px;}
+    footer .topBox .leftBox li:nth-child(3), footer .topBox .leftBox li:nth-child(6){margin-left: 30px;}
+    footer .topBox .rightBox{width: 510px; margin-top: 30px; margin-right: 2%}
+    footer .topBox .rightBox li{width: 150px; margin-bottom: 19px;}
+    footer .topBox .rightBox li:nth-child(3), footer .topBox .rightBox li:nth-child(6){width: 190px;}
+    footer .topBox .rightBox li a{margin-left: 15px;}
+
+    /*footer .bottomBox*/
+    footer .bottomBox{bottom: 16px;}
+    footer .bottomBox small{margin-left: 30px; font-size: 1.6rem; left: 20%; right: 20%;}
+    footer .bottomBox div{margin-right: 5.75%;}
+    footer .bottomBox div img{height: 22px;}
+}
+
+/*gta width > 1279px && height < 901px*/
+@media screen and (min-width: 1280px) and (max-height: 900px){
+    /*.main #top*/
+    .main #top h2{top: 202px;}
+    .main #top p{top: 639px;}
+    
+    /*.main #acoustic*/
+    .main #acoustic h2{top: 256px;}
+    .main #acoustic p{top: 390px;}
+    .main #acoustic .bxslider{top: 160px;}
+    
+    /*.main #acoustic #acSlider*/
+    .main #acoustic .bx-wrapper{top: 160px;}
+    
+    /*.main #acoustic #acoustic-pager*/
+    .main #acoustic #acoustic-pager{top: 780px;}
+    
+    /*.main #hybrid*/
+    .main #hybrid h2{top: 256px;}
+    .main #hybrid p{top: 390px;}
+    .main #hybrid .bxslider{top: 160px;}
+    
+    /*.main #hybrid #hySlider*/
+    .main #hybrid .bx-wrapper{top: 160px;}
+    
+    /*.main #hybrid #hybrid-pager*/
+    .main #hybrid #hybrid-pager{top: 780px;}
+    
+    /*.main #digital*/
+    .main #digital h2{top: 256px;}
+    .main #digital p{top: 390px;}
+    .main #digital .bxslider{top: 160px;}
+    
+    /*.main #digital #digSlider*/
+    .main #digital .bx-wrapper{top: 160px;}
+    
+    /*.main #digital #digital-pager*/
+    .main #digital #digital-pager{top: 780px;}
+    
+    /*.main #app*/
+    .main #app h2{top: 256px;}
+    .main #app p{top: 390px;}
+    .main #app .bxslider{top: 160px;}
+    
+    /*.main #app #appSlider*/
+    .main #app .bx-wrapper{top: 160px;}
+    
+    /*.main #app #app-pager*/
+    .main #app #app-pager{top: 780px;}
+}
+
+/*gta width > 1279px && height < 871px*/
+@media screen and (min-width: 1280px) and (max-height: 870px){
+    
+    /*.main #acoustic*/
+    .main #acoustic h2{top: 246px; left: 18.854%;}
+    .main #acoustic p{top: 380px; left: 8.937%;}
+    .main #acoustic .bxslider{top: 150px; height: 550px; right: 13.979%;}
+    
+    /*.main #acoustic #acSlider*/
+    .main #acoustic .bx-wrapper{top: 150px; height: 550px; right: 13.979%;}
+    
+    /*.main #acoustic #acoustic-pager*/
+    .main #acoustic #acoustic-pager{top: 720px;}
+    
+    /*.main #hybrid*/
+    .main #hybrid h2{top: 246px; left: 63.854%;}
+    .main #hybrid p{top: 380px; left: 49.937%;}
+    .main #hybrid .bxslider{top: 150px; height: 550px; left: 11.979%;}
+    
+    /*.main #hybrid #hySlider*/
+    .main #hybrid .bx-wrapper{top: 150px; height: 550px; left: 11.979%;}
+    
+    /*.main #hybrid #hybrid-pager*/
+    .main #hybrid #hybrid-pager{top: 720px;}
+    
+   /*.main #digital*/
+    .main #digital h2{top: 246px; left: 18.854%;}
+    .main #digital p{top: 380px; left: 8.937%;}
+    .main #digital .bxslider{top: 150px; height: 550px; right: 13.979%;}
+    
+    /*.main #digital #digSlider*/
+    .main #digital .bx-wrapper{top: 150px; height: 550px; right: 13.979%;}
+    
+    /*.main #digital #digital-pager*/
+    .main #digital #digital-pager{top: 720px; right: 15.583%;}
+    
+    /*.main #app*/
+    .main #app h2{top: 246px; left: 59.854%;}
+    .main #app p{top: 380px; left: 54.937%;}
+    .main #app .bxslider{top: 150px; height: 550px; left: 11.979%;}
+    
+    /*.main #app #appSlider*/
+    .main #app .bx-wrapper{top: 150px; height: 550px; left: 11.979%;}
+    
+    /*.main #app #app-pager*/
+    .main #app #app-pager{top: 720px;}
+}
+
+/*gta width > 1279px && height < 821px*/
+@media screen and (min-width: 1280px) and (max-height: 820px){
+    /*.main #intro*/
+    .main #intro h2{top: 310px;}
+    .main #intro p:nth-of-type(1){top: 62px;}
+    .main #intro p:nth-of-type(2){top: 235px;}
+    .main #intro p:nth-of-type(3){top: 415px;}
+    .main #intro p:nth-of-type(4){top: 592px;}
+    
+    /*.main #top*/
+    .main #top h2{top: 172px;}
+    .main #top p{top: 609px;}
+    .main #top h2 span:nth-child(1){margin-bottom: 20px;}
+    .main #top h2 span:nth-child(3){margin: 30px 0 0 0;}
+    .main #top p{top: 570px;}
+    
+    /*.main #acoustic*/
+    .main #acoustic h2{top: 246px; left: 18.854%;}
+    .main #acoustic p{top: 380px; left: 8.937%;}
+    .main #acoustic .bxslider{top: 170px; height: 450px; right: 13.979%;}
+    
+    /*.main #acoustic #acSlider*/
+    .main #acoustic .bx-wrapper{top: 170px; height: 450px; right: 13.979%;}
+    
+    /*.main #acoustic #acoustic-pager*/
+    .main #acoustic #acoustic-pager{width: 439px; height: 48px; background: url(../img/yamaha_maint_acoustic_textarea.png) no-repeat center; background-size: contain; top: 630px; right: 16.583%;}
+    .main #acoustic #acoustic-pager a{width: 120px; font-size: 1.8rem; margin: 19px 14px 0;}
+    .main #acoustic #acoustic-pager a:nth-child(1){margin-left: 28px;}
+    .main #acoustic #acoustic-pager a:nth-child(2){width: 96px;}
+    .main #acoustic #acoustic-pager a:nth-child(3){width: 108px;}
+    .main #acoustic #acoustic-pager a span{width: 112px; height: 2px; margin: 2px auto 0;}
+    .main #acoustic #acoustic-pager a.grand-pager span{width: 89px; margin-left: 5px;}
+    .main #acoustic #acoustic-pager a.upright-pager span{width: 100px; margin-left: 6px;}
+    
+    /*.main #hybrid*/
+    .main #hybrid h2{top: 246px; left: 63.854%;}
+    .main #hybrid p{top: 380px; left: 49.937%;}
+    .main #hybrid .bxslider{top: 170px; height: 450px; left: 11.979%;}
+    
+    /*.main #hybrid #hySlider*/
+    .main #hybrid .bx-wrapper{top: 170px; height: 450px; left: 11.979%;}
+    
+    /*.main #hybrid #hybrid-pager*/
+    .main #hybrid #hybrid-pager{width: 383px; height: 48px; background: url(../img/yamaha_maint_hybrid_textarea.png) no-repeat center; background-size: contain; top: 630px; left: 14%;}
+    .main #hybrid #hybrid-pager a{width: 79px; font-size: 1.8rem; margin: 19px 14px 0;}
+    .main #hybrid #hybrid-pager a:nth-child(1){margin-left: 28px;}
+    .main #hybrid #hybrid-pager a:nth-child(2){width: 94px;}
+    .main #hybrid #hybrid-pager a:nth-child(3){width: 96px;}
+    .main #hybrid #hybrid-pager a span{width: 70px; height: 2px; margin: 2px auto 0;}
+    .main #hybrid #hybrid-pager a.silent-pager span{width: 86px; margin-left: 4px;}
+    .main #hybrid #hybrid-pager a.avant-pager span{width: 89px; margin-left: 3px;}
+    
+   /*.main #digital*/
+    .main #digital h2{top: 246px; left: 18.854%;}
+    .main #digital p{top: 380px; left: 8.937%;}
+    .main #digital .bxslider{top: 170px; height: 450px; right: 13.979%;}
+    
+    /*.main #digital #digSlider*/
+    .main #digital .bx-wrapper{top: 170px; height: 450px; right: 13.979%;}
+    
+    /*.main #digital #digital-pager*/
+    .main #digital #digital-pager{width: 665px; height: 48px; background: url(../img/yamaha_maint_digital_textarea.png) no-repeat center; background-size: contain; top: 630px; right: 15%;}
+    .main #digital #digital-pager a{width: 69px; font-size: 1.6rem; margin: 19px 20px 0;}
+    .main #digital #digital-pager a:nth-child(1){margin-left: 24px;}
+    .main #digital #digital-pager a:nth-child(2){width: 62px;}
+    .main #digital #digital-pager a:nth-child(3){width: 53px;}
+    .main #digital #digital-pager a:nth-child(4){width: 105px;}
+    .main #digital #digital-pager a:nth-child(5){width: 44px;}
+    .main #digital #digital-pager a:nth-child(6){width: 82px;}
+    .main #digital #digital-pager a span{width: 69px; height: 2px; margin: 2px 0 0 5px;}
+    .main #digital #digital-pager a.clavinova-pager span{width: 62px; margin-left: 4px;}
+    .main #digital #digital-pager a.pseries-pager span{width: 58px; margin-left: 3px;}
+    .main #digital #digital-pager a.modus-pager span{width: 48px; margin-left: 3px;}
+    .main #digital #digital-pager a.portable-pager span{width: 100px; margin-left: 4px;}
+    .main #digital #digital-pager a.arius-pager span{width: 40px; margin-left: 2px;}
+    .main #digital #digital-pager a.synthe-pager span{width: 77px; margin-left: 3px;}
+    
+    /*.main #app*/
+    .main #app h2{top: 246px; left: 59.854%;}
+    .main #app p{top: 380px; left: 54.937%;}
+    .main #app .bxslider{top: 170px; height: 450px; left: 11.979%;}
+    
+    /*.main #app #appSlider*/
+    .main #app .bx-wrapper{top: 170px; height: 450px; left: 11.979%;}
+    
+    /*.main #app #app-pager*/
+    .main #app #app-pager{width: 198px; height: 48px; background: url(../img/yamaha_maint_app_textarea.png) no-repeat center; background-size: contain; top: 630px; left: 14%;}
+    .main #app #app-pager a{width: 31px; font-size: 1.8rem; margin: 19px 14px 0;}
+    .main #app #app-pager a:nth-child(1){margin-left: 28px;}
+    .main #app #app-pager a:nth-child(2){width: 77px;}
+    .main #app #app-pager a span{width: 28px; height: 2px; margin: 2px auto 0;}
+    .main #app #app-pager a.appp-pager span{margin-left: 1px;}
+    .main #app #app-pager a.accessory-pager span{width: 72px; margin-left: 2px;}
+    
+    /*.main #bottom*/
+    #bottom p{top: 245px;}
+    #bottom span{top: 405px;}
+    #bottom a{top: 416px;}
+}
+
+/*gta width > 1279px && height < 690px*/
+@media screen and (min-width: 1280px) and (max-height: 690px){
+    /*.main*/
+    .main{transition: 1s;}
+    .main div.close{display: block; width: 100%; height: 100%; background: url(../img/yamaha_mainp_page01_bg.jpg) no-repeat center; background-size: cover;}
+    .main div.close p{font-size: 5rem; color: #f5f5f5; line-height: 100%; text-align: center; position: absolute; top: 40%; left: 0; right: 0;}
+    .main div.close p br{display: none;}
+    header{display: none;}
+    .main #intro{display: none;}
+    .main #top{display: none;}
+    .main #acoustic{display: none;}
+    .main #hybrid{display: none;}
+    .main #digital{display: none;}
+    .main #app{display: none;}
+    .main #bottom{display: none;}
+    footer{display: none;}
+}
+
+/*gta 1340px*/
+@media screen and (min-width: 1340px){
+    /*.main #top*/
+    .main #top h2{left: 18.496%;}
+    .main #top p{left: 18.496%;}
+    
+    /*header .gnb*/
+    header .gnb .mainMenu li.hybrid a span:nth-child(2).off{right: 9.112%;}
+    header .gnb .mainMenu li.digital a span:nth-child(2).off{right: 9.112%;}
+    header .gnb .mainMenu li.app a span.off{right: 9.112%;}
+}
+
+/*gta 1400px*/
+@media screen and (min-width: 1400px){
+    /*header .gnb*/
+    header .gnb .mainMenu li.hybrid a span:nth-child(2).off{right: 9.522%;}
+    header .gnb .mainMenu li.digital a span:nth-child(2).off{right: 9.522%;}
+    header .gnb .mainMenu li.app a span.off{right: 9.522%;}
+}
+
+/*gta 1500px*/
+@media screen and (min-width: 1500px){
+    /*header .gnb*/
+    header .gnb .mainMenu li.hybrid a span:nth-child(2).off{right: 10.062%;}
+    header .gnb .mainMenu li.digital a span:nth-child(2).off{right: 10.062%;}
+    header .gnb .mainMenu li.app a span.off{right: 10.062%;}
+}
+
+/*gta 1600px*/
+@media screen and (min-width: 1600px){
+    /*header .gnb*/
+    header .gnb .mainMenu li.hybrid a span:nth-child(2).off{right: 10.662%;}
+    header .gnb .mainMenu li.digital a span:nth-child(2).off{right: 10.662%;}
+    header .gnb .mainMenu li.app a span.off{right: 10.662%;}
+    
+    /*.main #bottom*/
+    #bottom p{font-size: 4rem; top: 285px; left: 15.104%;}
+    #bottom span{font-size: 8rem; top: 445px; left: 19.166%;}
+    #bottom a{left: 54.896%;}
+    
+    /*footer*/
+    footer{height: 231px; font-size: 2.2rem;}
+    footer h2{top: 74px; left: 3.078%; width: 87px; height: 86px;}
+
+    /*footer .topBox*/
+    footer .topBox{top: 10px;}
+    footer .topBox .leftBox{width: 617px; margin-top: 30px; margin-left: 10.587%;}
+    footer .topBox .leftBox li{width: 194px; margin-bottom: 20px;}
+    footer .topBox .leftBox li:nth-child(3), footer .topBox .leftBox li:nth-child(6){margin-left: 35px;}
+    footer .topBox .rightBox{width: 571px; margin-top: 30px; margin-right: 3%}
+    footer .topBox .rightBox li{width: 170px; margin-bottom: 20px;}
+    footer .topBox .rightBox li:nth-child(3), footer .topBox .rightBox li:nth-child(6){width: 215px;}
+    footer .topBox .rightBox li a{margin-left: 17px;}
+
+    /*footer .bottomBox*/
+    footer .bottomBox{bottom: 11px;}
+    footer .bottomBox div img{height: 25px;}
+}
+
+/*gta 1700px*/
+@media screen and (min-width: 1700px){
+    /*header .gnb*/
+    header .gnb .mainMenu li.hybrid a span:nth-child(2).off{right: 11.162%;}
+    header .gnb .mainMenu li.digital a span:nth-child(2).off{right: 11.162%;}
+    header .gnb .mainMenu li.app a span.off{right: 11.162%;}
+}
+
+/*gta 1800px*/
+@media screen and (min-width: 1800px){
+    /*header .gnb*/
+    header .gnb .mainMenu li.hybrid a span:nth-child(2).off{right: 11.762%;}
+    header .gnb .mainMenu li.digital a span:nth-child(2).off{right: 11.762%;}
+    header .gnb .mainMenu li.app a span.off{right: 11.762%;}
+}
+
+/*gta 1900px*/
+@media screen and (min-width: 1900px){
+    /*header .gnb*/
+    header .gnb .mainMenu li.hybrid a span:nth-child(2).off{right: 12.112%;}
+    header .gnb .mainMenu li.digital a span:nth-child(2).off{right: 12.112%;}
+    header .gnb .mainMenu li.app a span.off{right: 12.112%;}
+}

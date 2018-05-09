@@ -1,0 +1,28 @@
+/*reset*/
+*{margin: 0; padding: 0; box-sizing: border-box;}
+body{font-family: Arial sans-serif; line-height: 1.6;}
+h1, p{padding: 20px;}
+h2{padding: 40px 20px 0;}
+.c1{background: skyblue;}
+.c2{background: lightgreen;}
+.c3{background: pink;}
+
+@media screen and (min-width: 768px){
+    .mf .c2, .mf .c3{float: left; width: 50%;}
+}
+
+@media screen and (min-width: 768px){
+    .cdwrap{width: 100%;}
+    .cd .c1, .cd .c2{width: 50%; float: right;}
+    .cd .c3{clear: both;}
+}
+
+@media screen and (min-width: 1024px){
+    .wrap{width: 66.666%;}
+    .cd .c1, .cd .c2{width: 33.333%;}
+    .cd .c3{width: 33.333%; float: left; clear: none;}
+}
+
+@media screen and (min-width: 768px){
+    .ls .c1, .wrap{width: 50%;}
+}

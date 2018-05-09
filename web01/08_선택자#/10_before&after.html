@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			/*
+			지정한 태그를 기준으로 앞, 뒤로 가상의 태그를 만들어주는 선택자.
+			가상으로 만들어진 태그의 텍스트는 선택되지 않음.
+			가상 선택자를 사용할 때는 content: ""; 가 꼭!!! 들어가 있어야함.
+			
+			**** 레이아웃을 잡을 때 사용. ****
+			
+			*/
+			h1:before{content: "before"; color: red;}
+			h1:after{content: "after";}
+			
+			h2:before{content: "before";}
+			h2:after{content: "after";}
+		</style>
+	</head>
+	<body>
+		<h1>가상선택자</h1>
+		<h2>가상선택자</h2>
+	</body>
+</html>

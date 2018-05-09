@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <title>Transition Delay2</title>
+    <style>
+      *{padding: 0; margin: 0;}
+      #wrap{width: 600px; height: 300px; margin: 30px auto 0; border: 1px solid #aaa; border-radius: 30px; padding: 20px;}
+      #wrap div{width: 100px; height: 100px; font-size: 12px; background: #eee; line-height: 100px; text-align: center; transition-duration: 3s;}
+      
+      #wrap:hover div{transform: translateX(420px) rotate(720deg);}
+      /*#wrap:hover div{transform: rotate(720deg); margin-left: 420px;}*/
+      
+      #wrap .noDelay{border: 1px solid #ff6a00; margin-top: 20px; margin-bottom: 50px;}
+      #wrap .delay{border: 1px solid #006aff; transition-delay: 1s;}
+    </style>
+  </head>
+  <body>
+    <div id="wrap">
+      <div class="noDelay"><p>no-delay</p></div>
+      <div class="delay"><p>delay</p></div>
+    </div>
+  </body>
+</html>

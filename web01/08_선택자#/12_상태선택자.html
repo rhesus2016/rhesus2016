@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			/*
+			상태 선택자 종류
+			1. :link - 방문하지 않은 링크에 스타일을 적용하는 선택자
+			ex) a:link{앵커태그의 기본 css 속성}
+			2. :visited - 방문한 링크에 스타일을 적용하는 선택자
+			3. :hover - 선택한 영역에 마우스 커서를 올려 놓았을 때 스타일을 적용하는 선택자
+			4. :active - 태그를 활성화 했을 때 스타일을 적용하는 선택자
+			5. :focus - 선택한 영역에 선택되었을 때 스타일을 적용하는 선택자
+			*/
+			h1{color: orange;}
+			h1:hover{color: red;}
+			h1:active{color: blue;}
+			
+			/*h1 a{color: green;}*/
+			a:visited{color: yellow;}
+			input:focus{background-color: yellow;}
+			
+	 	</style>
+	</head>
+	<body>
+		<h1>힘내요.</h1>
+		<h1><a href="http://cafe.naver.com/sbsweb">앵커태그</a></h1>
+		<h1><a href="#">앵커태그</a></h1>
+		<h1><span>SBS아카데미</span>컴퓨터아트학원</h1>
+		
+		<form method="post" action="action.php" name="name" target="_blank" autocomplete="off">
+			<input type="text" name="">
+		</form>
+	</body>
+</html>
+
+
+
+
+
+
+
+

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+		<meta charset="utf-8">
+    <title>Skew Exercise</title>
+    <style>
+      *{padding: 0; margin: 0;}
+      .hidden{position: absolute; top: 0; left: -9999em;}
+      .clear:after{content:""; display: block; clear: both;}
+      
+      #wrap{width: 1520px; margin: 0 auto; text-align: center;}
+      #header{width: 1520px; height: 80px; background: pink; line-height: 80px;}
+      
+      /*#container:after{content:""; display: block; clear: both;}*/
+      #container article{width: 500px; float: left;}
+      #container article div{width: 300px; border: 5px solid red; margin: 0 auto;}
+      #container article h3{margin: 15px 0;}
+      #container article div img{width: 300px; display: block; transition-duration: 1s;}
+      
+      #container article div:hover .skewX{transform: skewX(30deg);}
+      #container article div:hover .skewY{transform: skewY(30deg);}
+      #container article div:hover .skew{transform: skew(30deg,30deg);}
+      #container article div:hover .N_skewX{transform: skewX(-30deg);}
+      #container article div:hover .N_skewY{transform: skewY(-30deg);}
+      #container article div:hover .N_skew{transform: skew(-30deg,-30deg);}
+      
+      #footer{width: 1520px; height: 80px; background: pink; line-height: 80px; margin-top: 20px;}
+    </style>
+  </head>
+  <body>
+    <div id="wrap">
+      <h1 class="hidden">wrap</h1>
+      <header id="header">
+        <h2>header</h2>
+      </header>
+      <section id="container" class="clear">
+        <h2>container</h2>
+        <article>
+          <h3>skewX</h3>
+          <div>
+            <img src="../images/ryan1.gif" alt="" class="skewX">
+          </div>
+        </article>
+        <article>
+          <h3>skewY</h3>
+          <div>
+            <img src="../images/ryan1.gif" alt="" class="skewY">
+          </div>
+        </article>
+        <article>
+          <h3>skew</h3>
+          <div>
+            <img src="../images/ryan1.gif" alt="" class="skew">
+          </div>
+        </article>
+        <article>
+          <h3>Negative Number skewX</h3>
+          <div>
+            <img src="../images/ryan1.gif" alt="" class="N_skewX">
+          </div>
+        </article>
+        <article>
+          <h3>Negative Number skewY</h3>
+          <div>
+            <img src="../images/ryan1.gif" alt="" class="N_skewY">
+          </div>
+        </article>
+        <article>
+          <h3>Negative Number skew</h3>
+          <div>
+            <img src="../images/ryan1.gif" alt="" class="N_skew">
+          </div>
+        </article>
+      </section>
+      <footer id="footer">
+        <h2>footer</h2>
+      </footer>
+    </div>
+  </body>
+</html>

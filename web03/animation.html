@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>animation</title>
+        <style>
+            div{margin: 10px 0; padding: 0; font-size: 32px; border: 3px dashed darkblue;}
+            p{margin: 0; padding: 10px; border: 3px solid deeppink; margin-bottom: 1px;}
+            #sec03 div{position: absolute; top: 0; left: 0; margin: 0; font-size: 24px; padding: 10px; border: 3px solid deeppink; background: white;}
+            .div1{height: 70px;}
+            .div2{height: 70px;}
+            .div3{height: 70px;}
+            .div1 p{display: none; background: moccasin;}
+            .div2 p{background: powderblue;}
+            .div3 p{background: mistyrose;}
+        </style>
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/animation.js"></script>
+    </head>
+    <body>
+        <h1>애니메이션 시키기</h1>
+        <section id="sec01">
+            <h2>fadeIn() / fadeOut() / fadeToggle()</h2>
+            <button type="button" class="btn1">fadeIn()</button>
+            <button type="button" class="btn2">fadeOut()</button>
+            <button type="button" class="btn3">fadeToggle()</button>
+            <div class="div1"><p class="p1">fadeIn()</p></div>
+            <div class="div2"><p>fadeOut()</p></div>
+            <div class="div3"><p>fadeToggle()</p></div>
+        </section>
+        <section id="sec02">
+            <h2>slideDown / slideUp() / slideToggle()</h2>
+            <button type="button" class="btn1">slideDown()</button>
+            <button type="button" class="btn2">slideUp()</button>
+            <button type="button" class="btn3">slideToggle()</button>
+            <div class="div1"><p class="p1">slideDown()</p></div>
+            <div class="div2"><p>slideUp()</p></div>
+            <div class="div3"><p>slideToggle()</p></div>
+        </section>
+        <section id="sec03">
+            <h2>animate()</h2>
+            <div>animate()</div>
+        </section>
+    </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<title>Skew</title>
+		<style>
+			*{padding: 0; margin: 0;}
+			div{width: 300px; border: 5px solid red; margin: 50px; float: left;}
+			div > img{width: 300px; display: block;}
+			.box1:hover > img{transform: skewX(30deg);}
+			/*.box1:hover > img{transform: skewX(-30deg);}*/
+			.box2:hover > img{transform: skewY(30deg);}
+			/*.box2:hover > img{transform: skewY(-30deg);}*/
+			.box3:hover > img{transform: skew(30deg, 10deg);}
+			/*.box3:hover > img{transform: skew(-30deg, -10deg);}*/
+			
+		</style>
+	</head>
+	<body>
+		<div class="box1">
+			<img src="images/ryan1.gif" alt="ryan1">
+		</div>
+		<div class="box2">
+			<img src="images/ryan1.gif" alt="ryan1">
+		</div>
+		<div class="box3">
+			<img src="images/ryan1.gif" alt="ryan1">
+		</div>
+	</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			*{padding: 0; margin: 0;}
+			
+			#wrap{width: 906px; margin: 0 auto;}
+
+			#header{width: 900px; height: 80px; background: pink;}
+			
+			#container{border: 3px solid red;}
+			#container:after{content: ""; clear: both; display: block;}
+			.leftBox{width: 200px; height: 500px; background: #e8f900; float: left;}
+			.rightBox{width: 700px; height: 500px; background: #ff711b; float: left;}
+			
+			
+			#footer{width: 900px; height: 80px; background: gray;}
+			
+		</style>
+	</head>
+	<body>
+		<div id="wrap">
+			<div id="header"></div>
+			<div id="container">
+				<div class="leftBox"></div>
+				<div class="rightBox"></div>
+			</div>
+			<div id="footer"></div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <title>Original Hover Effects with CSS3</title>
+    <style>
+      *{padding: 0; margin: 0;}
+      body{background: #f4f4f4; color: #333; font-size: 13px; font-family: "Oswald-Medium";}
+      @font-face{
+				font-family: "Oswald-Medium";
+				src: url(font/Oswald-Medium.eot) format("embedded-opentype"),
+				url(font/Oswald-Medium.woff) format("woff");
+			}
+      a{text-decoration: none; /*color: #fff;*/}
+      
+      #wrap{width: 680px; margin: 0 auto;}
+      .clear:after{content: ""; display: block; clear: both;}
+      
+      /*각 컨텐츠 박스 설정*/
+      .view{width: 300px; height: 200px; border: 10px solid #fff; margin: 10px; text-align: center; box-shadow: 1px 1px 2px #e6e6e6; cursor: default; float: left; position: relative; overflow: hidden;}
+      
+      /*주황색 박스 설정.*/
+      .view img{transition: all 0.2s linear;}
+      .view .mask{width: 300px; height: 200px; background: rgba(219,127,8,0.7); position: absolute; top: 0; left: 0; opacity: 0; transition: all 0.4s ease-in-out;}
+      .view .mask h2{color: #fff; padding: 10px; font-size: 17px; margin-top: 20px; background: rgba(0,0,0,0.8); transition: all 0.2s ease-in-out; transform: translateY(-100px);}
+      .view .mask p{color: #fff; padding: 10px 20px 20px; font-size: 12px; font-style: italic; font-family: "Georgia"; transform: translateY(100px); transition: all 0.2s ease-in-out; opacity: 0; }
+      .view .mask a{background: #000; color: #fff; padding: 7px 14px; text-transform: uppercase; display: inline-block; transform: translateY(70px); transition: all 0.2s ease-in-out; }
+      
+      /*롤오버 후 설정.*/
+      .view:hover img{transform: scale(1.1);}
+      .view:hover .mask{opacity: 1;}
+      .view:hover .mask h2{transform: translateY(0);}
+      .view:hover .mask p{transform: translateY(0); opacity: 1; transition-delay: .1s;}
+      .view:hover .mask a{transform: translateY(0); transition-delay: .2s;}
+    </style>
+  </head>
+  <body oncontextmenu="return false">
+    <div id="wrap" class="clear">
+      <div class="view">
+        <img src="images/1.jpg" alt="">
+        <div class="mask">
+          <h2>HOVER STYLE #1</h2>
+          <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
+          <a href="#">READ MORE</a>
+        </div><!--.mask end-->
+      </div><!--#view end-->
+      <div class="view">
+        <img src="images/2.jpg" alt="">
+        <div class="mask">
+          <h2>HOVER STYLE #1</h2>
+          <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
+          <a href="#">READ MORE</a>
+        </div><!--.mask end-->
+      </div><!--#view end-->
+      <div class="view">
+        <img src="images/3.jpg" alt="">
+        <div class="mask">
+          <h2>HOVER STYLE #1</h2>
+          <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
+          <a href="#">READ MORE</a>
+        </div><!--.mask end-->
+      </div><!--#view end-->
+      <div class="view">
+        <img src="images/4.jpg" alt="">
+        <div class="mask">
+          <h2>HOVER STYLE #1</h2>
+          <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
+          <a href="#">READ MORE</a>
+        </div><!--.mask end-->
+      </div><!--#view end-->
+    </div><!--#wrap end-->
+  </body>
+</html>

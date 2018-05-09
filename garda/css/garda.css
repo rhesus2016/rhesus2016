@@ -1,0 +1,158 @@
+@charset "utf-8";
+@keyframes scale{
+	0%{transform: scale(0);}
+}
+
+/*reset*/
+*{margin: 0; padding: 0; box-sizing: border-box;}
+ul{list-style-type: none;}
+a{text-decoration: none; color: #555;}
+img{border: none;}
+html{font-size: 0.625em;}
+body{font: 1.2rem/1.6 Arial,sans-serif; color: #555;}
+.blind{position: absolute; text-indent: -99999px; font-size: 0; line-height: 0;}
+
+/*layout*/
+header{position: fixed; left: 0; top: 0; width: 15%; height: 100%;}
+.gnb{width: 85%; height: 35px; margin-left: 15%;}
+.main{width: 85%; margin-left: 15%;}
+.main:after{content: ""; display: block; clear: both;}
+.content{float: left; animation: scale 1s; transition: .5s; height: 260px;}
+.content:nth-child(1){width: 60%; height: 520px; background: #bbb;}
+.content:nth-child(2){width: 40%; background: #aaa;}
+.content:nth-child(3){width: 20%; background: #999;}
+.content:nth-child(4){width: 20%; background: #888;}
+.content:nth-child(5){width: 20%; background: #777;}
+.content:nth-child(6){width: 40%; background: #666;}
+.content:nth-child(7){width: 20%; background: #555;}
+.content:nth-child(8){width: 20%; background: #444;}
+.content:nth-child(9){width: 40%; background: #333;}
+.content:nth-child(10){width: 20%; background: #222;}
+.content:nth-child(11){width: 20%; background: #111;}
+.content:nth-child(12){width: 20%; background: #000;}
+.content div{position: relative; overflow: hidden; height: 100%;}
+
+/*header*/
+h1{width: 180px; height: 136px; margin: 70px auto 94px; background: url(../img/garda-logo1.png); text-indent: -99999px;}
+.mnb a{display: block; padding: 8px 30px; font-size: 1.7rem; font-weight: bold; text-align: center;}
+.mnb a:hover, .mnb a:focus{color: skyblue;}
+.sns{position: absolute; bottom: 50px; width: 100%; text-align: center;}
+
+/*.gnb*/
+.gnb{position: relative; background: #212121;}
+.gnb span{position: absolute;}
+.gnb span:first-of-type{left: 10px;}
+.gnb span:last-of-type{right: 10px;}
+.gnb a{padding: 0 10px; color: #eee; line-height: 35px;}
+
+/*.bg*/
+.bg{background-size: cover; background-position: center;}
+.bg1{background-image: url(../img/garda-pic1.jpg);}
+.bg2{background-image: url(../img/garda-pic2.jpg);}
+.bg3{background-image: url(../img/garda-pic3.jpg);}
+.bg4{background-image: url(../img/garda-pic4.jpg);}
+.bg5{background-image: url(../img/garda-pic5.jpg);}
+.bg6{background-image: url(../img/garda-pic6.jpg);}
+.bg7{background-image: url(../img/garda-pic7.jpg);}
+.bg span{transform: scale(10); opacity: 0; transition: .3s; position: absolute; bottom: 0; right: 20px; color: #fff; font-size: 6rem; line-height: 1;}
+.bg:hover span{transform: scale(1); opacity: 1;}
+.bg1 span{bottom: -22px; right: -6px; transform: scale(1); opacity: 1; font-size: 14rem;}
+.bg1:hover span{transform: translateX(-100px); color: rgba(0,0,0,.5);}
+
+/*.text*/
+.text{transition: .6s; padding: 40px 30px; background: #fff; color: #666;}
+.text:hover{background: #6ce2fb; color: #fff;}
+.content:nth-child(3) .text{background: #bff7fa;}
+.text b{display: block; transition: .6s; margin-bottom: 20px; color: #444; font-size: 3rem; font-weight: normal;}
+.text:hover b{color: #fff;}
+.text i{font-style: normal;}
+
+/*gta 1600px*/
+@media screen and (max-width: 1599px){
+	
+	header{position: relative; width: 100%; height: 80px;}
+	.gnb, .main{width: 100%; margin-left: 0;}
+	h1{float: left; width: 200px; height: 40px; margin: 20px 0 0 20px; background: url(../img/garda-logo2.png); background-size: contain;}
+	.mnb{float: right; margin: 20px 200px 0 0;}
+	.mnb ul:after{content: ""; display: block; clear: both;}
+	.mnb li{float: left;}
+	.sns{right: 20px; bottom: 10px; width: auto;}
+}
+
+/*gta 1280px*/
+@media screen and (max-width: 1279px){
+
+	.content:nth-child(1){width: 75%;}
+	.content:nth-child(2){width: 25%;}
+	.content:nth-child(3){width: 25%;}
+	.content:nth-child(4){width: 25%;}
+	.content:nth-child(5){width: 25%;}
+	.content:nth-child(6){width: 50%;}
+	.content:nth-child(7){width: 25%;}
+	.content:nth-child(8){width: 50%;}
+	.content:nth-child(9){width: 25%;}
+	.content:nth-child(10){width: 50%;}
+	.content:nth-child(11){width: 25%;}
+	.content:nth-child(12){width: 25%;}
+	
+	/*.text*/
+	.content:nth-child(8) .text{background: #bff7fa;}	
+}
+
+/*gta 1024px*/
+@media screen and (max-width: 1023px){
+	
+	.content:nth-child(1){width: 100%;}
+	.content:nth-child(2){width: 60%;}
+	.content:nth-child(3){width: 40%;}
+	.content:nth-child(4){width: 40%;}
+	.content:nth-child(5){width: 60%;}
+	.content:nth-child(6){width: 60%;}
+	.content:nth-child(7){width: 40%;}
+	.content:nth-child(8){width: 100%;}
+	.content:nth-child(9){width: 40%;}
+	.content:nth-child(10){width: 60%;}
+	.content:nth-child(11){width: 60%;}
+	.content:nth-child(12){width: 40%;}	
+	
+	/*header*/
+	.mnb{margin-right: 0;}
+	.sns{display: none;}
+}
+
+/*gta 768px*/
+@media screen and (max-width: 767px){
+	
+	.content:nth-child(1){height: 300px;}
+	.content:nth-child(2){width: 100%;}
+	.content:nth-child(3){width: 50%;}
+	.content:nth-child(4){width: 50%;}
+	.content:nth-child(5){width: 100%;}
+	.content:nth-child(6){width: 50%;}
+	.content:nth-child(7){width: 50%;}
+	.content:nth-child(8){width: 100%;}
+	.content:nth-child(9){width: 100%;}
+	.content:nth-child(10){width: 50%;}
+	.content:nth-child(11){width: 50%;}
+	.content:nth-child(12){width: 100%;}
+	
+	/*header*/
+	header{height: auto;}
+	h1{float: none; margin: 20px auto;}
+	.mnb{float: none;}
+	.mnb li{float: none;}
+	
+	/*.bg*/
+	.bg1 span{bottom: -14px; font-size: 9rem;}
+}
+
+/*gta 500px*/
+@media screen and (max-width: 499px){
+
+	.gnb{display: none;}
+	.content:nth-child(1) ~ div{width: 100%;}
+	
+	/*.bg*/
+	.bg1 span{bottom: -10px; font-size: 6rem;}
+	.bg1:hover span{transform: translateX(-50px);}
+}

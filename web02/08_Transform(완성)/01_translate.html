@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<title>Translate</title>
+		<style>
+			*{padding: 0; margin: 0;}
+			div{width: 300px; border: 5px solid red; margin: 50px;}
+			div > img{width: 300px; display: block;}
+			.box1:hover > img{transform: translateX(100px);}
+			/*.box1 > img:hover{transform: translateX(-100px);}*/
+			.box2:hover > img{transform: translateY(100px);}
+			/*.box2 > img:hover{transform: translateY(-100px);}*/
+			.box3:hover > img{transform: translate(100px,100px);}
+		</style>
+	</head>
+	<body>
+		<div class="box1">
+			<img src="images/ryan1.gif" alt="ryan1">
+		</div>
+		<div class="box2">
+			<img src="images/ryan2.gif" alt="ryan2">
+		</div>
+		<div class="box3">
+			<img src="images/ryan3.gif" alt="ryan3">
+		</div>
+	</body>
+</html>

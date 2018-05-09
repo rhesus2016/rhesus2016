@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>selector</title>
+        <style>
+            div{margin: 10px 0; padding: 10px; border: 3px solid silver; font-size: 32px;}
+            p, a{border: 3px solid silver;}
+        </style>
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/selector.js"></script>
+    </head>
+    <body>
+        <h1>셀렉터</h1>
+        <section id="sec01">
+            <h2>id 셀렉터</h2>    
+            <div>div1</div>
+        </section>
+        <section id="sec02">
+            <h2>class 셀렉터</h2>
+            <div class="woman">하윤</div>
+            <div class="man">도윤</div>
+            <div class="woman">서윤</div>
+            <div class="man">하준</div>
+            <div class="woman">서연</div>
+            <div class="man">서준</div>
+        </section>
+        <section id="sec03">
+            <h2>자손 셀렉터</h2>
+            <div>재미있는 jQuery</div>
+            <ul>
+                <li><span class="span01">jQuery</span>재미있어요?</li>
+                <li>재미있는 <span class="span01">jQuery</span>.</li>
+            </ul>
+            <p><span class="span02">jQuery</span>재미있어요.</p>
+        </section>
+        <section id="sec04">
+            <h2>좀 더 검색하기</h2>
+            <div class="wrap">
+                wrap
+                <div class="div1">
+                    div1
+                    <p>p1<a href="#">텍스트1</a></p>
+                    <p>p2<a href="#">텍스트2</a></p>
+                    <p>p3<a href="#">텍스트3</a></p>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>

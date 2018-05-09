@@ -1,0 +1,10 @@
+@charset "utf-8";
+
+div{width: 600px; height: 400px; background-image: url(../images/sample.jpg); background-repeat: no-repeat; border: 5px solid red; margin: 50px;}
+
+.box1{background-size: auto;}
+.box2{background-size: 300px;}
+.box3{background-size: 200px 150px;}
+.box4{background-size: 45%;}
+.box5{background-size: contain;} /*이미지의 비율을 유지하면서 너비나 높이 중 긴부분에 맞춤.*/
+.box6{background-size: cover;} /*이미지의 비율을 유지하면서 너비나 높이 중 짧은 부분에 맞춤.*/

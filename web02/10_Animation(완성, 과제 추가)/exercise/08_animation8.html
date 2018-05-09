@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <title>animation</title>
+    <style>
+      div{
+        width: 60px;
+        height: 60px;
+        background: red;
+        animation: BGcolor 1.5s infinite alternate, ani8 1.5s infinite;
+      }
+      @keyframes ani8{
+        0%{transform: perspective(120px) rotateX(0) rotateY(0);}
+        50%{transform: perspective(120px) rotateX(-180deg) rotateY(0);}
+        100%{transform: perspective(120px) rotateX(-180deg) rotateY(-180deg);}
+      }
+      @keyframes BGcolor{
+        /*0%{background: red;}*/
+        50%{background: green;}
+        100%{background: blue;}
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+  </body>
+</html>

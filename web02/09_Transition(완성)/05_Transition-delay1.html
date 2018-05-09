@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <title>Transition Delay1</title>
+    <style>
+      div{
+        width: 100px;
+        height: 100px; 
+        background: yellow;
+        border: 3px solid red;
+        transition-property: width, height, background, border, transform;
+        transition-duration: 1s;
+        transition-delay: 1s, 2s, 3s, 4s;
+      }
+      
+      div:hover{
+        width: 300px;
+        height: 300px;
+        background: orange;
+        border: 10px solid greenyellow;
+        transform: rotate(270deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>Delay</h1>
+    </div>
+  </body>
+</html>

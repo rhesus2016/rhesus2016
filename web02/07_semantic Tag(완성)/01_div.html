@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			*{padding: 0; margin: 0;}
+			
+			#sidebanner{width: 100px; height: 400px; background: #a57e68; position: fixed; top: 100px; right: 0; /*z-index: 양수or음수*/}
+			
+			#wrap{width: 960px; margin: 0 auto;}
+			#header{width: 960px; height: 100px; background: #d5d9a4; position: relative;}
+			/*#header #nav{width: 600px; height: 40px; background: #f6fabe; position: absolute; top: 20px; right: 20px;}*/
+			#header #nav{width: 600px; height: 40px; background: #f6fabe; float: right; margin-top: 30px; margin-right: 20px;}
+			
+			#slide{width: 960px; height: 300px; background: #d4c96b;}
+			#contents{width: 960px;}
+			#contents:after{content: ""; display: block; clear: both;}
+			#contents div{width: 319px; height: 300px; background: #eada7e; float: left; margin-right: 1.5px;}
+			#contents div:last-child{margin-right: 0;}
+			
+			#footer{width: 960px; height: 80px; background: #434731;}
+		</style>
+	</head>
+	<body>
+		<div id="sidebanner"></div><!--#sidebanner end-->
+		<div id="wrap">
+			<div id="header">
+				<div id="nav"></div>
+			</div><!--#header end-->
+			<div id="container">
+				<div id="slide"></div>
+				<div id="contents">
+					<div class="leftBox"></div>
+					<div class="centerBox"></div>
+					<div class="rightBox"></div>
+				</div>
+			</div><!--#container end-->
+			<div id="footer"></div><!--#footer end-->
+		</div><!--#wrap end-->
+	</body>
+</html>
+
+
+
+
+
+

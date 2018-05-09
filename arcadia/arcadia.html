@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.bxslider.min.css">
+    <link rel="stylesheet" type="text/css" href="css/arcadia.css">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.bxslider.min.js"></script>
+    <script src="js/arcadia.js"></script>
+    <!--[if lte IE 8]>
+    <script src="js/html5shiv.min.js"></script> 
+    <script src="js/respond.min.js"></script>
+    <![end if]-->
+    <title>Arcadia</title>
+</head>
+<body id="top">
+
+<!-- header -->
+<header>
+	<h1 class="blind">Arcadia</h1>
+	<button type="button">
+		<span>menu</span>
+		<span></span>
+		<span></span>
+	</button>
+	<nav>
+		<h2 class="blind">Main Navigation</h2>
+		<ul>
+			<li><a href="#meetus">Meet Us</a></li>
+			<li><a href="#service">Service</a></li>
+			<li><a href="#projects">Projects</a></li>
+			<li><a href="#about">About</a></li>
+			<li><a href="#contact">Contact</a></li>
+		</ul>
+	</nav>
+	<p>We’ve got the special power<span></span></p>
+	<p>We make websites</p>
+	<a href="#meetus" class="arrow">Go to next</a>
+</header>
+<!-- /header -->
+
+<!-- .main -->
+<div class="main">
+	<main>
+	
+		<!-- #meetus -->
+		<section id="meetus">
+			<h2>Meet us<span></span></h2>
+			<p>There are a variety of web professionals on our team and can make whatever you want. Contact us! I'll show you more than you think.</p>
+			<a href="#service" class="arrow">Go to next</a>
+			<div><a href="#" target="_blank">Go to video</a></div>
+		</section>
+		<!-- /#meetus -->
+		
+		<!-- #service -->
+		<section id="service">
+			<h2>Service<span></span></h2>
+			<p>We will build the site you want. From basic website to mobile phone web design, everything about the web is possible. In addition, you can fulfill your responsive web, which is a recent issue.</p>
+			<div>
+				<a href="#">
+					<h3>BRANDING</h3>
+					<p>We will inform you of your company and products just by the image of the product.</p>
+				</a>
+				<a href="#">
+					<h3>WEB DEVELOPMENT</h3>
+					<p>Experienced technology will help you develop customized web development.</p>
+				</a>
+				<a href="#">
+					<h3>APP DESIGN</h3>
+					<p>Create sophisticated mobile web and responsive sites tailored to the latest trends.</p>
+				</a>
+			</div>
+			<a href="#projects" class="arrow">Go to next</a>
+			<p class="shop"><a href="#" target="_blank">Check our SHOP</a></p>
+		</section>
+		<!-- /#service -->
+		
+		<!-- #projects -->
+		<section id="projects">
+			<h2>Our latest projects<span></span></h2>
+			<p>We have been working on various projects so far. If you are curious about this, we can introduce you directly. For more information, please click the button below.</p>
+			<div class="portfolio"></div>
+			<a class="behance" href="#" target="_blank">more on behance</a>
+			<a href="#about" class="arrow">Go to next</a>
+			<div class="partners">
+				<h3>Our partners<span></span></h3>
+				<div>
+					<span>Adidas</span>
+					<span>Google</span>
+					<span>Samsung</span>
+					<span>Microsoft</span>
+				</div>
+			</div>
+		</section>
+		<!-- /#projects -->
+		
+		<!-- #about -->
+		<section id="about">
+			<h2>About us<span></span></h2>
+			<p>We have a total of 12 teams. The team leader of each department has three team members, design, development, and publishing. We are currently hiring more people, so please contact us.</p>
+			<div class="staff">
+				<a href="#">
+					<h3>Mike</h3>
+					<p>CEO / Founder</p>
+					<span></span>
+				</a>
+				<a href="#">
+					<h3>Taylor</h3>
+					<p>Graphic Designer</p>
+					<span></span>
+				</a>
+				<a href="#">
+					<h3>James</h3>
+					<p>Copywriter</p>
+					<span></span>
+				</a>
+				<a href="#">
+					<h3>WE ARE<br>HIRING!</h3>
+					<span></span>
+				</a>
+			</div>
+			<a href="#contact" class="arrow">Go to next</a>
+			<div class="tweets">
+				<h3>Latest tweets<span></span></h3>
+				<ul class="slider">
+					<li><a href="#" target="_blank">
+							<p>I really like my team! We can do it!</p>
+							<span>Craig</span>
+						</a></li>
+					<li><a href="#" target="_blank">
+							<p>If you want to make a stylish and nice homepage, please contact us.</p>
+							<span>Mike</span>
+						</a></li>
+					<li><a href="#" target="_blank">
+							<p>We are the most outstanding group of famous web agency. I will always think of more than you think.</p>
+							<span>Taylor</span>
+						</a></li>
+					<li><a href="#" target="_blank">
+							<p>Every time they have a project, they are so proud that they can not stand it.</p>
+							<span>James</span>
+						</a></li>
+				</ul>
+			</div>
+		</section>
+		<!-- /#about -->
+		
+	</main>
+</div>
+<!-- /.main -->
+
+<!-- footer -->
+<footer id="contact">
+	<div class="footerInner">
+		<h2>Contact us<span></span></h2>
+		<form action="#" method="post">
+			<span><label for="name">Name</label><input type="text" id="name"></span>
+			<span><label for="email">Email</label><input type="email" id="email"></span>
+			<span><label for="phone">Telephone</label><input type="tel" id="phone"></span>
+			<span><label for="subject">Subject</label><input type="text" id="subject"></span>
+			<span><label for="message">Message</label><textarea id="message" cols="30" rows="5"></textarea></span>
+			<button type="submit">Send</button>
+		</form>
+		<div class="address">
+			<h3>Address</h3>
+			<p>908 New Hampshire Ave NW<br>Washington, DC 20037<br>(202) 463-5141<br>Doris Cannon</p>
+			<span>
+				<a href="#" target="_blank"><img src="img/arcadia-icon-facebook.png" alt="Facebook"></a>
+				<a href="#" target="_blank"><img src="img/arcadia-icon-twitter.png" alt="Twitter"></a>
+				<a href="#" target="_blank"><img src="img/arcadia-icon-vimeo.png" alt="Vimeo"></a>
+				<a href="#" target="_blank"><img src="img/arcadia-icon-behance.png" alt="Behance"></a>
+			</span>
+		</div>
+		<span class="copyright">
+			<small>2018 &copy; <span>Arcadia.</span> All Rights Reserved.</small>
+			<a href="#top">Back to top</a>
+		</span>
+	</div>
+</footer>
+<!-- /footer -->
+
+</body>
+</html>

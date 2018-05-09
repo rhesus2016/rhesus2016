@@ -1,0 +1,18 @@
+@charset "utf-8";
+* {margin: 0; padding: 0; box-sizing:border-box;}
+body {font-family: Arial,sans-serif;}
+.wrap {width: 700px; margin: 20px auto;}
+.tabs {list-style-type: none; border-bottom: 2px solid #494949;}
+.tabs:after {content: ""; display: block; clear:both;}
+.tabs li {float: left; margin-right: 2px;}
+.tabs li a {display: block; padding: 10px 30px; background: #494949; color: #fff; font-weight: bold; text-decoration: none; font-size: 0.9em; border: 1px solid #494949; border-bottom: none; border-radius:5px 5px 0 0; margin-bottom: -2px;}
+.tabs a.on {background: #fff; color: #393939;}
+.panels {border: 1px solid #494949; border-top: none; background: #fff; border-radius:0 0 5px 5px;}
+.panel {padding: 20px; font-size: 0.9em; line-height: 1.6;}
+.panel:first-letter {font-weight: bold; color: orangered; font-size: 1.1em;}
+
+
+
+
+
+

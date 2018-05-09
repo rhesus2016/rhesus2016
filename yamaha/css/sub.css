@@ -1,0 +1,342 @@
+@charset "utf-8";
+body{background: url(../img/yamaha_sub02m_bg.jpg) no-repeat center; background-size: cover;}
+
+/*animate*/
+@keyframes videoSlide{
+    100%{transform: translateX(0);}
+}
+.videoSlideF{animation-name: videoSlide; animation-delay: .3s; animation-duration: 1.5s; animation-fill-mode: forwards;}
+.videoSlideS{animation-name: videoSlide; animation-delay: .6s; animation-duration: 1.5s; animation-fill-mode: forwards;}
+.videoSlideT{animation-name: videoSlide; animation-delay: .9s; animation-duration: 1.5s; animation-fill-mode: forwards;}
+
+@keyframes orangeColor{
+    100%{color: #eb9f34;}
+}
+.orangeColor{animation-name: orangeColor; animation-duration: .7s; animation-delay: .5s; animation-fill-mode: forwards;}
+
+@keyframes lineSize{
+     0%{width: 0; opacity: 1;}
+    100%{opacity: 1;}
+}
+.lineSize{animation-name: lineSize; animation-duration: .8s; animation-delay: 1s; animation-fill-mode: forwards;}
+
+/*.main #abTop*/
+.main #abTop{width: 100%; background: url(../img/yamaha_sub02m_about_bg.jpg) no-repeat center; background-size: cover; padding-top: 62px; padding-bottom: 42px}
+.main #abTop h2{font-size: 1.5rem; text-transform: uppercase; margin-left: 7.187%;}
+.main #abTop h2 span{display: block; background: #f5f5f5; width: 86.562%; height: 1px;}
+.main #abTop .aboutBox{background: rgba(0,0,0,.7); width: 75.559%; margin-left: 12%; padding-top: 34px; padding-left: 6%; padding-bottom: 60px; position: relative;}
+.main #abTop .aboutBox p:nth-child(1){font-size: 1.5rem;}
+.main #abTop .aboutBox p:nth-child(1) span{color: #eb9f34;}
+.main #abTop .aboutBox > span{display: block; width: 68px; height: 1px; background: #eb9f34; margin-left: 66px; margin-top: 1px;}
+.main #abTop .aboutBox p:nth-child(3){width: 91.875%; font-size: 1.3rem; margin-top: 25px; line-height: 1.7; word-break: break-all;}
+.main #abTop .aboutBox p:nth-child(4){font-size: 1.1rem; position: absolute; bottom: 16px; right: 12%;}
+.main #abTop .aboutBox p:nth-child(4) span{border-top: 1px solid #f5f5f5;}
+.main #abTop .bigYamaha{width: 300px; height: 78px; margin-top: 50px; background: url(../img/yamaha_sub02_logo_top.png) no-repeat center; background-size: cover; opacity: .7;}
+
+/*.main #introduce*/
+.main #introduce{width: 100%; padding-top: 37px; position: relative; padding-bottom: 37px;}
+.main #introduce h2{width: 170px; font-size: 1.9rem; text-transform: uppercase; margin: 0 auto 30px;}
+.main #introduce h2 span{display: block; background: #f5f5f5; width: 22px; height: 1px; margin: 0 auto 11px;}
+.main #introduce div:nth-of-type(1){width: 100%; background: url(../img/yamaha_sub02_introduce.jpg) no-repeat center; background-size: cover; padding: 22px; font-size: 1.3rem; border-top: 1px solid #2d2d2d; border-bottom: 1px solid #4d4d4d; word-break: break-all;}
+.main #introduce div:nth-of-type(1) p{margin-bottom: 35px; line-height: 1.5; text-align: center;}
+.main #introduce div:nth-of-type(1) p:nth-child(3){margin-bottom: 0;}
+
+/*.main #video*/
+.main #video{width: 100%; padding-bottom: 30px;}
+.main #video h2{width: 183px;font-size: 1.9rem; text-transform: uppercase; margin: 0 auto 22px;}
+.main #video h2 span{display: block; background: #f5f5f5; width: 22px; height: 1px; margin: 0 auto 11px;}
+.main #video a{display: block; width: 95%; height: 200px; margin:0 auto 30px; position: relative; border: 1px solid #4d4d4d;}
+.main #video a:nth-of-type(1){background: url(../img/history.jpg) no-repeat center; background-size: cover;}
+.main #video a:nth-of-type(1) span{position: absolute; font-size: 2.6rem; text-transform: uppercase; bottom: 5px; right: 10px;}
+.main #video a:nth-of-type(2){background: url(../img/business.jpg) no-repeat center; background-size: cover;}
+.main #video a:nth-of-type(2) span{position: absolute; font-size: 2.6rem; text-transform: uppercase; bottom: 5px; right: 10px;}
+.main #video a:nth-of-type(3){background: url(../img/develop.jpg) no-repeat center; background-size: cover;}
+.main #video a:nth-of-type(3) span{position: absolute; font-size: 2.6rem; text-transform: uppercase; bottom: 5px; right: 10px;}
+.main #video a:nth-of-type(4){background: url(../img/responsibility.jpg) no-repeat center; background-size: cover; margin-bottom: 0;}
+.main #video a:nth-of-type(4) span{position: absolute; font-size: 2.6rem; text-transform: uppercase; bottom: 5px; right: 10px;}
+
+/*.main #news*/
+.main #news{width: 100%; padding-top: 62px; height: 880px;}
+.main #news h2{font-size: 1.5rem; text-transform: uppercase; margin-left: 7.187%; }
+.main #news h2 span{display: block; background: #f5f5f5; width: 92.362%; height: 1px; margin-bottom: 20px;}
+.main #news ul{width: 85.862%; margin: 0 auto; position: relative;}
+.main #news ul li{width: 100%; position: absolute;}
+.main #news ul li a{display: block; width: 100%; height: 130px; border: 1px solid #3d3d3d; box-shadow: 6px 4px 20px #000;}
+.main #news ul li.first a:nth-child(1){height: 340px; position: relative; z-index: 4; background: url(../img/event_01.jpg) no-repeat top; background-size: cover; border-bottom: none;}
+.main #news ul li.first a:nth-child(2){position: relative; z-index: 3; background: url(../img/event_02.jpg) no-repeat center; background-size: cover; border-top: none; border-bottom: none;}
+.main #news ul li.first a:nth-child(3){position: relative; z-index: 2; background: url(../img/event_03.jpg) no-repeat center; background-size: cover; border-top: none; border-bottom: none;}
+.main #news ul li.first a:nth-child(4){position: relative; z-index: 1; background: url(../img/event_04.jpg) no-repeat center; background-size: cover; border-top: none;}
+.main #news ul li.second a:nth-child(1){height: 340px; position: relative; z-index: 4; background: url(../img/event_05.jpg) no-repeat top; background-size: cover; border-bottom: 0; border-bottom: none;}
+.main #news ul li.second a:nth-child(2){position: relative; z-index: 3; background: url(../img/event_06.jpg) no-repeat center; background-size: cover; border-top: none; border-bottom: none;}
+.main #news ul li.second a:nth-child(3){position: relative; z-index: 2; background: url(../img/event_07.jpg) no-repeat center; background-size: cover; border-top: none; border-bottom: none;}
+.main #news ul li.second a:nth-child(4){position: relative; z-index: 1; background: url(../img/event_08.jpg) no-repeat center; background-size: cover; border-top: none;}
+.main #news ul li.third a:nth-child(1){height: 340px; position: relative; z-index: 4; background: url(../img/event_09.jpg) no-repeat top; background-size: cover; border-bottom: none;}
+.main #news ul li.third a:nth-child(2){position: relative; z-index: 3; background: url(../img/event_10.jpg) no-repeat center; background-size: cover; border-top: none; border-bottom: none;}
+.main #news ul li.third a:nth-child(3){position: relative; z-index: 2; background: url(../img/event_11.jpg) no-repeat center; background-size: cover; border-top: none; border-bottom: none;}
+.main #news ul li.third a:nth-child(4){position: relative; z-index: 1; background: url(../img/event_12.jpg) no-repeat center; background-size: cover; border-top: none;}
+
+/*.main #news #bxslider*/
+.main #news .bx-wrapper{background: none; border: none; margin-bottom: 0; box-shadow: none; width: 85.862%; margin: 0 auto;}
+.bx-wrapper .bx-pager.bx-default-pager a.active, .bx-wrapper .bx-pager.bx-default-pager a:focus, .bx-wrapper .bx-pager.bx-default-pager a:hover{background: #eb9f34; transition: .5s;}
+.bx-wrapper .bx-controls-auto, .bx-wrapper .bx-pager{position: static;}
+.bx-wrapper .bx-controls-direction a{z-index: 5;}
+.bx-wrapper .bx-pager{padding-top: 15px;}
+
+/*.main #service*/
+.main #service{width: 100%; padding-top: 62px;}
+.main #service h2{font-size: 1.5rem; text-transform: uppercase; margin-left: 7.187%;}
+.main #service h2 span{display: block; background: #f5f5f5; width: 92.362%; height: 1px; margin-bottom: 20px;}
+.main #service p{font-size: 1.2rem; margin-left: 7.187%; width: 82.462%; word-break: break-all; margin-bottom: 25px; line-height: 1.5;}
+.main #service p span{display: block; width: 85.862%; height: 1px; background: #9d9d9d; margin-top: 4px;}
+
+/*gta 480px*/
+@media screen and (min-width: 480px){
+    
+    /*.main #abTop*/
+    .main #abTop{padding-top: 93px; padding-bottom: 63px}
+    .main #abTop h2{font-size: 2.25rem;}
+    .main #abTop h2 span{height: 2px;}
+    .main #abTop .aboutBox{padding-top: 51px; padding-bottom: 90px;}
+    .main #abTop .aboutBox p:nth-child(1){font-size: 2.25rem;}
+    .main #abTop .aboutBox > span{width: 102px; height: 2px; margin-left: 99px; margin-top: 2px;}
+    .main #abTop .aboutBox p:nth-child(3){font-size: 1.95rem; margin-top: 38px;}
+    .main #abTop .aboutBox p:nth-child(4){font-size: 1.65rem; bottom: 24px;}
+    .main #abTop .aboutBox p:nth-child(4) span{border-top: 1px solid #f5f5f5;}
+    .main #abTop .bigYamaha{width: 450px; height: 117px; margin-top: 75px; background: url(../img/yamaha_sub02_logo_top_3.png) no-repeat center; background-size: cover;}
+
+    /*.main #introduce*/
+    .main #introduce{padding-top: 56px; padding-bottom: 56px;}
+    .main #introduce h2{width: 255px; font-size: 2.85rem; margin: 0 auto 45px;}
+    .main #introduce h2 span{width: 33px; height: 2px; margin: 0 auto 17px;}
+    .main #introduce div:nth-of-type(1){padding: 33px; font-size: 1.95rem;}
+    .main #introduce div:nth-of-type(1) p{margin-bottom: 53px;}
+
+    /*.main #video*/
+    .main #video{padding-bottom: 45px;}
+    .main #video h2{width: 284px; font-size: 2.95rem; margin: 0 auto 33px;}
+    .main #video h2 span{width: 33px; height: 2px; margin: 0 auto 17px;}
+    .main #video a{height: 300px; margin-bottom: 45px;}
+    .main #video a:nth-of-type(1) span{font-size: 3.9rem; bottom: 8px; right: 15px;}
+    .main #video a:nth-of-type(2) span{font-size: 3.9rem; bottom: 8px; right: 15px;}
+    .main #video a:nth-of-type(3) span{font-size: 3.9rem; bottom: 8px; right: 15px;}
+    .main #video a:nth-of-type(4) span{font-size: 3.9rem; bottom: 8px; right: 15px;}
+    
+    /*.main #news*/
+    .main #news{padding-top: 93px; padding-bottom: 56px; height: 1320px;}
+    .main #news h2{font-size: 2.25rem;}
+    .main #news h2 span{height: 2px; margin-bottom: 30px;}
+    .main #news ul li a{height: 195px;}
+    .main #news ul li.first a:nth-child(1){height: 510px;}
+    .main #news ul li.second a:nth-child(1){height: 510px;}
+    .main #news ul li.third a:nth-child(1){height: 510px;}
+    
+    /*.main #news #bxslider*/
+    .bx-wrapper .bx-pager{padding-top: 23px;}
+    .bx-wrapper .bx-pager.bx-default-pager a{width: 11px; height: 11px;}
+    
+    /*.main #service*/
+    .main #service{padding-top: 93px;}
+    .main #service h2{font-size: 2.25rem;}
+    .main #service h2 span{height: 2px; margin-bottom: 30px;}
+    .main #service p{font-size: 1.44rem; margin-bottom: 38px;}
+    .main #service p span{ height: 1px; margin-top: 6px;}
+}
+
+/*gta 640px*/
+@media screen and (min-width: 640px){
+    
+    /*.main #abTop*/
+    .main #abTop{padding-top: 124px; padding-bottom: 84px}
+    .main #abTop h2{font-size: 3rem;}
+    .main #abTop h2 span{height: 2px;}
+    .main #abTop .aboutBox{padding-top: 68px; padding-bottom: 120px;}
+    .main #abTop .aboutBox p:nth-child(1){font-size: 3rem;}
+    .main #abTop .aboutBox > span{width: 136px; height: 2px; margin-left: 132px; margin-top: 3px;}
+    .main #abTop .aboutBox p:nth-child(3){font-size: 2.6rem; margin-top: 50px;}
+    .main #abTop .aboutBox p:nth-child(4){font-size: 2.2rem; bottom: 32px;}
+    .main #abTop .aboutBox p:nth-child(4) span{border-top: 2px solid #f5f5f5;}
+    .main #abTop .bigYamaha{width: 600px; height: 156px; margin-top: 50px; background: url(../img/yamaha_sub02_logo_top_2.png) no-repeat center; background-size: cover;}
+
+    /*.main #introduce*/
+    .main #introduce{padding-top: 74px; padding-bottom: 74px;}
+    .main #introduce h2{width: 340px; font-size: 3.8rem; margin: 0 auto 60px;}
+    .main #introduce h2 span{width: 44px; height: 3px; margin: 0 auto 22px;}
+    .main #introduce div:nth-of-type(1){padding: 44px; font-size: 2.6rem;}
+    .main #introduce div:nth-of-type(1) p{margin-bottom: 70px;}
+
+    /*.main #video*/
+    .main #video{padding-bottom: 60px;}
+    .main #video h2{width: 366px; font-size: 3.8rem; margin: 0 auto 44px;}
+    .main #video h2 span{width: 44px; height: 3px; margin: 0 auto 22px;}
+    .main #video a{height: 400px; margin-bottom: 60px;}
+    .main #video a:nth-of-type(1) span{font-size: 5.2rem; bottom: 10px; right: 20px;}
+    .main #video a:nth-of-type(2) span{font-size: 5.2rem; bottom: 10px; right: 20px;}
+    .main #video a:nth-of-type(3) span{font-size: 5.2rem; bottom: 10px; right: 20px;}
+    .main #video a:nth-of-type(4) span{font-size: 5.2rem; bottom: 10px; right: 20px;}
+    
+    /*.main #news*/
+    .main #news{padding-top: 124px; padding-bottom: 74px; height: 1760px;}
+    .main #news h2{font-size: 3rem;}
+    .main #news h2 span{height: 2px; margin-bottom: 40px;}
+    .main #news ul li a{height: 260px;}
+    .main #news ul li.first a:nth-child(1){height: 680px;}
+    .main #news ul li.second a:nth-child(1){height: 680px;}
+    .main #news ul li.third a:nth-child(1){height: 680px;}
+    
+    /*.main #news #bxslider*/
+    .bx-wrapper .bx-pager{padding-top: 30px;}
+    .bx-wrapper .bx-pager.bx-default-pager a{width: 12px; height: 12px;}
+    
+    /*.main #service*/
+    .main #service{padding-top: 124px;}
+    .main #service h2{font-size: 3rem;}
+    .main #service h2 span{height: 3px; margin-bottom: 40px;}
+    .main #service p{font-size: 2.4rem; margin-bottom: 50px;}
+    .main #service p a{transition: .4s;}
+    .main #service p a:hover, .main #service p a:focus{color: #eb9f34;}
+    .main #service p span{height: 2px; margin-top: 8px; transition: .4s;}
+    .main #service p a:hover span, .main #service p a:focus span{background: #eb9f34;}
+}
+
+/*gta 1024px*/
+@media screen and (min-width: 1024px){
+    
+    /*body*/   
+    body{overflow: visible; background: url(../img/yamaha_sub02p_bg.jpg) no-repeat center; background-size: cover;}
+    
+    /*header #headerBg*/
+    header #headerBg{display: block; height: 105px;}
+    
+    /*.main #abTop*/
+    .main #abTop{padding-top: 174px; padding-bottom: 116px; position: relative; height: 768px;}
+    .main #abTop h2{font-size: 3.4rem; margin-left: 12.187%;}
+    .main #abTop h2 span{width: 87.562%; height: 2px;}
+    .main #abTop .aboutBox{width: 74.059%; margin-left: 15%; padding-top: 60px; padding-left: 6%; padding-bottom: 140px; z-index: 1;}
+    .main #abTop .aboutBox p:nth-child(1){font-size: 4rem;}
+    .main #abTop .aboutBox p:nth-child(1) span{color: #f5f5f5;}
+    .main #abTop .aboutBox > span{width: 182px; height: 2px; margin-left: 176px; margin-top: 2px; opacity: 0;}
+    .main #abTop .aboutBox p:nth-child(3){width: 82%; font-size: 2rem; margin-top: 65px; line-height: 1.9; margin-left: 5%;}
+    .main #abTop .aboutBox p:nth-child(4){font-size: 2rem; bottom: 46px; right: 17%;}
+    .main #abTop .aboutBox p:nth-child(4) span{border-top: 1px solid #f5f5f5;}
+    .main #abTop .bigYamaha{width: 752px; height: 194px; background: url(../img/yamaha_sub02_logo_top_4.png) no-repeat center; background-size: cover; position: absolute; bottom: 20px;}
+
+    /*.main #introduce*/
+    .main #introduce{padding-top: 83px; padding-bottom: 40px;}
+    .main #introduce h2{width: 357px; font-size: 4rem; margin: 0 auto 123px;}
+    .main #introduce h2 span{width: 60px; height: 3px; margin: 0 auto 25px;}
+    .main #introduce div:nth-of-type(1){background: rgba(0,0,0,.5); padding: 42px; font-size: 2rem; border: 1px solid #2d2d2d; width: 72.55%;  position: absolute; top: 210px; right: 5%; z-index: 1;}
+    .main #introduce div:nth-of-type(1) p{margin-bottom: 35px; line-height: 1.8; text-align: left;}
+    .main #introduce div:nth-of-type(1) p:nth-child(3){margin-bottom: 0;}
+    .main #introduce div:nth-of-type(2){width: 72.55%; height:  470px; position: relative; margin-left: 5%; background: url(../img/yamaha_sub02_introduce.jpg) no-repeat center; background-size: cover; opacity: 0;}
+    
+    /*.main #introduce animate*/
+    .main #introduce div:nth-of-type(2){animation-delay: .1s; animation-duration: 1.3s;}
+
+    /*.main #video*/
+    .main #video{padding-top: 40px; padding-bottom: 60px;}
+    .main #video h2{width: 385px; font-size: 4rem; margin: 0 auto 38px;}
+    .main #video h2 span{width: 60px; height: 3px; margin: 0 auto 25px;}
+    .main #video div{width: 94%; height: 679px; margin: 0 auto;}
+    .main #video a{margin: 0; border: 1px solid #4d4d4d;}
+    .main #video a span{transition: .6s;}
+    .main #video a:nth-of-type(1){background: url(../img/history.jpg) no-repeat center; background-size: cover; width: 50%; height: 679px; overflow: hidden; float: left; box-shadow: 10px 1px 30px #000; z-index: 1;}
+    .main #video a:nth-of-type(1) span{font-size: 8rem; bottom: 0; left: 0; padding-left: 20px; padding-bottom: 10px; display: block; width: 100%; transform: translateY(106px); position: absolute; background: rgba(0,0,0,.7);}
+    .main #video a:nth-of-type(1):hover span, .main #video a:nth-of-type(1):hover span{color: #eb9f34; transform: translateY(0);}
+    .main #video a:nth-of-type(2){background: url(../img/business.jpg) no-repeat center; background-size: cover; float: left; width: 50%; height: 220px; margin-top: 10px; overflow: hidden; transform: translateX(-540px);}
+    .main #video a:nth-of-type(2) span{font-size: 4rem; bottom: 0px; right: 0px; display: block; width: 100%; text-align: right; padding-right: 20px; padding-bottom: 5px; transform: translateY(55px); background: rgba(0,0,0,.7);}
+    .main #video a:nth-of-type(2):hover span, .main #video a:nth-of-type(2):focus span{transform: translateY(0); color: #eb9f34;}
+    .main #video a:nth-of-type(3){background: url(../img/develop.jpg) no-repeat center; background-size: cover; float: left; width: 50%; height: 220px; overflow: hidden; transform: translateX(-480px);}
+    .main #video a:nth-of-type(3) span{font-size: 4rem; bottom: 0px; right: 0px; display: block; width: 100%; text-align: right; padding-right: 20px; padding-bottom: 5px; transform: translateY(55px); background: rgba(0,0,0,.7);}
+    .main #video a:nth-of-type(3):hover span, .main #video a:nth-of-type(3):focus span{transform: translateY(0); color: #eb9f34;}
+    .main #video a:nth-of-type(4){background: url(../img/responsibility.jpg) no-repeat center; background-size: cover; margin-bottom: 0; float: left; width: 50%; height: 220px; overflow: hidden;  transform: translateX(-420px);}
+    .main #video a:nth-of-type(4) span{font-size: 4rem; bottom: 0px; right: 0px; display: block; width: 100%; text-align: right; padding-right: 20px; padding-bottom: 5px; transform: translateY(55px); background: rgba(0,0,0,.7);}
+    .main #video a:nth-of-type(4):hover span, .main #video a:nth-of-type(4):focus span{transform: translateY(0); color: #eb9f34;}
+    
+    /*.main #news*/
+    .main #news{padding-top: 174px; padding-bottom: 0px; height: 1030px;}
+    .main #news h2{font-size: 3.4rem; margin-left: 12.187%;}
+    .main #news h2 span{width: 87.562%; height: 2px;}
+    .main #news ul{width: 77.462%;}
+    .main #news ul li.first a:nth-child(1){width: 50%; height: 679px; float: left; box-shadow: 10px 1px 30px #000;}
+    .main #news ul li.first a:nth-child(2){float: left; width: 50%; height: 220px; margin-top: 10px; box-shadow: none;}
+    .main #news ul li.first a:nth-child(3){float: left; width: 50%; height: 220px; box-shadow: none;}
+    .main #news ul li.first a:nth-child(4){float: left; width: 50%; height: 220px; box-shadow: none;}
+    .main #news ul li.second a:nth-child(1){width: 50%; height: 679px; float: left; box-shadow: 10px 1px 30px #000;}
+    .main #news ul li.second a:nth-child(2){float: left; width: 50%; height: 220px; margin-top: 10px; box-shadow: none;}
+    .main #news ul li.second a:nth-child(3){float: left; width: 50%; height: 220px; box-shadow: none;}
+    .main #news ul li.second a:nth-child(4){float: left; width: 50%; height: 220px; box-shadow: none;}
+    .main #news ul li.third a:nth-child(1){width: 50%; height: 679px; float: left; box-shadow: 10px 1px 30px #000;}
+    .main #news ul li.third a:nth-child(2){float: left; width: 50%; height: 220px; margin-top: 10px; box-shadow: none;}
+    .main #news ul li.third a:nth-child(3){float: left; width: 50%; height: 220px; box-shadow: none;}
+    .main #news ul li.third a:nth-child(4){float: left; width: 50%; height: 220px; box-shadow: none;}
+    
+    /*.main #news #bxslider*/
+    .main #news .bx-wrapper{width: 77.462%; margin-left: 12.1%;}
+    .bx-wrapper .bx-pager{padding-top: 30px;}
+}
+
+/*gta 1280px*/
+@media screen and (min-width: 1280px){
+    
+    /*body*/   
+    body{overflow: visible;}
+    
+    /*header #headerBg*/
+    header #headerBg{display: block; height: 110px;}
+    
+    /*.main #abTop*/
+    .main #abTop{padding-top: 155px; padding-bottom: 175px; height: 960px;}
+    .main #abTop h2{margin-left: 7.187%;}
+    .main #abTop h2 span{width: 86.562%; height: 3px;}
+    .main #abTop .aboutBox{width: 76.549%; margin-left: 11%; padding-top: 80px; padding-left: 6%; padding-bottom: 170px; z-index: 1;}
+    .main #abTop .aboutBox p:nth-child(1){font-size: 6rem;}
+    .main #abTop .aboutBox > span{width: 272px; height: 3px; margin-left: 264px; margin-top: 3px;}
+    .main #abTop .aboutBox p:nth-child(3){width: 82%; font-size: 3rem; margin-top: 85px; line-height: 1.9; margin-left: 5%;}
+    .main #abTop .aboutBox p:nth-child(4){font-size: 3rem; right: 14%;}
+    .main #abTop .aboutBox p:nth-child(4) span{border-top: 2px solid #f5f5f5;}
+    .main #abTop .bigYamaha{width: 1200px; height: 309px; background: url(../img/yamaha_sub02_logo_top_5.png) no-repeat center; background-size: cover; bottom: 20px;}
+
+    /*.main #introduce*/
+    .main #introduce{padding-top: 100px; padding-bottom: 50px;}
+    .main #introduce h2{width: 446px; font-size: 5rem; margin: 0 auto 65px;}
+    .main #introduce h2 span{width: 80px; height: 3px; margin: 0 auto 43px;}
+    .main #introduce div:nth-of-type(1){padding: 47px; font-size: 2.4rem; width: 63.229%; top: 320px; right: 6.5%;}
+    .main #introduce div:nth-of-type(1) p{margin-bottom: 47px;}
+    .main #introduce div:nth-of-type(2){width: 73.229%; height:  690px; margin-left: 6.5%;}
+
+    /*.main #video*/
+    .main #video{padding-top: 50px; padding-bottom: 70px;}
+    .main #video h2{width: 481px; font-size: 5rem; margin: 0 auto 70px;}
+    .main #video h2 span{width: 80px; height: 3px; margin: 0 auto 43px;}
+    .main #video div{width: 85%; height: 840px;}
+    .main #video a:nth-of-type(1){height: 840px; box-shadow: 10px 0px 30px #000;}
+    .main #video a:nth-of-type(1) span{font-size: 9rem; transform: translateY(119px); padding: 0; padding-left: 20px;}
+    .main #video a:nth-of-type(2){height: 269px; margin-top: 15px;}
+    .main #video a:nth-of-type(2) span{font-size: 6rem; transform: translateY(78px);}
+    .main #video a:nth-of-type(3){height: 269px;}
+    .main #video a:nth-of-type(3) span{font-size: 6rem; transform: translateY(78px);}
+    .main #video a:nth-of-type(4){height: 269px;}
+    .main #video a:nth-of-type(4) span{font-size: 6rem; transform: translateY(78px);}
+    
+    /*.main #news*/
+    .main #news{padding-top: 174px; padding-bottom: 0px; height: 1240px;}
+    .main #news h2{margin-left: 10.187%;}
+    .main #news h2 span{width: 86.562%; height: 3px; margin-bottom: 80px;}
+    .main #news ul{width: 78.262%;}
+    .main #news ul li.first a:nth-child(1){height: 840px; box-shadow: 10px 0px 30px #000;}
+    .main #news ul li.first a:nth-child(2){height: 269px; margin-top: 15px;}
+    .main #news ul li.first a:nth-child(3){height: 269px;}
+    .main #news ul li.first a:nth-child(4){height: 269px;}
+    .main #news ul li.second a:nth-child(1){height: 840px; box-shadow: 10px 0px 30px #000;}
+    .main #news ul li.second a:nth-child(2){height: 269px; margin-top: 15px;}
+    .main #news ul li.second a:nth-child(3){height: 269px;}
+    .main #news ul li.second a:nth-child(4){height: 269px;}
+    .main #news ul li.third a:nth-child(1){height: 840px; box-shadow: 10px 0px 30px #000;}
+    .main #news ul li.third a:nth-child(2){height: 269px; margin-top: 15px;}
+    .main #news ul li.third a:nth-child(3){height: 269px;}
+    .main #news ul li.third a:nth-child(4){height: 269px;}
+    
+    /*.main #news #bxslider*/
+    .main #news .bx-wrapper{width: 78.262%; margin-left: 10.187%;}
+    .bx-wrapper .bx-pager{padding-top: 40px;}
+}

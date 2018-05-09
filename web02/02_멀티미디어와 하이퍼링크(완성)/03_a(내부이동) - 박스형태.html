@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			*{padding: 0; margin: 0;}
+			body{height: 4000px;}
+			ul{list-style: none;}
+			a{color: #000; text-decoration: none;}
+			
+			#wrap{width: 500px; margin: 0 auto;}
+			h1{text-align: center;}
+			#nav li{width: 100px; float: left; text-align: center;}
+			#nav ul{width: 400px; margin: 0 auto;}
+			#nav ul:after{content: ""; display: block; clear: both;}
+			
+			#container section{width: 500px; height: 500px; text-align: center; line-height: 500px;}
+			#box1{background: #7eac7e;}
+			#box2{background: #9fc89e;}
+			#box3{background: #d7d477;}
+			#box4{background: #aee5be;}
+		</style>
+	</head>
+	<body>
+		<div id="box">
+			<p>text sample</p>
+			<span>text sample</span>
+			<div class="centerBox"></div>
+		</div>
+		<style>
+			p{text-align: center;}
+			#box{text-align: center;}
+			.centerBox{width: 500px; height: 100px; background: skyblue; margin: 0 auto;}
+		</style>
+	
+		<div id="wrap">
+			<h1>앵커 태그 내부 이동</h1>
+			<nav id="nav">
+				<ul>
+					<li><a href="#box1">box1</a></li>
+					<li><a href="#box2">box2</a></li>
+					<li><a href="#box3">box3</a></li>
+					<li><a href="#box4">box4</a></li>
+				</ul>
+			</nav>
+
+			<div id="container">
+				<section id="box1"><a href="#">box1</a></section>
+				<section id="box2"><a href="#">box2</a></section>
+				<section id="box3"><a href="#">box3</a></section>
+				<section id="box4"><a href="#">box4</a></section>
+			</div>
+		</div>
+	</body>
+</html>

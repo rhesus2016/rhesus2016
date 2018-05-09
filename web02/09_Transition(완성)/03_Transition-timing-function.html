@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <title>Transition Timing Function</title>
+    <style>
+      *{padding: 0; margin: 0;}
+      #wrap{width: 620px; margin: 0 auto;}
+      #wrap div{width: 100px; height: 50px; margin-top: 20px; margin-left: 20px; background: #006aff; color: #fff; border-radius: 5px; text-align: center; line-height: 50px; font-weight: bold; float: left; transition-duration: 2s;}
+      #wrap:hover div{height: 400px;}
+      #wrap div p{height: 50px; line-height: 50px;}
+      #wrap div:last-child{margin-right: 20px;}
+      #wrap .ease{transition-timing-function: ease;}
+      /*ease: 처음에는 천천히 시작해서 점점 빨라지다가 마지막에는 천천히 끝냄. *기본값*/
+      #wrap .linear{transition-timing-function: linear;}
+      /*linear: 시작부터 끝까지 같은 속도. ★가장 많이 사용하는 속도*/
+      #wrap .ease-in{transition-timing-function: ease-in;}
+      /*ease-in: 시작을 느리게*/
+      #wrap .ease-out{transition-timing-function: ease-out;}
+      /*ease-out: 느리게 끝냄.*/
+      #wrap .ease-in-out{transition-timing-function: ease-in-out;}
+      /*ease-in-out: 느리게 시작하고 느리게 끝냄.*/
+    </style>
+  </head>
+  <body>
+    <div id="wrap">
+      <div class="ease"><p>ease</p></div>
+      <div class="linear"><p>linear</p></div>
+      <div class="ease-in"><p>ease-in</p></div>
+      <div class="ease-out"><p>ease-out</p></div>
+      <div class="ease-in-out"><p>ease-in-out</p></div>
+    </div>
+  </body>
+</html>

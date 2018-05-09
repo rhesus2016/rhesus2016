@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lnag="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>field</title>
+        <style>
+            .gray{color: #ccc;}
+            .sec02{display: block; width: 300px; margin-bottom: 10px;}
+            #textarea{height: 100px;}
+            #sec03 span{position: relative; display: block;}
+            #sec03 label{position: absolute; font-size: 0.9em; margin-top: 2px; margin-left: 4px; color: #ccc;}
+            #sec03 div, #sec03 button{float: left;}
+            #sec03 button{height: 44px; margin-left: 2px; margin-top: 2px;}
+        </style>
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/field.js"></script>
+    </head>
+    <body>
+        <h1>가이드 텍스트</h1>
+        <section id="sec01">
+            <h2>if문</h2>
+            <input type="text" placeholder="만 나이를 입력해 주세요">
+            <button type="button">성인인증</button>
+        </section>
+        <section id="sec02">
+            <h2>value 속성 활용</h2>
+            <form type="method" action="#">
+                <label for="text">이름</label>
+                <input type="text" id="text" class="sec02" value="이름을 입력해 주세요.">
+                <label for="textarea">메모</label>
+                <textarea id="textarea" class="sec02">하고싶은 말을 남겨주세요.</textarea>
+                <button type="submit">전송</button>
+            </form>
+        </section>
+        <section id="sec03">
+            <h2>label 요소 활용</h2>
+            <form type="method" action="#">
+                <div>
+                    <span>
+                        <label for="id">아이디</label>
+                        <input type="text" id="id">
+                    </span>
+                    <span>
+                        <label for="pw">비밀번호</label>
+                        <input type="password" id="pw">
+                    </span>
+                </div>
+                <button type="submit">로그인</button>
+            </form>
+        </section>
+    </body>
+</html>

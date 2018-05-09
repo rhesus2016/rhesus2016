@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			/*
+			하위 선택자: 요소1에 선택한 태그 하위에 있는 모든 태그를 선택하는 태그.
+			작성방법: 요소1 요소2{속성: 속성값;}
+			*/
+			h1{background-color: yellow;}
+			/*#box h1{color: red;}*/
+			#box .text{color: red;}
+			
+			/*#wrap div p{color: red; font-weight: bold;}*/
+			#wrap p{color: red; font-weight: bold;}
+		</style>
+	</head>
+	<body>
+		
+		<div id="wrap">
+			<div>
+				<p>web01</p>
+			</div>
+		</div>
+	
+		<h1>SBS아카데미컴퓨터아트학원</h1>
+		<h2>SBS아카데미컴퓨터아트학원</h2>
+		<h3 class="text">SBS아카데미컴퓨터아트학원</h3>
+		<h4>SBS아카데미컴퓨터아트학원</h4>
+		<h5>SBS아카데미컴퓨터아트학원</h5>
+		<h6>SBS아카데미컴퓨터아트학원</h6>
+		<p>SBS아카데미컴퓨터아트학원</p>
+		<span>SBS아카데미컴퓨터아트학원</span>
+		<div id="box">
+			<h1>SBS아카데미컴퓨터아트학원</h1>
+			<h2>SBS아카데미컴퓨터아트학원</h2>
+			<h3 class="text">SBS아카데미컴퓨터아트학원</h3>
+			<h4>SBS아카데미컴퓨터아트학원</h4>
+			<h5>SBS아카데미컴퓨터아트학원</h5>
+			<h6>SBS아카데미컴퓨터아트학원</h6>
+			<p>SBS아카데미컴퓨터아트학원</p>
+			<span>SBS아카데미컴퓨터아트학원</span>
+			<div>
+				<h1>SBS아카데미컴퓨터아트학원</h1>
+				<h2>SBS아카데미컴퓨터아트학원</h2>
+				<h3>SBS아카데미컴퓨터아트학원</h3>
+				<h4>SBS아카데미컴퓨터아트학원</h4>
+				<h5>SBS아카데미컴퓨터아트학원</h5>
+				<h6>SBS아카데미컴퓨터아트학원</h6>
+				<p>SBS아카데미컴퓨터아트학원</p>
+				<span>SBS아카데미컴퓨터아트학원</span>
+			</div>
+		</div>
+	</body>
+</html>

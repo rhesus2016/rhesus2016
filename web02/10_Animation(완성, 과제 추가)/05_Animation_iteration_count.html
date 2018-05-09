@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <title>Animation_iteration_count</title>
+    <style>
+      #box1{width: 1200px; height: 675px; background: url(images/singer1.jpg) no-repeat; background-size: 100% auto;}
+      #box1:hover{
+        animation-name: singer;
+        animation-duration: 2s;
+        animation-direction: alternate;
+        animation-iteration-count: 3;
+      }
+      @keyframes singer{
+        from{}
+        to{background: url(images/singer2.jpg) no-repeat; background-size: 100% auto;}
+      }
+      
+      #box2{
+        width: 600px;
+        height: 600px;
+        background: url(images/a.jpg) no-repeat;
+        
+        animation-duration: 3s;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+      }
+      #box2:hover{animation-name: joonhee;}
+      @keyframes joonhee{
+        0%{}
+        25%{background: url(images/b.jpg) no-repeat;}
+        50%{background: url(images/c.jpg) no-repeat;}
+        75%{background: url(images/d.jpg) no-repeat;}
+        100%{background: url(images/e.jpg) no-repeat;}
+      }
+    </style>
+  </head>
+  <body>
+    <div id="box1"></div>
+    <div id="box2"></div>
+  </body>
+</html>

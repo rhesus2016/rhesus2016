@@ -1,0 +1,66 @@
+[포폴10/가상리뉴얼] 김태진
+
+1. 가상리뉴얼 선정 사이트
+  - 야마하 피아노
+  - https://kr.yamaha.com/ko/products/musical_instruments/pianos/index.html
+
+
+
+2. 사이트맵
+    * 대메뉴를 클릭하면 아래에 소메뉴가 나오는 것이 아니라, 해당되는 소메뉴들이 있는 메인컨텐츠 위치로 이동시켜주는 방법을 사용
+      그리고 소메뉴를 클릭하면 각 소메뉴에 해당되는 사이트로 이동
+
+  - 어쿠스틱 피아노 
+       [프리미엄 피아노 / 그랜드 피아노 / 업라이트 피아노]
+
+  - 하이브리드 피아노
+       [Disklavier / 사이런트 피아노 / AvantGrand]
+
+  - 디지털 피아노
+       [Clavinova / ARIUS / P시리즈 / MODUS / 휴대용 그랜드 / 신디사이저]
+
+  - 앱 & 액세서리
+       [애플리케이션 / 액세서리 & 부속품]  
+
+
+
+3. 벤치마킹
+
+phoenix 
+- https://phoenix.cool/projects
+  * 웹 페이지 들어갈 때 나오는 동작
+    + start.jpg를 어둡게 한 뒤, 글자의 색상은 흰색 계열
+    [YAMAHA] / [when i play yamaha piano, all my idea become reality]
+
+
+KONIKU
+- http://koniku.com/
+  * 메인 페이지에 글자 레이아웃, 등장 순서와 가로로 선을 긋는 동작
+    + main.jpg 에 어두운 효과를 주고 글자는 흰색 계열
+    + This is yours ㄱ
+      WORLD CLASS PIANO YAMAHA
+      Artistry, craftsmanship And meet the end of the intersection of technology
+   
+
+Hybrid Studio(=HS) / OPERATION SAMUS RETURNS(=OSR)
+- http://www.hybridstudio.com
+- https://operationsamusreturns.com/en-gb
+  * PC 버전 메뉴 [HS]
+     - 해당 위치로 이동할 때마다 어느 대메뉴의 위치인지 상단 메뉴에 표시
+  * 휴대폰 및 태블릿 버전 메뉴 [OSR]
+     - 열렸던 메뉴가 닫히고 해당 위치로 이동
+
+
+SDVagencement(=SDV) / great
+- http://www.sdvagencement.fr
+- http://www.thegreat.agency/
+  * 메인 컨텐츠(소메뉴) - 위에서 아래로 움직이는 슬라이드 [SDV]
+                        - 뒤에 배경 나타나는 방법 [SDV]
+                        - 레이아웃은 두 번째 슬라이드를 참고, 각 소메뉴는 슬라이드 이동을 통해 방문자에게 소개될 예정[SDV]
+                        - 4개의 슬라이드에서 번갈아가며 글과 내부 슬라이드의 위치가 바뀔 예정[SDV]
+                        - 메인 배경이미지 내부 텍스트 동작 및 마우스 이동 시 배경이미지 이동 효과 [great]
+
+
+4. 동작구현 가능여부 질문 사이트
+lashopstudio
+- http://lashopstudios.com/

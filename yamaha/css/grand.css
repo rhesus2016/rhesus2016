@@ -1,0 +1,604 @@
+@charset "utf-8";
+
+/*.main #gdTop*/
+.main #gdTop{position: relative; width: 100%; padding-top: 240px; padding-bottom: 240px; background: url(../img/yamaha_sub01m_grand.jpg) no-repeat center; background-size: cover;}
+.main #gdTop h2{position: absolute; top: 70px; left: 8.3125%; transition: .3s;}
+.main #gdTop h2 span:nth-child(1){display: block; font-size: 1.5rem; margin-bottom: 3px;}
+.main #gdTop h2 span:nth-child(2){display: block; width: 147px; height: 1px; background: #f5f5f5; margin-left: 10px; margin-bottom: 6px; opacity: 0;}
+.main #gdTop h2 span:nth-child(3){display: block; font-size: 3.5rem; margin-left: 45px;}
+.main #gdTop p:nth-child(2){position: absolute; top: 230px; left: 8.0125%; font-size: 2rem; width: 235px; line-height: 1.343; transition: .3s;}
+.main #gdTop p:nth-child(3){position: absolute; top: 310px; left: 8.0125%; font-size: 3.7rem; text-transform: uppercase; transition: .3s;}
+
+/*.main #gdTop*/
+.main #gdTop h2 span:nth-child(1){animation-delay: .1s; animation-duration: .9s;}
+.main #gdTop h2 span:nth-child(2){animation-delay: .4s; animation-duration: 1.5s;}
+.main #gdTop h2 span:nth-child(3){animation-delay: 2s; animation-duration: 1.6s;}
+.main #gdTop p:nth-child(2){animation-delay: 2.7s; animation-duration: 2s;}
+.main #gdTop p:nth-child(3){animation-delay: 3.2s; animation-duration: 2s;}
+
+/*.main #craft*/
+.main #craft{width: 100%; padding-bottom: 500px; padding-top: 40px; position: relative; background: url(../img/yamaha_sub01m_craft_bg.jpg) no-repeat center; background-size: cover;}
+.main #craft h2{font-size: 2.8rem; width: 250px; margin: 0 auto ; z-index: 5; transition: .3s; position: relative; }
+.main #craft h2 span:nth-child(1){display: block; width: 175px; margin-bottom: 5px;}
+.main #craft h2 span:nth-child(2){display: block; width: 205px; margin-left: 45px; margin-bottom: 25px;}
+.main #craft h2 span:nth-child(3){display: block; width: 30px; height: 2px; background: #f5f5f5; margin: 0 auto;}
+.main #craft p.txt{position: absolute; top: 170px; font-size: 1.3rem; width: 100%; text-align: center; line-height: 1.538; z-index: 5; transition: .3s;}
+.main #craft p.txt span{display: block; width: 200px; margin: 0 auto;}
+.main #craft div.tBox{font-size: 1.3rem; text-align: center; background: rgba(0,0,0,.85); padding: 20px 0; position: absolute; top: 300px; width: 100%; border-top: 1px solid #5d5d5d; border-bottom: 1px solid #5d5d5d; z-index: 5; transition: .3s;}
+.main #craft div.tBox p{width: 73.437%; margin: 0 auto; margin-bottom: 30px;}
+.main #craft div.tBox p:nth-child(3){margin-bottom: 0;}
+.main #craft div.bBox{width: 90.187%; height: 504px; position: absolute; top: 97px; right: 0; text-indent: -9999px; background: url(../img/yamaha_sub01m_craft.jpg) no-repeat right; background-size: cover; border: 1px solid #3b3b3b; border-right: none; transition: .3s;}
+.main #craft div.sBox{width: 72.5%; height: 322px; position: absolute; top: 238px; left: 0; text-indent: -9999px; background: url(../img/yamaha_sub01m_craft02.jpg) no-repeat center; background-size: cover; border: 1px solid #2b2b2b; border-left: none; transition: .3s;}
+
+/*.main #component*/
+.main #component{padding-top: 582px; padding-bottom: 582px; position: relative; background: url(../img/yamaha_sub01m_component_bg.jpg) no-repeat center; background-size: cover;}
+.main #component h2{position: absolute; top: 0; left: -9999px; display: none;}
+.main #component .bxslider{width: 100%; position: absolute; top: 50px; transition: .3s;}
+.main #component .bxslider li{width: 87.5%; height: 175px; margin: 0 auto; margin-bottom: 50px; position: relative; border: 1px solid #2d2d2d;}
+.main #component .bxslider li span{font-size: 2.5rem; position: absolute; top: -20px; right: 10px;}
+.main #component .bxslider p{font-size: 2rem; position: absolute; bottom: 5px; left: 5px; width: 230px; transition: .3s;}
+.main #component .bxslider li.frame{background: url(../img/yamaha_sub01m_frame.jpg) no-repeat center; background-size: cover;}
+.main #component .bxslider li.hammer{background: url(../img/yamaha_sub01m_hammer.jpg) no-repeat top; background-size: cover;}
+.main #component .bxslider li.hammer p{width: 170px;}
+.main #component .bxslider li.string{background: url(../img/yamaha_sub01m_string.jpg) no-repeat center; background-size: cover;}
+.main #component .bxslider li.keyboard{background: url(../img/yamaha_sub01m_keyboard.jpg) no-repeat center; background-size: cover;}
+.main #component .bxslider li.keyboard span{top: -17px}
+.main #component .bxslider li.keyboard p{width: 180px;}
+.main #component .bxslider li.pedal{background: url(../img/yamaha_sub01m_pedal.jpg) no-repeat center; background-size: cover; margin-bottom: 0;}
+.main #component #component-pager{display: none; transition: .3s;}
+
+/*.main #product*/
+.main #product{padding-top: 732px; padding-bottom: 732px; position: relative; background: url(../img/yamaha_sub01m_product_bg.jpg) no-repeat center; background-size: cover;}
+.main #product h2{width: 100%; position: absolute; top: 30px; font-size: 2.5rem; text-align: center; text-transform: uppercase; transition: .3s;}
+.main #product h2 span:last-child{display: block; width: 25px; height: 2px; background: #f5f5f5; margin: 14px auto 0;}
+.main #product .bxslider{width: 100%; position: absolute; top: 110px; transition: .3s;}
+.main #product .bxslider li{width: 100%; height: 185px; margin-bottom: 40px; border: 1px solid #4d4d4d; border-right: none; border-left: none; position: relative;}
+.main #product .bxslider li a{display: block; width: 100%; height: 185px; border-bottom: 1px solid #4d4d4d}
+.main #product .bxslider li.gb1k a{background: url(../img/yamaha_sub01m_gb1k.jpg) no-repeat center; background-size: cover;}
+.main #product .bxslider li.gc1 a{background: url(../img/yamaha_sub01m_gc1.jpg)no-repeat bottom; background-size: cover;}
+.main #product .bxslider li.gc2 a{background: url(../img/yamaha_sub01m_gc2.jpg)no-repeat center; background-size: cover;}
+.main #product .bxslider li.c1x a{background: url(../img/yamaha_sub01m_c1x.jpg)no-repeat center; background-size: cover;}
+.main #product .bxslider li.c3x a{background: url(../img/yamaha_sub01m_c3x.jpg)no-repeat bottom; background-size: cover;}
+.main #product .bxslider li.c7x a{background: url(../img/yamaha_sub01m_c7x.jpg)no-repeat center; background-size: cover;}
+.main #product .bxslider li span{font-size: 2.7rem; position: absolute; bottom: 7px; right: 15px;}
+.main #product #product-pager{display: none;}
+
+/*gta 480px*/
+@media screen and (min-width: 480px){
+    
+    /*.main #gdTop*/
+    .main #gdTop{padding-top: 360px; padding-bottom: 360px;}
+    .main #gdTop h2{top: 105px;}
+    .main #gdTop h2 span:nth-child(1){font-size: 2.25rem; margin-bottom: 5px;}
+    .main #gdTop h2 span:nth-child(2){width: 221px; height: 2px; margin-left: 15px; margin-bottom: 9px;}
+    .main #gdTop h2 span:nth-child(3){font-size: 5.25rem; margin-left: 68px;}
+    .main #gdTop p:nth-child(2){top: 345px; font-size: 3rem; width: 352.5px;}
+    .main #gdTop p:nth-child(3){top: 465px; font-size: 5.55rem;}
+
+    /*.main #craft*/
+    .main #craft{padding-top: 60px; padding-bottom: 760px;}
+    .main #craft h2{width: 375px; font-size: 4.2rem;}
+    .main #craft h2 span:nth-child(1){width: 263px; margin-bottom: 7.5px;}
+    .main #craft h2 span:nth-child(2){width: 308px; margin-left: 68px; margin-bottom: 38px;}
+    .main #craft h2 span:nth-child(3){width: 45px; height: 2px;}
+    .main #craft p.txt{top: 255px; font-size: 1.95rem;}
+    .main #craft p.txt span{width: 300px;}
+    .main #craft div.tBox{font-size: 1.95rem; padding: 30px 0; top: 450px;}
+    .main #craft div.tBox p{margin-bottom: 45px;}
+    .main #craft div.bBox{height: 756px; top: 146px;}
+    .main #craft div.sBox{height: 483px; top: 357px;}
+
+    /*.main #component*/
+    .main #component{padding-top: 858px; padding-bottom: 858px;}
+    .main #component .bxslider{top: 75px;}
+    .main #component .bxslider li{height: 253px; margin-bottom: 75px;}
+    .main #component .bxslider li span{font-size: 3.75rem; top: -30px; right: 15px;}
+    .main #component .bxslider p{font-size: 3rem; bottom: 8px; left: 8px; width: 310px;}
+    .main #component .bxslider li.hammer p{width: 255px;}
+    .main #component .bxslider li.keyboard span{top: -26px}
+    .main #component .bxslider li.keyboard p{width: 270px;}
+
+    /*.main #product*/
+    .main #product{padding-top: 1099px; padding-bottom: 1099px;}
+    .main #product h2{top: 45px; font-size: 3.75rem;}
+    .main #product h2 span:last-child{width: 38px; height: 2px; margin: 21px auto 0;}
+    .main #product .bxslider{top: 165px;}
+    .main #product .bxslider li{height: 277px; margin-bottom: 60px;}
+    .main #product .bxslider li a{height: 278px;}
+    .main #product .bxslider li span{font-size: 4.05rem; bottom: 11px; right: 23px;}
+}
+
+/*gta 640px*/
+@media screen and (min-width: 640px){
+    
+    /*.main #gdTop*/
+    .main #gdTop{padding-top: 480px; padding-bottom: 480px;}
+    .main #gdTop h2{top: 140px;}
+    .main #gdTop h2 span:nth-child(1){font-size: 3rem; margin-bottom: 6px;}
+    .main #gdTop h2 span:nth-child(2){width: 294px; height: 2px; margin-left: 20px; margin-bottom: 12px;}
+    .main #gdTop h2 span:nth-child(3){font-size: 7rem; margin-left: 90px;}
+    .main #gdTop p:nth-child(2){top: 460px; font-size: 4rem; width: 470px;}
+    .main #gdTop p:nth-child(3){top: 620px; font-size: 7.4rem;}
+
+    /*.main #craft*/
+    .main #craft{padding-top: 80px; padding-bottom: 1000px;}
+    .main #craft h2{width: 500px; font-size: 5.6rem;}
+    .main #craft h2 span:nth-child(1){width: 350px; margin-bottom: 10px;}
+    .main #craft h2 span:nth-child(2){width: 410px; margin-left: 90px; margin-bottom: 50px;}
+    .main #craft h2 span:nth-child(3){width: 60px; height: 3px;}
+    .main #craft p.txt{top: 340px; font-size: 2.6rem;}
+    .main #craft p.txt span{width: 400px;}
+    .main #craft div.tBox{font-size: 2.6rem; padding: 40px 0; top: 600px;}
+    .main #craft div.tBox p{margin-bottom: 60px;}
+    .main #craft div.bBox{height: 1008px; top: 194px;}
+    .main #craft div.sBox{height: 644px; top: 476px;}
+
+    /*.main #component*/
+    .main #component{padding-top: 1165px; padding-bottom: 1165px;}
+    .main #component .bxslider{top: 100px;}
+    .main #component .bxslider li{height: 350px; margin-bottom: 100px;}
+    .main #component .bxslider li span{font-size: 5rem; top: -40px; right: 20px;}
+    .main #component .bxslider p{font-size: 4rem; bottom: 10px; left: 10px; width: 460px;}
+    .main #component .bxslider li.hammer p{width: 340px;}
+    .main #component .bxslider li.keyboard span{top: -34px}
+    .main #component .bxslider li.keyboard p{width: 360px;}
+
+    /*.main #product*/
+    .main #product{padding-top: 1465px; padding-bottom: 1465px;}
+    .main #product h2{top: 60px; font-size: 5rem;}
+    .main #product h2 span:last-child{width: 50px; height: 3px;margin: 28px auto 0;}
+    .main #product .bxslider{top: 220px;}
+    .main #product .bxslider li{height: 370px; margin-bottom: 80px;}
+    .main #product .bxslider li a{height: 370px;}
+    .main #product .bxslider li span{font-size: 5.4rem; bottom: 14px; right: 30px;}
+}
+
+/*gta 1024px*/
+@media screen and (min-width: 1024px){
+    /*body*/
+    body{overflow: hidden;}
+    
+    /*.main #gdTop*/
+    .main #gdTop{height: 768px; padding: 0;}
+    .main #gdTop h2{top: 150px; left: 10.3125%;}
+    .main #gdTop h2 span:nth-child(1){font-size: 2.2rem; margin-bottom: 6px;}
+    .main #gdTop h2 span:nth-child(2){width: 400px; height: 2px; margin-left: 13px; margin-bottom: 10px;}
+    .main #gdTop h2 span:nth-child(3){font-size: 8.4rem; margin-left: 180px;}
+    .main #gdTop p:nth-child(2){top: 370px; left: 10.0125%; font-size: 4rem; width: 500px;}
+    .main #gdTop p:nth-child(3){top: 520px; left: 10.0125%; font-size: 7rem;}
+
+    /*.main #craft*/
+    .main #craft{height: 768px; padding: 0;}
+    .main #craft h2{position: absolute; top: 170px; left: 44.5%; font-size: 5rem;}
+    .main #craft h2 span:nth-child(1){width: 315px; margin-bottom: 6px; opacity: 0;}
+    .main #craft h2 span:nth-child(2){width: 367px; margin-left: 85px; margin-bottom: 26px; opacity: 0;}
+    .main #craft h2 span:nth-child(3){width: 57px; height: 3px; margin: 0; margin-left: 100px; opacity: 0;}
+    .main #craft p.txt{top: 345px; left: 54.5%; width: 362px; font-size: 1.8rem; text-align: left;}
+    .main #craft p.txt span{width: 362px; margin: 0;}
+    .main #craft div.tBox{font-size: 1.7rem; padding: 15px; top: 500px; right: 5%; width: 550px; text-align: left; background: rgba(0,0,0,.6);}
+    .main #craft div.tBox:hover, .main #craft div.tBox:focus{background: rgba(0,0,0,.85); border-top: 1px solid #eb9f34; border-bottom: 1px solid #eb9f34; transition: .7s;}
+    .main #craft div.tBox p{width: 100%; margin: 0; margin-bottom: 35px;}
+    .main #craft div.tBox p:nth-child(3){margin-bottom: 0;}
+    .main #craft div.bBox{width: 60.187%; height: 530px; top: 130px; left: 5%; border: 1px solid #2b2b2b;}
+    .main #craft div.sBox{width: 40.5%; height: 262px; top: 460px; left: 34%; border: 1px solid #2b2b2b;}
+    
+    /*.main #craft animate*/
+    .main #craft h2 span:nth-child(1){animation-duration: 1.2s; animation-delay: .3s;}
+    .main #craft h2 span:nth-child(2){animation-duration: 1.2s; animation-delay: 1.1s;}
+    .main #craft h2 span:nth-child(3){animation-duration: 1.2s; animation-delay: .3s;}
+    .main #craft p.txt{animation-duration: 1.8s; animation-delay: 2.5s; opacity: 0;}
+    .main #craft div.tBox{animation-duration: 1.8s; animation-delay: 3.5s; opacity: 0;}
+    .main #craft div.bBox{animation-duration: 2s; animation-delay: 2.5s; opacity: 0;}
+    .main #craft div.sBox{animation-duration: 2s; animation-delay: 2.5s; opacity: 0;}
+
+    /*.main #component*/
+    .main #component{height: 768px; padding: 0;}
+    .main #component .bxslider{width: 79%; height: 554px; position: absolute; top: 120px; right: 4.482%; z-index: 5;}
+    .main #component .bxslider li{height: 100%; margin: 0; position: absolute; top: 0; right: 0;}
+    .main #component .bxslider li.frame{background: url(../img/yamaha_sub01m_frame.jpg) no-repeat center; background-size: cover;}
+    .main #component .bxslider li.hammer{background: url(../img/yamaha_sub01m_hammer.jpg) no-repeat center; background-size: cover;}
+    .main #component .bxslider li.string{background: url(../img/yamaha_sub01m_string.jpg) no-repeat center; background-size: cover;}
+    .main #component .bxslider li.keyboard{background: url(../img/yamaha_sub01m_keyboard.jpg) no-repeat center; background-size: cover;}
+    .main #component .bxslider li.pedal{background: url(../img/yamaha_sub01m_pedal.jpg) no-repeat center; background-size: cover;}
+    .main #component .bxslider li span{display: none;}
+    .main #component .bxslider p{font-size: 6rem; position: absolute; bottom: 10px; left: 1.953%; width: 440px; line-height: 1.2;}
+    .main #component .bxslider li.frame p{width: 468px;}
+    .main #component .bxslider li.hammer p{width: 487px;}
+    .main #component .bxslider li.keyboard p{width: 514px;}
+    .main #component .shadowBox{width: 79%; height: 554px; position: absolute; top: 160px; right: 11%; background: #000; margin: 0; border: 1px solid #4d4d4d; transition: .3s; opacity: 0;}
+    .main #component #component-pager{display: block; width: 140px; position: absolute; top: 180px; left: 0.5%; font-size: 3rem; text-align: right; transition: .3s; opacity: 0;}
+    .main #component #component-pager a{display: block; margin-bottom: 33px; transition: .3s;}
+    .main #component #component-pager a:last-child{margin-bottom: 0;}
+    .main #component #component-pager a span{display: block; background: #eb9f34; width: 0; height: 2px; position: absolute; right: 0; margin-top: 2px; transition: .3s;}
+    #component #component-pager a:hover, #component #component-pager  a:focus{color: #eb9f34;}
+    #component #component-pager a:hover span, #component #component-pager  a:focus span{width: 125px;}
+    
+    /*.main #component animate*/
+    .main #component #component-pager{animation-delay: .5s; animation-duration: 1.5s;}
+    
+    /*.main #component #comSlider*/
+    .main #component .bx-wrapper{background: none; border: none; margin-bottom: 0; box-shadow: none; width: 79%; height: 554px; position: absolute; top: 120px; right: 4.482%; z-index: 5;}
+    .main #component .bx-wrapper .bx-controls-direction a{display: none;}
+    .main #component .bx-wrapper #comSlider{top: 0; right: 0;}
+
+    /*.main #product*/
+    .main #product{height: 768px; padding: 0;}
+    .main #product h2{font-size: 10rem; width: 430px; height: 100px; text-transform: uppercase; top: 605px; left: 5.859%; z-index: 6;}
+    .main #product h2 span:last-child{display: none;}
+    .main #product .bxslider{width: 79%; height: 554px; top: 120px; left: 4.482%; z-index: 5;}
+    .main #product .bxslider li{height: 100%; margin: 0; position: absolute; border: none;}
+    .main #product .bxslider li a{width: 100%; height: 100%; border: 1px solid #2d2d2d}
+    .main #product .bxslider li span{display: none;}
+    .main #product .bxslider li.gb1k a{background: url(../img/yamaha_sub01m_gb1k.jpg) no-repeat center; background-size: cover;}
+    .main #product .bxslider li.gc1 a{background: url(../img/yamaha_sub01m_gc1.jpg) no-repeat bottom; background-size: cover;}
+    .main #product .bxslider li.gc2 a{background: url(../img/yamaha_sub01m_gc2.jpg) no-repeat center; background-size: cover;}
+    .main #product .bxslider li.c1x a{background: url(../img/yamaha_sub01m_c1x.jpg) no-repeat 90%; background-size: cover;}
+    .main #product .bxslider li.c3x a{background: url(../img/yamaha_sub01m_c3x.jpg) no-repeat bottom; background-size: cover;}
+    .main #product .bxslider li.c7x a{background: url(../img/yamaha_sub01m_c7x.jpg) no-repeat center; background-size: cover; margin-bottom: 0;}
+    .main #product .shadowBox{width: 79%; height: 554px; position: absolute; top: 160px; left: 11%; background: #000; margin: 0; border: 1px solid #4d4d4d; transition: .3s; opacity: 0;}
+    .main #product #product-pager{display: block; width: 120px; position: absolute; top: 180px; right: 1.5%; font-size: 3rem; text-align: left; transition: .3s; opacity: 0;}
+    .main #product #product-pager a{display: block; margin-bottom: 43px; transition: .3s;}
+    .main #product #product-pager a:last-child{margin-bottom: 0;}
+    .main #product #product-pager a span{display: block; background: #eb9f34; width: 0; height: 2px; position: absolute; left: 0; margin-top: 2px; transition: .3s;}
+    .main #product #product-pager a:hover, #product #product-pager  a:focus{color: #eb9f34;}
+    .main #product #product-pager a:hover span, #product #product-pager  a:focus span{width: 90px;}
+    
+    /*.main #product animate*/
+    .main #product #product-pager{animation-delay: .5s; animation-duration: 1.5s;}
+    
+    /*.main #product #proSlider*/
+    .main #product .bx-wrapper{background: none; border: none; margin-bottom: 0; box-shadow: none; width: 79%; height: 554px; position: absolute; top: 120px; left: 4.482%; z-index: 5;}
+    .main #product .bx-wrapper .bx-controls-direction a{display: none;}
+    .main #product .bx-wrapper #proSlider{top: 0; left: 0;}
+}
+
+/*gta width > 1023px && height > 850px */
+@media screen and (min-width: 1024px) and (min-height: 850px){
+    /*.main gdTop*/
+    .main #gdTop h2{top: 210px;}
+    .main #gdTop p:nth-child(2){top: 460px;}
+    .main #gdTop p:nth-child(3){top: 610px;}
+    
+    /*.main #craft*/
+    .main #craft h2{top: 210px;}
+    .main #craft p.txt{top: 385px;}
+    .main #craft div.tBox{top: 550px;}
+    .main #craft div.bBox{top: 180px;}
+    .main #craft div.sBox{top: 510px}
+    
+    /*.main #component*/
+    .main #component .bxslider{top: 180px;}
+    .main #component .bx-wrapper{top: 180px;}
+    .main #component .shadowBox{top: 220px;}
+    .main #component #component-pager{top: 240px;}
+    
+    /*.main #product*/
+    .main #product .bxslider{top: 180px;}
+    .main #product h2{top: 665px;}
+    .main #product .bx-wrapper{top: 180px;}
+    .main #product .shadowBox{top: 220px;}
+    .main #product #product-pager{top: 240px;}
+}
+
+/*gta width > 1023px && height < 730px */
+@media screen and (min-width: 1024px) and (max-height: 731px){
+    /*.main #gdTop*/
+    .main #gdTop h2{top: 120px;}
+    .main #gdTop p:nth-child(2){top: 340px;}
+    .main #gdTop p:nth-child(3){top: 490px;}
+    
+    /*.main #craft*/
+    .main #craft h2{font-size: 4rem; top: 150px;}
+    .main #craft h2 span:nth-child(3){display: none;}
+    .main #craft p.txt{background: rgba(0,0,0,.5); border-top: 1px solid #5d5d5d; border-bottom: 1px solid #5d5d5d; padding: 15px; width: 392px; top: 265px; left: 53%;}
+    .main #craft div.tBox{top: 420px;}
+    .main #craft div.bBox{height: 420px;}
+    .main #craft div.sBox{height: 230px; top: 350px;}
+    
+    /*.main #component*/
+    .main #component .bxslider{width: 72%; height: 450px; right: 11.482%;}
+    .main #component .bx-wrapper{width: 72%; height: 450px; right: 11.482%;}
+    .main #component .shadowBox{width: 72%; height: 450px; right: 18%;}
+    
+    /*.main #product*/
+    .main #product .bxslider{width: 72%; height: 450px; left: 11.482%;}
+    .main #product #product-pager a{margin-bottom: 35px;}
+    .main #product .bx-wrapper{width: 72%; height: 450px; left: 11.482%;}
+    .main #product .shadowBox{width: 72%; height: 450px; left: 18%;}
+    .main #product h2{font-size: 8rem; top: 520px; left: 12.859%;}
+}
+
+/*gta width > 1023px && height < 620px */
+@media screen and (min-width: 1024px) and (max-height: 621px){
+    /*.main*/
+    .main div.close{display: block; width: 100%; height: 100%; background: url(../img/yamaha_mainp_page01_bg.jpg) no-repeat center; background-size: cover;}
+    .main div.close p{font-size: 5rem; color: #f5f5f5; line-height: 1.4; text-align: center; position: absolute; top: 40%; left: 0; right: 0;}
+    header{display: none;}
+    .main #gdTop{display: none;}
+    .main #craft{display: none;}
+    .main #component{display: none;}
+    .main #product{display: none;}
+    footer{display: none;}
+}
+    
+/*gta 1100px*/
+@media screen and (min-width: 1100px){
+   
+    /*#component*/
+    .main #component #component-pager{left: 1.5%;}
+    
+    /*#product*/
+    .main #product #product-pager{right: 2.5%;}
+}
+    
+/*gta 1200px*/
+@media screen and (min-width: 1200px){
+   
+    /*#component*/
+    .main #component #component-pager{left: 2.5%;}
+    
+    /*#product*/
+    .main #product #product-pager{right: 3.5%;}
+}
+
+/*gta 1280px*/
+@media screen and (min-width: 1280px){
+    /*body*/
+    body{overflow: hidden;}
+    
+    /*.main #gdTop*/
+    .main #gdTop{height: 960px;}
+    .main #gdTop h2{top: 195px; left: 14.7125%;}
+    .main #gdTop h2 span:nth-child(1){font-size: 2.8rem;}
+    .main #gdTop h2 span:nth-child(2){width: 400px; height: 2px; margin-bottom: 8px;}
+    .main #gdTop h2 span:nth-child(3){font-size: 11rem; margin-left: 200px;}
+    .main #gdTop p:nth-child(2){top: 520px; left: 14.7125%; font-size: 4.5rem; width: 600px;}
+    .main #gdTop p:nth-child(3){top: 700px; left: 14.7125%; font-size: 9rem;}
+
+    /*.main #craft*/
+    .main #craft{height: 960px;}
+    .main #craft h2{top: 211px; left: 54%; font-size: 6rem;}
+    .main #craft h2 span:nth-child(1){width: 380px;}
+    .main #craft h2 span:nth-child(2){width: 440px; margin-bottom: 40px;}
+    .main #craft h2 span:nth-child(3){width: 57px; height: 3px;}
+    .main #craft p.txt{top: 435px; left: 59%; width: 452px; font-size: 1.8rem; text-align: left;}
+    .main #craft p.txt span{width: 452px;}
+    .main #craft div.tBox{font-size: 2rem; padding: 17px; top: 565px; left: 65%; width: 400px; text-align: left; background: none;}
+    .main #craft div.tBox p{width: 100%; margin: 0; margin-bottom: 35px;}
+    .main #craft div.bBox{width: 48.187%; height: 670px; top: 160px; left: 9%;}
+    .main #craft div.sBox{width: 27.5%; height: 322px; top: 560px; left: 35.062%;}
+
+    /*.main #component*/
+    .main #component{height: 960px;}
+    .main #component .bxslider{width: 68.906%; height: 654px; top: 170px; left: 22.882%;}
+    .main #component .shadowBox{width: 68.906%; height: 654px; top: 220px; left: 15%;}
+    .main #component #component-pager{width: 190px; top: 250px; left: 5.3%; font-size: 4rem;}
+    .main #component #component-pager a{margin-bottom: 43px;}
+    .main #component #component-pager a span{height: 3px; margin-top: 3px;}
+    #component #component-pager a:hover span, #component #component-pager  a:focus span{width: 165px;}
+    
+    /*.main #component #comSlider*/
+    .main #component .bx-wrapper{background: none; border: none; margin-bottom: 0; box-shadow: none; width: 68.906%; height: 654px; position: absolute; top: 170px; left: 22.882%; z-index: 5;}
+    .main #component .bx-wrapper .bx-controls-direction a{display: none;}
+    .main #component .bx-wrapper #comSlider{top: 0; left: 0;}
+
+    /*.main #product*/
+    .main #product{height: 960px;}
+    .main #product h2{font-size: 11rem; top: 750px; left: 15%;}
+    .main #product .bxslider{width: 68.906%; height: 654px; top: 170px; left: 12.282%;}
+    .main #product .shadowBox{width: 68.906%; height: 654px; top: 220px; left: 20%;}
+    .main #product #product-pager{width: 140px; top: 250px; right: 4.5%; font-size: 4rem; transition: .3s;}
+    .main #product #product-pager a{margin-bottom: 43px; transition: .3s;}
+    .main #product #product-pager a span{height: 3px; margin-top: 3px;}
+    .main #product #product-pager a:hover span, .main #product #product-pager a:focus span{width: 105px;}
+    
+    /*.main #product #proSlider*/
+    .main #product .bx-wrapper{background: none; border: none; margin-bottom: 0; box-shadow: none; width: 68.906%; height: 654px; position: absolute; top: 170px; left: 12.282%; z-index: 5;}
+    .main #product .bx-wrapper .bx-controls-direction a{display: none;}
+    .main #product .bx-wrapper #proSlider{top: 0; left: 0;}
+}
+
+/*gta width > 1279px && height < 901px*/
+@media screen and (min-width: 1280px) and (max-height: 900px){
+    /*.main #gdTop*/
+    .main #gdTop h2{top: 155px;}
+    .main #gdTop p:nth-child(2){top: 440px;}
+    .main #gdTop p:nth-child(3){top: 610px;}
+    
+    /*.main #craft*/
+    .main #craft h2{font-size: 5rem; top: 171px;}
+    .main #craft h2 span:nth-child(3){display: none;}
+    .main #craft p.txt{background: rgba(0,0,0,.5); border-top: 1px solid #5d5d5d; border-bottom: 1px solid #5d5d5d; padding: 17px; width: 482px; top: 315px; left: 59.5%;}
+    .main #craft div.tBox{font-size: 1.7rem; top: 445px;}
+    .main #craft div.bBox{height: 500px;}
+    .main #craft div.sBox{top: 440px; height: 270px;}
+    
+    /*.main #component*/
+    .main #component .bxslider{width: 61.906%; height: 520px; top: 150px;}
+    .main #component .bx-wrapper{width: 61.906%; height: 520px; top: 150px;}
+    .main #component #component-pager{top: 220px; font-size: 3.5rem;}
+    .main #component .shadowBox{width: 61.906%; height: 520px; top: 190px;}
+    
+    /*.main #product*/
+    .main #product .bxslider{width: 61.906%; height: 520px; top: 150px; left: 16%;}
+    .main #product #product-pager{top: 220px; right: 9.5%;}
+    .main #product #product-pager a{font-size: 3rem;}
+    .main #product .bx-wrapper{width: 61.906%; height: 520px; top: 150px; left: 16%;}
+    .main #product .shadowBox{width: 61.906%; height: 520px; top: 190px; left: 21%;}
+    .main #product h2{font-size: 9rem; top: 610px; left: 16%;}
+}
+
+/*gta width > 1279px && height < 731px*/
+@media screen and (min-width: 1280px) and (max-height: 730px){
+    /*.main*/
+    .main div.close{display: block; width: 100%; height: 100%; background: url(../img/yamaha_mainp_page01_bg.jpg) no-repeat center; background-size: cover;}
+    .main div.close p{font-size: 5rem; color: #f5f5f5; line-height: 1.4; text-align: center; position: absolute; top: 40%; left: 0; right: 0;}
+    header{display: none;}
+    .main #gdTop{display: none;}
+    .main #craft{display: none;}
+    .main #component{display: none;}
+    .main #product{display: none;}
+    footer{display: none;}
+}
+
+/*gta 1340px*/
+@media screen and (min-width: 1340px){
+    
+    /*.main #component*/
+    .main #component .bxslider{left: 22.582%;}
+    .main #component .bx-wrapper{left: 22.582%;}
+    .main #component #component-pager{left: 5.7%;}
+
+    /*.main #product*/
+    .main #product .shadowBox{left: 19.6%;}
+    .main #product #product-pager{right: 5.3%;}   
+}
+
+/*gta width > 1340px && height < 901px*/
+@media screen and (min-width: 1340px) and (max-height: 900px){
+    
+    /*.main #product*/
+    .main #product .bxslider{left: 16%;}
+    .main #product #product-pager{right: 9.5%;}
+    .main #product .bx-wrapper{left: 16%;}
+    .main #product .shadowBox{left: 21%;}
+    .main #product h2{left: 16%;}
+}
+    
+/*gta 1400px*/
+@media screen and (min-width: 1400px){
+    
+    /*.main #component*/
+    .main #component .bxslider{left: 22.082%;}
+    .main #component .bx-wrapper{left: 22.082%;}
+    .main #component #component-pager{left: 6.1%;}
+
+    /*.main #product*/
+    .main #product .shadowBox{left: 19%;}
+    .main #product #product-pager{right: 6.2%;}
+}
+
+/*gta width > 1400px && height < 901px*/
+@media screen and (min-width: 1400px) and (max-height: 900px){
+    
+    /*.main #product*/
+    .main #product .bxslider{left: 16%;}
+    .main #product #product-pager{right: 10.2%;}
+    .main #product .bx-wrapper{left: 16%;}
+    .main #product .shadowBox{left: 21%;}
+    .main #product h2{left: 16%;}
+}
+    
+/*gta 1500px*/
+@media screen and (min-width: 1500px){
+    
+    /*.main #component*/
+    .main #component .bxslider{left: 21.482%;}
+    .main #component .bx-wrapper{left: 21.482%;}
+    .main #component #component-pager{left: 6.7%;}
+
+    /*.main #product*/
+    .main #product .shadowBox{left: 18.6%;}
+    .main #product #product-pager{right: 7%;}
+}
+
+/*gta width > 1500px && height < 901px*/
+@media screen and (min-width: 1500px) and (max-height: 900px){
+    
+    /*.main #product*/
+    .main #product .bxslider{left: 16%;}
+    .main #product #product-pager{right: 10.7%;}
+    .main #product .bx-wrapper{left: 16%;}
+    .main #product .shadowBox{left: 21%;}
+    .main #product h2{left: 16%;}
+}
+    
+/*gta 1600px*/
+@media screen and (min-width: 1600px){
+    
+    /*.main #component*/
+    .main #component .bxslider{left: 20.982%;}
+    .main #component .bx-wrapper{left: 20.982%;}
+    .main #component #component-pager{left: 7.3%;}
+
+    /*.main #product*/
+    .main #product .shadowBox{left: 18%;}
+    .main #product #product-pager{right: 7.9%;}
+}
+
+/*gta width > 1600px && height < 901px*/
+@media screen and (min-width: 1600px) and (max-height: 900px){
+    
+    /*.main #product*/
+    .main #product .bxslider{left: 16%;}
+    .main #product #product-pager{right: 11%;}
+    .main #product .bx-wrapper{left: 16%;}
+    .main #product .shadowBox{left: 21%;}
+    .main #product h2{left: 16%;}
+}
+    
+/*gta 1700px*/
+@media screen and (min-width: 1700px){
+    
+    /*.main #component*/
+    .main #component .bxslider{left: 20.682%;}
+    .main #component .bx-wrapper{left: 20.682%;}
+    .main #component #component-pager{left: 7.7%;}
+
+    /*.main #product*/
+    .main #product .shadowBox{left: 17.8%;}
+    .main #product #product-pager{right: 8.5%;}
+}
+
+/*gta width > 1700px && height < 901px*/
+@media screen and (min-width: 1700px) and (max-height: 900px){
+    
+    /*.main #product*/
+    .main #product .bxslider{left: 16%;}
+    .main #product #product-pager{right: 11.4%;}
+    .main #product .bx-wrapper{left: 16%;}
+    .main #product .shadowBox{left: 21%;}
+    .main #product h2{left: 16%;}
+}
+    
+/*gta 1800px*/
+@media screen and (min-width: 1800px){
+    
+    /*.main #component*/
+    .main #component #component-pager{left: 8.2%;}
+
+    /*.main #product*/
+    .main #product .shadowBox{left: 17.6%;}
+    .main #product #product-pager{right: 9%;}
+}
+
+/*gta width > 1800px && height < 901px*/
+@media screen and (min-width: 1800px) and (max-height: 900px){
+    
+    /*.main #product*/
+    .main #product .bxslider{left: 16%;}
+    .main #product #product-pager{right: 11.8%;}
+    .main #product .bx-wrapper{left: 16%;}
+    .main #product .shadowBox{left: 21%;}
+    .main #product h2{left: 16%;}
+}
+    
+/*gta 1900px*/
+@media screen and (min-width: 1900px){
+    
+    /*.main #component*/
+    .main #component .bxslider{left: 20.282%;}
+    .main #component .bx-wrapper{left: 20.282%;}
+    .main #component #component-pager{left: 8.5%;}
+}
+
+/*gta width > 1900px && height < 901px*/
+@media screen and (min-width: 1900px) and (max-height: 900px){
+    
+    /*.main #product*/
+    .main #product .bxslider{left: 16%;}
+    .main #product #product-pager{right: 12%;}
+    .main #product .bx-wrapper{left: 16%;}
+    .main #product .shadowBox{left: 21%;}
+    .main #product h2{left: 16%;}
+}

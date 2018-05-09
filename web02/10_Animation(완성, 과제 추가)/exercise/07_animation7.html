@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <title>animation</title>
+    <style>
+      div{
+        width: 100px;
+        height: 100px;
+        background: pink;
+        /*animation-name: ani7;
+        animation-duration: 2s;*/
+        animation: ani7 2s infinite;
+      }
+      
+      @keyframes ani7{
+        0%{}
+        100%{transform: translateX(300px);}
+      }
+      
+      .linear{animation-timing-function: linear;}
+      .ease{animation-timing-function: ease;}
+      .ease-in{animation-timing-function: ease-in;}
+      .ease-out{animation-timing-function: ease-out;}
+      .ease-in-out{animation-timing-function: ease-in-out;}
+    </style>
+  </head>
+  <body>
+    <div class="linear">linear:일정한 속도</div>
+    <div class="ease">ease:시작과 종료를 부드럽게</div>
+    <div class="ease-in">ease-in:서서히 시작</div>
+    <div class="ease-out">ease-out:서서히 종료</div>
+    <div class="ease-in-out">ease-in-out:서서히 시작하여 서서히 종료</div>
+    
+
+
+
+
+  </body>
+</html>

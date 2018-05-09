@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <title>Transition Property</title>
+    <style>
+      div{
+        width: 200px;
+        height: 200px;
+        background: pink;
+        border: 1px solid red;
+        transition-duration: 1s;
+        transition-property: width, height, background, border, transform;
+        /*all / none / 대상*/
+      }
+      div:hover{width: 400px; height: 400px; background: red; border: 5px solid yellow; transform: translateX(200px);}
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>Property</h1>
+    </div>
+  </body>
+</html>

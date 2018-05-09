@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+/* reset */
+* {margin: 0; padding: 0; box-sizing: border-box;}
+img {border: none;}
+ul {list-style: none;}
+a {text-decoration: none;}
+.blind {position: absolute; text-indent: -99999px; line-height: 0; font-size: 0;}
+.clear:after {content: ""; display: block; clear: both;}
+body {font-family: Arial,sans-serif; line-height: 1;}
+
+/* bg */
+#wrap {background-image: url(../img/clock1.jpg); background-repeat: no-repeat; background-position: center; background-size:cover; position: fixed; width: 100%; height: 100%; padding: 50px 2.5%;}
+#wrap.a {background-image: url(../img/clock1.jpg);}
+#wrap.b {background-image: url(../img/clock2.jpg);}
+#wrap.c {background-image: url(../img/clock3.jpg);}
+#wrap.d {background-image: url(../img/clock4.jpg);}
+#wrap.e {background-image: url(../img/clock5.jpg);}
+#wrap.f {background-image: url(../img/clock6.jpg);}
+
+/* header */
+h1 {margin: 0; width: 10%; float: left; color: #111;}
+.navWrap {float: right; width: 90%; height: 32px; text-align: right; line-height: 32px; }
+.navWrap nav, .navWrap li {display: inline-block;}
+.navWrap li a {padding: 0 10px; color: #111;}
+
+.gnb {margin-right: 2%;}
+.gnb a {text-transform: uppercase; font-size: 0.9em; font-weight: bold;}
+
+
+#wrap.b h1, #wrap.b .navWrap li a, #wrap.c h1, #wrap.c .navWrap li a, #wrap.f h1, #wrap.f .navWrap li a {color: #eee;}
+
+/* main */
+.content p {position: fixed; top: 50%; margin-top: -150px; left: 50%; margin-left: -300px; width: 600px; height: 300px; border-radius:5px; opacity:.9; background:rgba(255,255,255,.3); box-shadow:0 0 5px 1px rgba(0,0,0,.3);  font-size: 4em; line-height: 300px; text-align: center; animation:load 2s;}
+
+/* footer */
+footer {position: absolute; bottom:0; left: 0; width: 100%; padding-bottom: 50px;} 
+footer ul {text-align: center;}
+footer li {display: inline-block; margin: 0.5%; width: 15%;}
+footer li a {display: block; line-height: 30px; background: #fff; color: #111; opacity: .6; transition: all 0.5s ease-in;}
+footer li a:hover, footer li a:focus, footer li a.on {background: #111; color: #ddd; opacity: .9;}
+

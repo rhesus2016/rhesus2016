@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>content</title>
+        <style>
+            div{border: 3px solid silver; margin: 10px 0; padding: 10px; font-size: 32px;}
+            #sec02 button{width: 200px;}
+            #sec02 .div1{border-style: dashed;}
+            #sec02 .div2{background: red; color: white;}
+            #sec02 .div3{background: gold; color: white;}
+            #sec02 .div4{background: orange; color: white;}
+            #sec03 div{border: 3px double olive; width: 300px; height: 300px;}
+            #sec04 input, #sec04 textarea{display: block; width: 300px;}
+            #sec04 input{margin-bottom: 10px;}
+            #sec04 textarea{height: 100px;}
+            #sec04 .art02{margin-top: 10px;}
+            .dashed{border-style: dashed;}
+            .notice{border-color: red;}
+        </style>
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/content.js"></script>
+    </head>
+    <body>
+        <h1>내용이나 속성 변경하기</h1>
+        <section id="sec01">
+            <h2>text() / html()</h2>
+            <button type="button" class="btn1">text(텍스트)</button>
+            <button type="button" class="btn2">html(텍스트)</button>
+            <button type="button" class="btn3">text(요소)</button>
+            <button type="button" class="btn4">html(요소)</button>
+            <div class="div1">text(텍스트)</div>
+            <div class="div2">html(텍스트)</div>
+            <div class="div3">text(요소)</div>
+            <div class="div4">html(요소)</div>
+        </section>
+        <section id="sec02">
+            <h2>append() / appendTo() / prepend() / prependTo()</h2>
+            <button type="button" class="btn1">사과를 바구니에 append</button>
+            <button type="button" class="btn2">바나나를 바구니에 append</button>
+            <button type="button" class="btn3">오렌지를 바구니에 append</button>
+            <button type="button" class="btn4">사과를 바구니에 prepend</button>
+            <button type="button" class="btn5">바나나를 바구니에 prepend</button>
+            <button type="button" class="btn6">오렌지를 바구니에 prepend</button>
+            <article>
+                <button type="button" class="btn7">모든 과일을 바구니에 prepend</button>
+                <button type="button" class="btn8">모든 과일을 바구니에 prepend</button>
+            </article>
+            <div class="div1">바구니</div>
+            <div class="div2">사과</div>
+            <div class="div3">바나나</div>
+            <div class="div4">오렌지</div>
+        </section>
+        <section id="sec03">
+            <h2>attr()</h2>
+            <button type="button" class="btn1">이미지1</button>
+            <button type="button" class="btn2">이미지2</button>
+            <button type="button" class="btn3">이미지3</button>
+            <button type="button" class="btn4">이미지4</button>
+            <button type="button" class="btn5">이미지5</button>
+            <div><img src="img/iphone1.jpg" alt="아이폰1"></div>
+        </section>
+        <section id="sec04">
+            <h2>val()</h2>
+            <input type="text" value="html에서 작성">
+            <textarea>html에서 작성</textarea>
+            <article class="art02">
+                <select class="sel01">
+                    <option>서울</option>
+                    <option>부산</option>
+                    <option>제주</option>
+                    <option>인천</option>
+                    <option>대구</option>
+                    <option>광주</option>
+                </select>
+                <select multiple size="6" class="sel02">
+                    <option>강남</option>
+                    <option>구로</option>
+                    <option>동작</option>
+                    <option>양천</option>
+                    <option>노원</option>
+                    <option>강서</option>
+                </select>
+            </article>
+        </section>
+        <section id="sec05">
+            <h2>addClass() / removeClass() / toggleClass()</h2>
+            <button type="button" class="btn1">dashed 추가</button>
+            <button type="button" class="btn2">dashed 제거</button>
+            <button type="button" class="btn3">notice 추가</button>
+            <button type="button" class="btn4">notice 제거</button>
+            <button type="button" class="btn5">dashed 추가/제거</button>
+            <button type="button" class="btn6">dashed 추가/제거</button>
+            <div>addClass() / removeClass() / toggleClass()</div>
+        </section>
+    </body>
+</html>

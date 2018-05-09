@@ -1,0 +1,24 @@
+@charset "utf-8";
+*{margin: 0; padding: 0;}
+h1, h2{margin: 50px 0; text-align: center;}
+
+/*기본 공식*/
+.basic .wrap{width: 80%; /*960px*/ border: 4px solid red; margin: 0 auto;}
+.basic .container{width: 93.75%; /*900px/960px*/ border: 4px solid black; margin: 0 auto;}
+.basic .container:after{content: ""; display: block; clear: both;}
+.basic .container div{float: left;}
+.basic .container div:first-child{background: red; width: 33.333%; /*300px*/}
+.basic .container div:last-child{background: lightpink; width: 66.666%; /*600px*/}
+
+/*가변 마진*/
+.margin .wrap{width: 960px; border: 4px solid red; margin: 0 auto;}
+.margin .wrap:after{content: ""; display: block; clear: both;}
+.margin .wrap div{width: 300px; float: left;}
+.margin .wrap div:first-child{margin-right: 360px; background: gold;}
+.margin .wrap div:last-child{background: whitesmoke;}
+
+/*!
+link
+h1{가변그리드}
+section>h2{기본 공식}+div.wrap
+https://lipsum.com/*/

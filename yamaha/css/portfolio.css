@@ -1,0 +1,31 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+
+/*reset*/
+*{margin: 0; padding: 0; box-sizing: border-box;}
+a{text-decoration: none; color: #424a51;}
+ul{list-style-type: none;}
+img{border: none;}
+html{font-size: 0.625em;}
+body {font-family: 'Lato', sans-serif; color: #424a51;}
+.blind{position: absolute; top: 0; left: -9999px; display: none;}
+
+/*header*/
+header{width: 100%; position: fixed; top: 0; background: #fff; border-bottom: 2px solid #0431B4;}
+header.on{width: 100%; position: fixed; top: 0; background: #fff; border-bottom: 2px solid #fff;}
+header h1{position: absolute; top: 10px; right: 4.375%; font-size: 16px; text-transform: uppercase; color: #0431B4;}
+header button{text-indent: -9999px; width: 18px; height: 18px; border: none; background: #fff; cursor: pointer; margin-top: 10px; margin-left: 4.375%; margin-bottom: 10px; position: relative;}
+header button span{transition: .4s;}
+header button span:nth-child(1){position: absolute; top: 42%; display: block; width: 100%; height: 2px; background: #0431B4;}
+header button span:nth-child(2){display: block; width: 100%; height: 2px; background: #0431B4; transform: rotate(90deg);}
+header button.on span:nth-child(1){transform: rotate(45deg);}
+header button.on span:nth-child(2){transform: rotate(-45deg);}
+header nav{position: absolute; background: #fff; width: 100%; height: 220px; top: 40px; font-size: 20px; text-transform: uppercase; font-weight: bold; border-bottom: 2px solid #0431B4; display: none;}
+header nav ul{margin-top: 20px;}
+header nav ul li{text-align: center; padding-top: 10px; padding-bottom: 10px;}
+header nav ul li a{color: #0431B4;}
+
+/*.main*/
+.main button.topButton{position: fixed; bottom: 10px; right: 4.375%; width: 40px; height: 30px; color: #fff; font-size:  14px; background: #8198d9; border: none; text-transform: uppercase; font-weight: bold; cursor: pointer;}
+
+/*footer*/

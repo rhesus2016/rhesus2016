@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <title>Original Hover Effects with CSS3</title>
+    <style>
+      *{padding: 0; margin: 0;}
+      body{background: #f4f4f4; color: #333; font-size: 13px; font-family: "Oswald-Medium";}
+      @font-face{
+				font-family: "Oswald-Medium";
+				src: url(font/Oswald-Medium.eot) format("embedded-opentype"),
+				url(font/Oswald-Medium.woff) format("woff");
+			}
+      
+      #wrap{width: 680px; margin: 0 auto;}
+      .view{width: 300px; height: 200px; margin: 10px; border: 10px solid #fff; text-align: center; box-shadow: 1px 1px 2px #e6e6e6; cursor: default; float: left; position: relative; overflow: hidden;}
+      
+      #wrap .view .mask, #wrap .view .contents{position: absolute; top: 0; left: 0;}
+      #wrap .view .mask{width: 361px; height: 361px; background: rgba(119,0,36,0.5); transition: all 0.3s 0.6s ease-in-out;}
+      #wrap .view .mask1{left: auto; right: 0; transform: rotate(56.5deg) translateX(-180px); transform-origin: 100% 0;}
+      #wrap .view .mask2{top: auto; bottom: 0; transform: rotate(56.5deg) translateX(180px); transform-origin: 0 100%;}
+      #wrap .view:hover .mask1{transition-delay: 0.2s; transform: rotate(56.5deg) translateX(1px);}
+      #wrap .view:hover .mask2{transition-delay: 0.2s; transform: rotate(56.5deg) translateX(-1px);}
+      
+      #wrap .view .contents{width: 361px; height: 0; background: rgba(0,0,0,0.9); transform: rotate(-33.5deg) translate(-112px, 166px); transform-origin: 0 100%; transition: all 0.4s 0.3s ease-in-out; opacity: 0.5; overflow: hidden;}
+      #wrap .view:hover .contents{width: 300px; height: 120px;opacity: 0.9; top: 40px; transform: rotate(0) translate(0,0);}
+      
+      #wrap .view h2{background: transparent; margin-top: 5px; border-bottom: 1px solid rgba(255,255,255,0.2); padding: 10px; color: #fff; text-transform: uppercase; font-size: 17px;}
+      #wrap .view p{padding: 10px 20px 20px; color: #fff; font-family: Georgia; font-size: 12px;}
+    </style>
+  </head>
+  <body>
+    <div id="wrap">
+      <div class="view">
+        <img src="images/11.jpg" alt="image11">
+        <div class="mask mask1"></div>
+        <div class="mask mask2"></div>
+        <div class="contents">
+          <h2>HOVER STYLE #9</h2>
+          <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
+        </div><!--.contents end-->
+      </div><!--.view end-->
+      <div class="view">
+        <img src="images/12.jpg" alt="image12">
+        <div class="mask mask1"></div>
+        <div class="mask mask2"></div>
+        <div class="contents">
+          <h2>HOVER STYLE #9</h2>
+          <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
+        </div><!--.contents end-->
+      </div><!--.view end-->
+      <div class="view">
+        <img src="images/13.jpg" alt="image13">
+        <div class="mask mask1"></div>
+        <div class="mask mask2"></div>
+        <div class="contents">
+          <h2>HOVER STYLE #9</h2>
+          <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
+        </div><!--.contents end-->
+      </div><!--.view end-->
+      <div class="view">
+        <img src="images/14.jpg" alt="image14">
+        <div class="mask mask1"></div>
+        <div class="mask mask2"></div>
+        <div class="contents">
+          <h2>HOVER STYLE #9</h2>
+          <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
+        </div><!--.contents end-->
+      </div><!--.view end-->
+    </div><!--#wrap end-->
+  </body>
+</html>
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,265 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+@keyframes fadeIn{
+	0% {opacity: 0;}
+}
+.fadeIn{animation: fadeIn 3s;}
+
+/*reset*/
+*{padding: 0; margin: 0; box-sizing: border-box;}
+ul{list-style-type: none;}
+a{text-decoration: none;}
+img{border: none;}
+html{font-size: 0.625em; line-height: 1;}
+body{font-family: 'Lato', sans-serif; color: #424a51;}
+.blind{position: absolute; text-indent: -99999px; font-size: 0; line-height: 0;}
+.arrow{display: block; width: 20px; height: 20px; margin: 0 auto; border: 1px solid #c59a6d; background: url(../img/arcadia-arrow-bottom2.png) no-repeat center; background-size: 9px; text-indent: -99999px;}
+
+/*header*/
+header{height: 400px; padding-top: 125px; background: url(../img/arcadia-bg-visual.jpg) no-repeat center; background-size: cover;}
+header button{position: absolute; top: 37px; left: 3.125%; z-index: 2; width: 15px; height: 12px; border: none; background: none;}
+header button span{display: block; transition: .3s; height: 2px; background: #fff; text-indent: -99999px;}
+header button.on span{position: absolute; width: 100%;}
+header button span:nth-child(2){margin: 3px 0;}
+header button.on span:nth-child(1){transform: rotate(45deg);}
+header button.on span:nth-child(2){display: none;}
+header button.on span:nth-child(3){transform: rotate(-45deg);}
+header nav{display: none; z-index: 1; position: fixed; top: 0; left: 0; width: 100%; height: 100%; padding-top: 87px; background: rgba(0,0,0,.85);} /*z-index 올려줘서 토글 전에꺼들은 hover,focus 반응 없음.*/
+header nav a{display: block; color: #fff; font-size: 1.5rem; line-height: 2; text-transform: uppercase; text-align: center;}
+header p{animation:fadeIn 3s; color: #fff; font-weight: bold; text-align: center;}
+header p:first-of-type{font-size: 1rem; text-transform: uppercase;}
+header p:last-of-type{width: 93.75%;/*600/640*/ height: 62px; margin: 0 auto 22px; border: 2px solid #fff; font-size: 3rem; line-height: 58px;/*lh 시각적으로 맞춤*/}
+header p span{display: block; width: 30px; height: 2px; margin: 19px auto; background: #c59a6d;}
+header .arrow{background-image: url(../img/arcadia-arrow-bottom1.png);}
+
+/*.main*/
+section h2{font-size: 2rem; text-align: center; text-transform: uppercase;}
+section h2 span{display: block; width: 30px; height: 2px; margin: 25px auto; background: #c59a6d;}
+section h2 + p{width: 93.75%; margin: 0 auto; font-size: 1.1rem; line-height: 1.636; text-align: center;}
+
+/*#meetus*/
+#meetus{padding-top: 44px;}
+#meetus p{margin-bottom: 30px;}
+#meetus div{height: 250px; margin-top: 30px; background: url(../img/arcadia-bg-video.jpg) no-repeat center; background-size: cover;}
+#meetus div a{display: block; height: 100%; background: url(../img/arcadia-icon-video.png) no-repeat center; background-size:21px; text-indent: -999px;}
+
+/*#service*/
+#service{padding-top: 58px;}
+#service div{margin: 50px 0 47px;}
+#service div a{display: block; opacity: .6; transition: .3s; width: 56.562%; margin: 0 auto 32px; padding: 50px 17px 39px; border: 1px solid #424a51; color: #424a51; text-align: center;}
+#service div a:hover, #service div a:focus{opacity: 1; padding: 68px 17px 57px; border: 2px solid #c59a6d; color: #c59a6d;}
+#service div a h3{margin-bottom: 16px; padding-top: 52px; font-size: 1.5rem; background: url(../img/arcadia-icon-branding.png) no-repeat top center; background-size: auto 32px;}
+#service div a:nth-child(2) h3{background-image: url(../img/arcadia-icon-development.png); background-size: auto 26px; background-position: 50% 3px;}
+#service div a:nth-child(3) h3{background-image: url(../img/arcadia-icon-design.png);}
+#service div a:hover h3, #service div a:focus h3{background-image: url(../img/arcadia-icon-branding-on.png);}
+#service div a:nth-child(2):hover h3, #service div a:nth-child(2):focus h3{background-image: url(../img/arcadia-icon-development-on.png);}
+#service div a:nth-child(3):hover h3, #service div a:nth-child(3):focus h3{background-image: url(../img/arcadia-icon-design-on.png);}
+#service div a p{font-size: 1.1rem; line-height: 1.636;}
+.shop{margin-top: 45px; padding-top: 37px; height: 100px; background: #282f35;}
+.shop a{display: block; width: 150px; height: 25px; margin: 0 auto; border: 1px solid rgba(197,154,109,.5); color: #fff; font-size: 1rem; line-height: 25px; font-weight: bold; text-align: center; text-transform: uppercase;}
+
+/*#projects*/
+#projects{padding-top: 67px;}
+.portfolio{margin-top: 58px; height: 180px; background: url(../img/arcadia-bg-portfolio.jpg) no-repeat center; background-size: cover;}
+.behance{display: block; width: 120px; height: 25px; margin: 56px auto 34px; background: #c59a6d; color: #fff; font-size: 1rem; line-height: 25px; font-weight: bold; text-align: center; text-transform: uppercase;}
+.partners{margin-top: 53px; padding: 60px 0 14px; background: url(../img/arcadia-bg-partners.jpg) no-repeat center; background-size: cover;}
+.partners h3{color: #fff; font-size: 2rem; text-transform: uppercase; text-align: center;}
+.partners h3 span{display: block; width: 30px; height: 2px; margin: 34px auto 27px; background: #c59a6d;}
+.partners div{width: 93.75%; margin: 0 auto;}
+.partners div:after{content: ""; display: block; clear: both;}
+.partners div span{float: left; width: 50%; height: 25px; margin-bottom: 30px; background: url(../img/arcadia-icon-adidas.png) no-repeat center; background-size: contain; text-indent: -99999px;}
+.partners div span:nth-child(2){background-image: url(../img/arcadia-icon-google.png); background-size: auto 19px;}
+.partners div span:nth-child(3){background-image: url(../img/arcadia-icon-samsung.png); background-size: auto 25px;}
+.partners div span:nth-child(4){background-image: url(../img/arcadia-icon-microsoft.png); background-size: auto 9px;}
+
+/*#about*/
+#about{padding-top: 84px;}
+.staff{margin: 62px auto 25px; width: 93.75%;}
+.staff:after{content: ""; display: block; clear: both;}
+.staff a{float: left; opacity: .6; width: 48.666%; height: 194px; margin-bottom: 25px; padding-top: 38px; border: 1px solid rgba(40,47,53,.3); text-align: center; color: #282f35;}
+.staff a:nth-child(even){float: right;}
+.staff a:nth-child(4){opacity: 1; width: 32%; margin-right: 10%; border-color: #c59a6d;}
+.staff a:hover, .staff a:focus{opacity: 1; border-color: rgba(40,47,53,.4);}
+.staff a h3{margin-bottom: 14px; padding-top: 75px; background: url(../img/arcadia-about-mike.png) no-repeat center top; background-size: 52px; font-size: 1.2rem; text-transform: uppercase;}
+.staff a:nth-child(2) h3{background-image: url(../img/arcadia-about-taylor.png);}
+.staff a:nth-child(3) h3{background-image: url(../img/arcadia-about-james.png);}
+.staff a:nth-child(4) h3{padding-top: 25px; color: #c59a6d; background: none;}
+.staff a p{font-size: 1rem;}
+.staff a span{display: block; width: 52px; height: 1px; margin: 16px auto 0; background: #c59a6d;}
+.staff a:nth-child(4) span{margin-top: 29px; width: 22px; height: 22px; background: url(../img/arcadia-about-plus.png) no-repeat center; background-size: contain;}
+.tweets{margin-top: 45px; padding: 48px 0 69px; background: url(../img/arcadia-bg-tweets.jpg) no-repeat center; background-size: cover; text-align: center;}
+.tweets h3{color: #fff; font-size: 2rem; text-transform: uppercase;}
+.tweets h3 span{display: block; width: 30px; height: 2px; margin: 26px auto 29px; background: #c59a6d;}
+.slider a{display: block; width: 93.75%; margin: 0 auto; color: #fff;}
+.slider a p{margin-bottom: 27px; font-size: 1.2rem; line-height: 1.5; font-style: italic;}
+.slider a span{font-size: 1rem; text-transform: uppercase;}
+
+/*bxslider*/
+.bx-wrapper{margin-bottom: 0; border: none; box-shadow: none; background: none;}
+.bx-wrapper .bx-pager.bx-default-pager a{border: 1px solid #c59a6d; border-radius: 0; background: none;}
+.bx-wrapper .bx-pager.bx-default-pager a.active, .bx-wrapper .bx- pager.bx-default-pager a:focus, .bx-wrapper .bx-pager.bx-default-pager a:hover{background: #c59a6d;}
+.bx-wrapper .bx-controls-auto, .bx-wrapper .bx-pager{bottom: -27px;}
+
+/*footer*/
+footer{padding: 74px 0 20px; border-bottom: 3px solid #c59a6d; background: #282f35; color: #fff;}
+footer a{color: #fff;}
+footer h2{font-size: 2rem; text-transform: uppercase; text-align: center;}
+footer h2 span{display: block; width: 30px; height: 2px; margin: 26px auto 65px; background: #c59a6d;}
+footer form{text-align: right;}
+footer form span{display: block; position: relative; margin: 0 auto 20px; width: 93.75%;}
+footer form label{position: absolute; top: 10px; left: 8px; color: rgba(255,255,255,.5); font-size: 1rem; font-weight: bold;}
+footer form input, footer form textarea{border: none; width: 100%; height: 30px; padding: 8px; background: #1e2429; color: rgba(255,255,255,.75); font-size: 1rem; font-weight: bold;}
+footer form textarea{height: 90px;}
+footer form input:hover, footer form textarea:hover, footer form input:focus, footer form textarea:focus{border-top: 3px solid rgba(197,154,109,.8);}
+footer form button{width: 85px; height: 25px; border: none; margin: -7px 3.125% 0 0; background: #c59a6d; color: #fff; font-size: 1.2rem; font-weight: bold; text-transform: uppercase;}
+.address{margin: 30px 0 18px 3.125%;}
+.address h3{height: 12px; padding-left: 18px; margin-bottom: 14px; background: url(../img/arcadia-icon-address.png) no-repeat; background-size: contain; font-size: 1.2rem; text-transform: uppercase;}
+.address p{padding-left: 18px; margin-bottom: 14px; font-size: 1.1rem; line-height: 2;}
+.address a{display: inline-block; height: 11px; padding-right: 23px;}
+.address a img{height: 100%;}
+.copyright{display: block; margin-right: 3.125%; text-align: right;}
+.copyright small{display: block; margin-bottom: 28px; font-size: 1rem; text-transform: uppercase;}
+.copyright small span{color: #c59a6d;}
+.copyright a{padding-right: 20px; font-size: 1.1rem; text-transform: uppercase; background: url(../img/arcadia-arrow-top.png) no-repeat right center; background-size: auto 6px;}
+
+/*gte 768px*/
+@media screen and (min-width: 768px){
+    
+    /*reset*/
+	.arrow{width: 40px; height: 40px; background-size: auto;}
+    
+    /*header*/
+	header{height: 800px; padding-top: 254px;}
+	header button{top: 73px; width: 30px; height: 24px;}
+	header button span{height: 4px;}
+	header button span:nth-child(2){margin: 6px 0;}
+	header nav{padding-top: 191px;/*(203-12)*/}
+	header nav a{font-size: 2.4rem;}
+	header p:first-of-type{font-size: 1.6rem/*(16px)*/;}
+	header p:last-of-type{width: 697px; height: 123px; margin-bottom: 44px; font-size: 6rem; line-height: 120px;}
+	header p span{width: 60px; margin: 37px auto;}
+    
+    /*.main*/
+	section h2{font-size: 3rem;}
+	section h2 span{width: 60px; margin: 53px auto 49px;}
+	section h2 + p{width: 720px; font-size: 22px;}
+    
+    /*#meetus*/
+	#meetus{padding-top: 94px;}
+	#meetus p{margin-bottom: 42px;}
+	#meetus div{height: 500px; margin-top: 79px;}
+	#meetus div a{background-size: auto;}
+    
+    /*#service*/
+	#service{padding-top: 123px;}
+	#service div{margin: 137px 0 40px;}
+	#service div a{width: 362px; margin-bottom: 62px; padding: 100px 40px 80px;}
+	#service div a:last-child{margin-bottom: 0;}
+	#service div a:hover , #service div a:focus {padding: 134px 40px 118px;}
+	#service div a h3{margin-bottom: 39px; padding-top: 105px; font-size: 2rem; background-size: auto;}
+	#service div a:nth-child(2) h3{background-size: auto; background-position: 50% 6px;}
+	#service div a p{font-size: 1.8rem; line-height: 2;}
+	.shop{margin-top: 142px; padding-top: 75px; height: 200px;}
+	.shop a{width: 300px; height: 50px; font-size: 1.4rem; line-height: 50px;}
+    
+    /*#projects*/
+	#projects{padding-top: 140px;}
+	.portfolio{margin-top: 150px; height: 360px;}
+	.behance{width: 192px; height: 50px; margin: 114px auto 67px; font-size: 1.4rem; line-height: 50px;}
+	.partners{margin-top: 104px; padding: 129px 0 176px;}
+	.partners h3{font-size: 3rem;}
+	.partners h3 span{width: 60px; margin: 68px auto 55px;}
+	.partners div{width: 720px;}
+	.partners div span{width: 25%; height: 51px;}
+	.partners div span:nth-child(2){background-size: auto;}
+	.partners div span:nth-child(3){background-size: auto;}
+	.partners div span:nth-child(4){background-size: auto;}
+    
+    /*#about*/
+	#about{padding-top: 174px;}
+	.staff{margin: 160px auto 0; width: 720px;}
+	.staff a{width: 292px; height: 387px; margin-bottom: 50px; padding-top: 75px;}
+	.staff a:nth-child(4){width: 192px; margin-right: 50px;}
+	.staff a h3{margin-bottom: 27px; padding-top: 150px; background-size: auto; font-size: 2rem;}
+	.staff a:nth-child(4) h3{padding-top: 48px;}
+	.staff a p{font-size: 1.6rem;}
+	.staff a span{width: 104px; margin-top: 26px;}
+	.staff a:nth-child(4) span{margin-top: 58px; width: 44px; height: 44px;}
+	.tweets{margin-top: 140px; padding: 103px 0 140px;}
+	.tweets h3{font-size: 3rem;}
+	.tweets h3 span{width: 60px; margin: 53px auto 57px;}
+	.slider a{width: 648px;}
+	.slider a p{margin-bottom: 55px; font-size: 2.4rem;}
+	.slider a span{font-size: 1.8rem;}
+    
+    /*bxslider*/
+	.bx-wrapper .bx-controls-auto, .bx-wrapper .bx-pager{bottom: -54px;}
+    
+    /*footer*/
+	footer{padding: 156px 0 57px;}
+	footer:after{content: ""; display: block; clear: both;}
+	footer h2{font-size: 3rem;}
+	footer h2 span{width: 60px; margin: 53px auto 132px;}
+	footer form{width: 93.75%; margin: 0 auto;}
+	footer form span{width: auto; margin-bottom: 50px;}
+	footer form label{font-size: 1.6rem; top: 18px; left: 20px;}
+	footer form input, footer form textarea{height: 50px; padding: 20px; font-size: 1.6rem;} /*label이랑 비슷한 위치로 보이게*/
+	footer form textarea{height: 155px;}
+	footer form button{width: 170px; height: 50px; margin: 0; font-size: 1.4rem;}
+	.address{float: left; margin: 50px 0 0 3.125%;}
+	.address h3{height: 24px; margin-bottom: 33px;/*42-9*/ padding-left: 36px; font-size: 1.8rem;}
+	.address p{padding-left: 36px; margin-bottom: 53px; font-size: 1.8rem;}
+	.address a{height: 29px; padding-right: 48px;}
+	.address a img{height: auto;}
+	.copyright{float: right; margin-top: 228px;}
+	.copyright small{margin-bottom: 62px; font-size: 1.6rem;}
+	.copyright a{padding-right: 37px; font-size: 1.6rem; background-size: auto;}
+}
+
+/*gte 1280px*/
+@media screen and (min-width: 1280px){
+    
+    /*header*/
+	header{height: 803px;}
+	header nav{position: absolute; top: 73px; left: 50%; padding-top: 0; width: 1174px; height: 24px; margin-left: -587px;/*1174/2*/ background: none;}
+	header nav ul:after{content: ""; display: block; clear: both;}
+	header nav li{float: left; width: 20%;}
+	header nav a{font-size: 1.4rem; line-height: 24px;}
+	header p:last-of-type{margin-bottom: 42px;}
+	header p span{margin: 38px auto 35px;}
+    
+    /*.main*/
+	section h2 + p{width: 740px;}
+    
+    /*#meetus*/
+	#meetus{padding-top: 91px;}
+    
+    /*#service*/
+	#service div{margin: 135px auto 148px; width: 1174px;}
+	#service div a{display: inline-block; margin-bottom: 0; margin-right: 39px;}
+	#service div a:last-child{margin-right: 0;}
+	.shop{margin-top: 151px;}
+    
+    /*#about*/
+	.staff{width: 1174px; margin-bottom: 107px;}
+	.staff a{margin-right: 34px; margin-bottom: 0;}
+	.staff a:nth-child(even){float: left;}
+	.staff a:nth-child(4){margin-right: 0;}
+	.tweets{margin-top: 94px;}
+	.slider a{width: 620px;}
+    
+    /*footer*/
+	footer{padding-bottom: 53px;}
+	.footerInner{width: 1174px; margin: 0 auto;}
+	.footerInner:after{content: ""; display: block; clear: both;}
+	footer form{float: right; width: 762px; margin-bottom: 157px;}
+	footer form span{float: left; width: 360px; margin-right: 42px;}
+	footer form span:nth-child(even){margin-right: 0;}
+	footer form span:last-of-type{width: 100%; margin-bottom: 80px;}
+	.address{margin: 5px 0 0;}
+	.address span{margin-left: 36px;}
+	.copyright{float: none; clear: both; margin: 0;}
+	.copyright:after{content: ""; display: block; clear: both;}
+	.copyright small{float: left; margin-bottom: 0;}
+	.copyright a{float: right;}	
+}

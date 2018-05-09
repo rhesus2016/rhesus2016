@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>Rotate3D Exercise</title>
+  <style>
+      *{padding: 0; margin: 0;}
+      .hidden{position: absolute; top: 0; left: -9999em;}
+      .clear:after{content:""; display: block; clear: both;}
+      
+      #wrap{width: 1520px; margin: 0 auto; text-align: center;}
+      #header{width: 1520px; height: 80px; background: pink; line-height: 80px;}
+      
+      /*#container:after{content:""; display: block; clear: both;}*/
+      #container article{width: 500px; float: left;}
+      #container article div{width: 300px; border: 5px solid red; margin: 0 auto; perspective: 200px;}
+      #container article h3{margin: 15px 0;}
+      #container article div img{width: 300px; display: block; transition-duration: 1s;}
+      
+      #container article div .RotateX{transform: rotateX(45deg);}
+      #container article div .RotateY{transform: rotateY(45deg);}
+      #container article div .RotateZ{transform: rotateZ(45deg);}
+      #container article div .RotateXYZ{transform: rotate3D(2.5,1.2,-1.5,45deg);}
+      
+      #footer{width: 1520px; height: 80px; background: pink; line-height: 80px; margin-top: 20px;}
+    </style>
+  </head>
+  <body>
+    <div id="wrap">
+      <h1 class="hidden">wrap</h1>
+      <header id="header">
+        <h2>header</h2>
+      </header>
+      <section id="container" class="clear">
+        <h2>container</h2>
+        <article>
+          <h3>Perspective RotateX</h3>
+          <div>
+            <img src="../images/ryan1.gif" alt="" class="RotateX">
+          </div>
+        </article>
+        <article>
+          <h3>Perspective RotateY</h3>
+          <div>
+            <img src="../images/ryan1.gif" alt="" class="RotateY">
+          </div>
+        </article>
+        <article>
+          <h3>Perspective RotateZ</h3>
+          <div>
+            <img src="../images/ryan1.gif" alt="" class="RotateZ">
+          </div>
+        </article>
+        <article>
+          <h3>Perspective RotateXYZ</h3>
+          <div>
+            <img src="../images/ryan1.gif" alt="" class="RotateXYZ">
+          </div>
+        </article>
+      </section>
+      <footer id="footer">
+        <h2>footer</h2>
+      </footer>
+    </div>
+  </body>
+</html>

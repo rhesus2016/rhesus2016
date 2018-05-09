@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <title>Double Transition</title>
+    <style>
+      div{
+        width: 200px;
+        height: 200px;
+        background: red;
+        border: 1px solid yellow;
+        /*transition-property: all;
+        transition-duration: 2s;
+        transition-delay: 1s;
+        transition-timing-function: linear;*/
+        transition: all 2s 1s linear;
+        /*transition: all 2s;*/
+      }
+      div:hover{width: 400px; height: 400px; background: yellow; transform: translateX(100px) rotate(270deg);}
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>Transition</h1>
+    </div>
+  </body>
+</html>

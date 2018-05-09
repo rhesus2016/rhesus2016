@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <title>Transform</title>
+    <style>
+      div{width: 200px; height: 60px; background: #faef7c; padding: 20px; margin-top: 50px; margin-left: 100px; transform: scale(0.5) rotate(45deg); opacity: 0.5; animation-duration: 3s; animation-name: Ani; animation-direction: alternate; animation-iteration-count: 2;} /*normal: 기본값*/
+      div > p{font-size: 20px; font-weight: bold;}
+      
+      @keyframes Ani{
+        from{}
+        to{width: 400px; background: #ff9400; transform: scale(1) rotate(0); opacity: 1;}
+      }
+    </style>
+  </head>
+  <body>
+    <div>      
+      <p>CSS3 animation</p>
+    </div>
+  </body>
+</html>
